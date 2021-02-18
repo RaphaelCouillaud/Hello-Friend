@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="style.css">
+         <!--kit icons-->
+       
+        <!--kit font awesome-->
+        <script src="https://kit.fontawesome.com/82f45c04c7.js" crossorigin="anonymous"></script>
+        <!--googlefonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=KoHo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+    
+        
+         <title>HELLO FRIEND - R. Couillaud</title>
+    </head>
+
+    <body>
+        <header>                      
+             <canvas></canvas>
+              <h1 class="glitch" data-text="HELLO FRIEND">HELLO FRIEND</h1>
+              <h2 id="headerdescription"></h2>                 
+        </header>
+
+
+
+        <nav id="navbar">
+		  <ul>
+		  	<li><a href="#who" data-text="Who ?">Who ?</a></li>
+		  	<li><a href="#news" data-text="What ?">What ?</a></li>
+		  	<li><a href="#contact" data-text="How ?">How ?</a></li>
+		  	<li><a href="#contact" data-text="Why ?">Why ?</a></li>
+		  </ul>
+		</nav>
+
+
+    <main>
+
+       <section id="technolist">           
+
+            <div class="carousel-text"> 
+            <p>PLAYER : RAPHAËL</p>  
+            <p>HIGH SCORE : 9 999 PTS</p>
+            </div>
+
+
+
+            <div class="carousel">              
+                <div class="carousel-item carousel-item-visible">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <div class="carousel-item">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="carousel-item">
+                  <i class="fab fa-js"></i>
+                </div>
+                <div class="carousel-item">
+                  <i class="fab fa-vuejs"></i>
+                </div>
+                <div class="carousel-item">
+                  <i class="fab fa-wordpress"></i>
+                </div>
+                <div class="carousel-item">
+                  <i class="fab fa-bootstrap"></i>
+                </div>
+                <div class="carousel-item">
+                <p id="jquery">jQuery</p>
+                </div> 
+                <div class="carousel-item">
+                  <i class="fab fa-sass"></i>
+                </div>  
+                <div class="carousel-item">
+                  <i class="fab fa-google"></i>
+                </div>                 
+                <div class="carousel-item">
+                  <i class="fab fa-node"></i>
+                </div>
+                <div class="carousel-item">
+                <p id="express">Express</p>
+                </div> 
+                <div class="carousel-item">
+                  <i class="fab fa-npm"></i>
+                </div>                                 
+                <div class="carousel-item">
+                  <p id="mysql">MySQL<span>®️</span></p>
+                </div>
+                <div class="carousel-item">
+                  <p id="sequelize">Sequelize</p>
+                </div>
+                <div class="carousel-item">
+                  <p id="mongo">mongoDB®️</p>
+                </div>    
+                <div class="carousel-item">
+                  <i class="fab fa-git-alt"></i>
+                </div>  
+                <div class="carousel-item">
+                  <i class="fab fa-github"></i>
+                </div>   
+                <div class="carousel-item">
+                 <p id="game">GAME OVER</p>
+                </div> 
+                       
+            </div> 
+
+            <div class="carousel-actions">
+                  <button id="carousel-button-prev" aria-label="Previous slide"><i class="fas fa-angle-double-left"></i></button>
+                    <!--<div id="carousel-slide-nav"></div>-->
+                  <button id="carousel-button-next" aria-label="Previous slide"><i class="fas fa-angle-double-right"></i></button>
+            </div>
+            
+          </section>
+
+ <!--------------------------PACMAN------------------------>
+         
+        <div class="road">
+  <div class="pacman"></div>
+  <div class="ghost">
+    <div class="eyes"></div>
+    <div class="skirt"></div>
+  </div>
+</div>
+         <!-----------------------BIO------------------------>
+        
+        <section id="biographic">
+          <h2>La bio graphique</h2> 
+          <div id="section1">  
+            <figure>                          
+              <img src="img/fofo.jpg">
+              <figcaption>Intro Forrest</figcaption>
+              <i class="fas fa-feather-alt"></i>
+            </figure>
+            <figure>                          
+				      <img src="img/oystersea1.png">
+              <figcaption>blabla Naissance</figcaption>
+              <i class="fas fa-disease"></i>
+				    </figure>  
+          </div>
+          
+          <div id="section2">
+            <figure>               
+             <img src="img/ping.jpg">
+              <figcaption>10 ans plus tard</figcaption>
+              <i class="fas fa-circle" id="balle"></i>
+            </figure>
+            <figure>                          
+              <img src="img/come.jpg">
+              <figcaption>20 ans plus tard idée ovni qui passe au dessus forêt, un des seuls observateurs d'ovnis</figcaption>              
+            </figure>             
+          </div>
+              
+             
+          <div id="section3">
+            <figure id="compta">                          
+              <img src="img/compta.png">
+              <figcaption>30 ans plus tard</figcaption>              
+            </figure> 
+            <figure>                          
+              <img src="img/openok.jpg">
+              <figcaption>40 ans plus tard</figcaption>
+            </figure>             
+          </div>
+        
+
+          <div id="section4">
+              <figure>                          
+                <img src="img/fsoc.jpg">
+                <figcaption>NOW avec background vraie photo et img comic + diplome rncp ...TO BE CONTINUED.</figcaption>
+              </figure> 
+          </div>
+       </section>
+
+
+        <!-----------------------SOFT SKILLS------------------------>
+<button class="refresh-button">Refresh!</button>
+
+
+        <article class="skill-bars">
+            <div class="bar">
+              <div class="info">
+                <span>Sens du détail</span>
+              </div>
+              <div class="progress-line sens">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Relationnel</span>
+              </div>
+              <div class="progress-line relationnel">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Adaptabilité</span>
+              </div>
+              <div class="progress-line adapt">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Curiosité</span>
+              </div>
+              <div class="progress-line curio">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Créativité</span>
+              </div>
+              <div class="progress-line crea">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Force de proposition</span>
+              </div>
+              <div class="progress-line force">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Veille technologique</span>
+              </div>
+              <div class="progress-line veille">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Esprit d'analyse</span>
+              </div>
+              <div class="progress-line esprit">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Dépassement de soi</span>
+              </div>
+              <div class="progress-line depass">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Respect des limites du cadre défini</span>
+              </div>
+              <div class="progress-line respect">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Humour</span>
+              </div>
+              <div class="progress-line humour">
+                <span></span>
+              </div>
+            </div>
+          </article>
+
+
+       <!----------------REALISATIONS------------------------->
+
+  <section id="projets">
+
+            <div class="listeprojets active">
+               <div class="listeprojetstop">
+               		<p>🎞️</p>
+	                <h3 id="thethrill">the thrill of losing</h3> 
+	                <a href="https://raphaelcouillaud.github.io/thethrilloflosing" class="lienindex" target="_blank">
+	               <i class="far fa-play-circle"></i>
+	                </a>                            
+              </div>
+              <div class="listeprojetsbottom">
+	              <div class="listeprojets1">
+	                <h4>Mission</h4>
+	                <p>Création d’un portfolio numérique<br/>Intégration web d'éléments à partir d'un compte Instagram<br/>Design 100% original<br/></p>
+	              </div>
+	              <div class="listeprojets2">
+	                <h4>Technologies utilisées</h4>
+	                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/><i class="fab fa-js"></i><br/>jQuery<br/></p>                  
+	              </div>
+	              <div class="listeprojets3">          
+	                 <h4>Avis client(e)</h4>
+	                <p></p>
+	             </div>  
+	             <div class="listeprojets4"> 
+	             	 <img src="img/sitelmc.jpg" alt="logo" />   
+	             </div>  
+	          </div>
+	        </div>
+            
+            <div class="listeprojets">
+                <div class="listeprojetstop">
+	                <p>🌐</p>
+	                <h3 id="groupomania">Groupomania C<i class="fas fa-globe"></i>nnect</h3>  
+	                 <a href="https://github.com/RaphaelCouillaud/P7-Groupomania" class="lienindex" target="_blank">
+	                <i class="far fa-play-circle"></i>
+	                </a>                          
+              </div>
+               <div class="listeprojetsbottom">
+	              <div class="listeprojets1">
+	                <h4>Mission</h4>
+	                <p>Construire un réseau social d’entreprise<br/>Authentifier un utilisateur et maintenir sa session<br/>Gérer un stockage de données à l'aide de SQL<br/>Personnaliser le contenu envoyé à un client web</p>
+	              </div>
+	              <div class="listeprojets2">
+	                <h4>Technologies utilisées</h4>
+	                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/><i class="fab fa-vuejs"></i><br/><i class="fab fa-js"></i><br/><i class="fab fa-node"></i><br/>MySQL<br/></p> 
+	              </div>
+	              <div class="listeprojets3">          
+	                <h4>Avis évaluateur</h4>
+	                <p>"Bonne sécurisation des données / Bonne communication frontend/backend / Belles interfaces utilisateur / Utilisation d'une librairie gérant la partie SQL."<br/>-<br/>Ibrahima Ciss, Engineer</p>
+	             </div> 
+	             <div class="listeprojets4">  
+	                <video src="exemple.webm" controls poster="img/siteconnect.jpg"></video>  
+	             </div>  
+	          </div>
+	        </div>
+
+            <div class="listeprojets">
+               <div class="listeprojetstop">
+               	<p>🌶️</p>
+                <h3 id="sopekocko">So Pekocko</h3> 
+                 <a href="https://github.com/RaphaelCouillaud/P6-So_Pekocko" class="lienindex" target="_blank">
+               <i class="far fa-play-circle"></i>
+                </a> 
+              </div>
+               <div class="listeprojetsbottom">
+	              <div class="listeprojets1">
+	                <h4>Mission</h4>
+	                <p>Construire une API sécurisée pour une application<br/>Se conformer à la réglementation<br/>Stocker des données de manière sécurisée<br/>Mettre en œuvre des opérations CRUD de manière sécurisée</p>
+	              </div>
+	              <div class="listeprojets2">
+	                <h4>Technologies utilisées</h4>
+	                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/><i class="fab fa-js"></i><br/><i class="fab fa-node"></i><br/>Express<br/>MondoDB<br/></p>  
+	                  
+	              </div>
+	              <div class="listeprojets3">          
+	                <h4>Avis évaluateur</h4>
+	                <p>"Excellent P6 réalisé qui répond à l'ensemble du cahier des charges du projet. Présentation orale, professionnelle et claire."<br/>-<br/>Joffrey Hernandez, Développeur fullstack</p>
+	             </div> 
+	             <div class="listeprojets4">  
+	               <video src="exemple.webm" controls poster="img/siteso.jpg"></video>     
+	             </div>  
+	          </div>
+	        </div>
+
+            <div class="listeprojets">
+                <div class="listeprojetstop">
+                	<p>🧠</p>
+	                <h3 id="burnout">Burnout : Parlons Reconstruction</h3>
+	                 <a href="https://burnoutparlonsreconstruction.fr/" class="lienindex" target="_blank">
+	               <i class="far fa-play-circle"></i>
+	                </a>
+              </div>
+              <div class="listeprojetsbottom">
+	              <div class="listeprojets1">
+	                <h4>Mission</h4>
+	                <p>Site vitrine pour une Psychologue du Travail<br/>Intégration du contenu<br/>Conception du design<br/>Optimisation du référencement<br/>Conseils hébergement & Maintenance</p>
+	              </div>
+	              <div class="listeprojets2">
+	                <h4>Technologies utilisées</h4>
+	                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/>Google Search Console<br/>Google Analytics</p>
+	                  
+	              </div>
+	              <div class="listeprojets3">          
+	                <h4>Avis client(e)</h4>
+	                <p>"Je vous remercie encore d'avoir accepté et pris le temps de réaliser ce site."<br/>-<br/>Aurélie Barribault, Psychologue du travail</p>
+	             </div>   
+	           	  <div class="listeprojets4"> 
+	           	  <img src="img/siteburn.jpg" alt="logo" /> 
+	             </div>  
+	          </div>
+	        </div>
+
+              <div class="listeprojets">
+	               <div class="listeprojetstop">
+		               	<p>🪑</p>
+		                <h3 id="orinoco">Orinoco</h3>
+		                 <a href="https://github.com/RaphaelCouillaud/P5-Orinoco" class="lienindex" target="_blank">
+		               <i class="far fa-play-circle"></i>
+		                </a>                             
+	              </div>
+               <div class="listeprojetsbottom">
+	              	<div class="listeprojets1">
+	                	<h4>Mission</h4>
+	                	<p>Valider des données issues de sources externes<br/>Gérer des événements JavaScript<br/>Créer un plan de test pour une application<br/>Interagir avec un web service avec JavaScript</p>
+	              	</div>
+	              <div class="listeprojets2">
+	                	<h4>Technologies utilisées</h4>
+	                	<p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/><i class="fab fa-js"></i><br/><i class="fab fa-github"></i></p>  	                  
+	              </div>
+	              <div class="listeprojets3">          
+		                <h4>Avis évaluateur</h4>
+		                <p>"Projet structuré et bien argumenté. Respect du cahier des charges."<br/>-<br/>Wenceslas Baridon, Développeur Back-End</p>
+	             </div>   
+	            <div class="listeprojets4">  
+	             <video src="exemple.webm" controls poster="img/siteori.jpg"></video>  
+	             </div>  
+	          </div>
+	        </div>
+
+             <div class="listeprojets">
+                <div class="listeprojetstop">
+	                <p>🖼️</p>
+	                <h3 id="jack">Portfolio Jack O'Keefe</h3>
+	                 <a href="https://raphaelcouillaud.github.io/Portfolio/" class="lienindex" target="_blank">
+	               <i class="far fa-play-circle"></i>
+	                </a>
+              	</div>
+               <div class="listeprojetsbottom">
+	              <div class="listeprojets1">
+	                <h4>Mission</h4>
+	                <p>Portfolio pour mes illustrations<br/>Projet personnel<br/>Conception technique et graphique</p>
+	              </div>
+	              <div class="listeprojets2">
+	                <h4>Technologies utilisées</h4>
+	                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/>CSS Grid<br/><i class="fab fa-js"></i></p>
+	                    
+	              </div>
+	              <div class="listeprojets3">          
+	                <h4>Avis client(e)</h4>
+	                <p>"Super boulot ! Un développeur vraiment au top ! Je le recommande évidemment."<br/>-<br/>Raphaël Couillaud</p>
+	             </div>   
+		            <div class="listeprojets4"> 
+		            	<img src="img/sitejack.jpg" alt="logo" />
+			        </div>  
+			      </div>
+			    </div>
+
+          
+
+            <div class="listeprojets">
+             <div class="listeprojetstop">
+             	 <p>🦉</p>
+                <h3 id="chouette">La Chouette Agence</h3>
+                 <a href="https://raphaelcouillaud.github.io/P4-La-Chouette/" class="lienindex" target="_blank">
+               <i class="far fa-play-circle"></i>
+                </a>
+              </div>
+               <div class="listeprojetsbottom">
+		              <div class="listeprojets1">
+		                <h4>Mission</h4>                
+		                <p>Analyse de l’état actuel de SEO du site fourni<br/>Amélioration du SEO du site<br/>Comparaison des résultats<br/>Livraison d'un rapport d’optimisation</p>
+		              </div>
+		              <div class="listeprojets2">
+		                <h4>Technologies utilisées</h4>
+		                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/>Lighthouse<br/>GT Metrics<br/>Google Search Console<br/>Google Analytics</p>
+		                   
+		              </div>
+		              <div class="listeprojets3">          
+		                <h4>Avis évaluateur</h4>
+		                <p>"Le site est responsive, la sémantique HTML a été modifiée, les recommandations sont pertinentes, utilisation d'un support de présentation."<br/>-<br/>Hugo Dumont</p>
+		             </div>              
+		         <div class="listeprojets4"> 
+		          		<img src="img/chouette.jpg" alt="logo" />
+			        </div>  
+			      </div>
+			    </div>
+
+          </section> 
+
+<!------------------------------------------------------------->
+
+
+
+
+
+
+
+          
+          <section id="todolist">
+            <div id="topolist"><h2>Topo sur le SEO qui doi être en amont de la discussion et sur les étapes de création du site.</h2>
+            </div>
+          
+            <div class="todocontainer">
+              <ul>
+                <li>
+                  <div>
+                    <p><span>📝</span></p>
+                    <p>Définition du type de site souhaité</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p><span>♟️</span></p>
+                    <p>Mise en place de la stratégie SEO</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p><span>🌐</span></p>
+                    <p>Choix de l'hébergement et du nom de domaine</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p><span>🕸️</span></p>
+                    <p>Définition de l'arborescence du site</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p><span>⌨️</span></p>
+                    <p>Préparation et intégration du contenu</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p><span>✍️</span></p>
+                    <p>Élaboration du thème et du design</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p><span>💳</span></p>
+                    <p>Installation éventuelle des extensions pour une solution E-commerce</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p><span>🍽️</span></p>
+                    <p>Création des pages et des menus</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p><span>🧾</span></p>
+                    <p>Ajout des produits</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p><span>💯</span></p>
+                    <p>Optimisation des pages</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p><span>📊</span></p>
+                    <p>Possibilité de formation aux outils statistiques de Google</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p><span>🍾</span></p>
+                    <p>Lancement du site</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+           
+         </section>
+
+         
+
+         <section id="refonte">
+          <div class="todocontainer">
+              <ul>
+                <li>
+                  <div>
+                  	<p><span>👂</span></p>
+                    <p>Écoute des attentes et des souhaits de refonte</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                  	<p><span>🔍</span></p>
+                    <p>Description du projet</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                  	<p><span>☢️</span></p>
+                    <p>Audit de l'existant</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                  	<p><span>⚖️</span></p>
+                    <p>Analyse des points forts et points faibles</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                  	<p><span>💡</span></p>
+                    <p>Analyse des besoins</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                  	<p><span>📑</span></p>
+                    <p>Élaboration de l'intervention et du cahier des charges</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                  	<p><span>🚦</span></p>
+                    <p>Définition des contraintes</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                  	<p><span>🤝</span></p>
+                    <p>Rédaction d'un devis adapté aux objectifs</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                  	<p><span>🧰</span></p>
+                    <p>Intervention technique</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+           </section>
+
+
+
+
+         
+
+
+              
+
+         
+            
+    </main>       
+
+
+      
+ <footer>
+        <!--  <div id="divcontact">
+            <div id="horaires">
+              
+              <p>⚠️</p>
+              <p><span>La Rochelle, 17</span><br /> 
+              <span>9h-20h</span></p>
+              <p>🚭</p>
+            </div>
+            <div id="defilfooter"><-- le conteneur -->
+                <!-- le contenu défilant -->
+                   <!--<h1 id="description">next stop : HELLO FRIEND</h1>
+                </div> 
+            
+            
+            <div id="adresse">
+              <p>Ⓜ️</p>   
+              <p><span>hellofriend@neuf.fr</span><br />             
+              <span>0698350642</span></p>
+              <p>📶</p>
+              
+            </div>
+            
+          </div>
+
+          <figure>                          
+              <img src="img/seats1.png">
+              
+             
+            </figure>
+      <div id="divfooter">
+        <div id="divfooterleft">
+          <a href="https://github.com/RaphaelCouillaud" class="lienindex">
+          <span id="github"><i class="fab fa-github"></i></span>
+          </a>
+          <a href="https://www.linkedin.com/in/raphael-couillaud/" class="lienindex">
+          <span id="linkedin"><i class="fab fa-linkedin"></i></span>
+          </a>
+        </div>
+        <div id="divfooterright">
+          <a href="https://github.com/RaphaelCouillaud" class="lienindex">
+          <span id="twitter"><i class="fab fa-twitter-square"></i></span>
+          </a>
+          <a href="https://github.com/RaphaelCouillaud" class="lienindex">
+          <span id="slack"><i class="fab fa-slack"></i></span>
+          </a>
+        </div>
+      </div>-->
+
+           
+            
+            
+<a href="#" class="to-top">
+     <i class="fas fa-space-shuttle"></i></a>
+            
+
+        </footer>   
+        <script src="what.js"></script>
+        <script src="index.js"></script>
+
+    </body>
+</html>
