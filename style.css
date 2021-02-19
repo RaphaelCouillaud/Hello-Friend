@@ -15,7 +15,12 @@ body {
 	padding: 0;	
 	font-family: Helvetica, 'Trebuchet MS', Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
-  background: #04040c;
+  
+  background:  url("img/stars.png"), #04040c;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; 
 
 }
 a {
@@ -161,10 +166,11 @@ h1 {
  transform: translate(-50%, -50%);
   margin: auto;
   color: white;
-   /*border-right: 0.15em solid white;*/
-   text-shadow: 6px 0 #10c4c4;
+   border-right: 0.35em solid white;
+   text-shadow: 5px 0 #10c4c4;
   animation: typing 0.75s step-end infinite;
-  width: 100%;
+  padding-right: 5px;
+  /*width: 100%;*/
 
 }
 
@@ -258,8 +264,280 @@ nav ul li a:hover:after {
   transform: translate(50px, -50px);
   transform: scale(1.5);
 }
+/*-------------------------------------SECTION WHO-----------------------------------*/
+#whosection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 100px;
+   padding-bottom: 100px;
+  align-items: center;
+ background-image: url("img/rob.jpg");
+ background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; 
+  position: relative;
+}
+#whosection img {
+  max-width: 100%;
+}
+.saucer {
+  display: block;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  right: 5%;
+  width: 10%; animation: spider-move 5s ease-in-out infinite forwards;
+  color: transparent;
+  }
+@keyframes spider-move {
+    0% {
+      height: 50px; 
+      top: 0;
+      right: 5%;
+    }  
+    10% {
+      right: 8%;
+    } 
+    20% {
+      right: 11%;
+    } 
+    30% {
+      right: 8%;
+    } 
+    40% {
+      right: 5%;
+    } 
+    50% {
+      right: 15%;
+    } 
+    52% {
+      right: 25%;
+    } 
+    54% {
+      right: 35%;
+    } 
+    56% {
+      right: 45%;
+    } 
+    58% {
+      left: 45%;      
+    } 
+    60% {
+      left: 35%;
+    } 
+    62% {
+      left: 20%;
+    } 
+    64% {
+      left: 0%;
+       opacity: 0;
+    }     
+    70% {
+      left: 5%;
+       opacity: 1;
+    } 
+    75% {
+      left: 30%;
+    } 
+    80% {
+      right: 30%;      
+    } 
+    90% {
+      right: 10%;     
+    } 
+    100% {
+      height: 200px;
+      top: 350px; 
+      right: 0%; 
+       opacity: 0;    
+    }
+
+  }
+
+ 
 
 
+
+#whosectionimg {
+  width: 275px;
+  height: 275px;
+  background-image: url("img/profilpix.png");
+  background-size: cover;
+  margin: auto;
+  border-radius: 50%;
+  
+  box-shadow: -3px 0 3px white, 0 3px 3px white, 3px 0 3px white, 0 -3px 20px white;
+  transition-property: width, background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0.5s;    
+    -webkit-transition-property: width, background;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 0.5s;  
+  mix-blend-mode: multiply; 
+  animation-name: fly;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out-in;
+}
+@keyframes fly {
+  0%   { left: -20%;}  
+  10%   { transform: rotate(11deg); transform: scale(1.25, 1.15);} 
+  40%  { transform: rotate(0deg);}
+  50%  { transform: rotate(5deg);}
+  60%  { transform: rotate(-11deg); }
+  90%  { transform: rotate(0deg); }
+  100% { transform: rotate(-5deg);
+  left: 20%; transform: scale(1, 0.85)}
+}
+
+
+#whosectionimg:hover, #whosectionimg:active {
+  background-image: url("img/profil.png");
+
+}
+#whosectiontopo {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column; 
+   font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
+   text-align: center;
+   text-shadow: 3px 0 white;
+   color: #10c4c4;
+   letter-spacing: 1.5px;
+   line-height: 1.5em;
+}
+#whosectiontopo h2 {
+  text-shadow: 3px 0 #10c4c4;
+   color: white;
+}
+/*-------------------------------------SECTION CV-----------------------------------*/
+
+.topolist {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column; 
+   font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
+   text-align: center;
+   text-shadow: 3px 0 #10c4c4;
+   color: white;
+   letter-spacing: 1.5px;
+   line-height: 1.5em;
+   
+}
+#todolist {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  overflow-x:hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.todocontainer p {
+  font-size: 0.85em;
+  color: #100c0c;
+  margin: 0;
+   font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
+}
+.todocontainer ul li div p:nth-child(1) {
+  font-size: 1.25em;
+  padding-top: 10px;
+   padding-bottom: 10px;
+   text-shadow: -0.5px 0 0.5px white, 0 0.5px 0.5px white, 0.5px 0 0.5px white, 0 -0.5px 10px white;
+}
+.todocontainer ul li{
+  list-style-type:none;
+  position: relative;
+  width: 8px;
+  margin: auto;
+  padding-top: 50px;
+  background: #fcfc04; 
+  border-radius: 30px;
+  
+}
+.todocontainer ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: inherit;
+  background: #04040c;
+  transition: background .5s ease-in-out;
+ }
+ .todocontainer ul li div p:nth-child(2) {
+  padding-bottom: 10px;
+
+}
+.todocontainer ul li div{
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 0 15px 0 15px;  
+  background: #10c4c4;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+ border-radius: 30px;
+ box-shadow: inset 0px 0px 0px 6px white;
+  border: 6px solid #fcfc04;
+}
+.todocontainer ul li div strong {
+   font-family: MrRobot, 'Press Start 2P', Helvetica, Arial, sans-serif;
+   color: #bc040c;
+   font-size: 1.5em;   
+}
+.todocontainer ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 14px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.todocontainer ul li:nth-child(odd) div {
+  left: 45px;
+  transform: translate3d(200px,0,0);
+}
+.todocontainer ul li:nth-child(odd) div::before {
+  left: -32px;
+  border-width: 15px 30px 15px 0;
+  border-color: transparent #fcfc04 transparent transparent;
+
+}
+
+.todocontainer ul li:nth-child(even) div {
+  left: -480px;
+  transform: translate3d(-200px,0,0);
+}
+ 
+.todocontainer ul li:nth-child(even) div::before {
+  right: -32px;
+  border-width: 15px 0 15px 30px;
+  border-color: transparent transparent transparent #fcfc04;
+}
+
+.todocontainer ul li.in-view::after {
+  background: #10c4c4;
+}
+
+.todocontainer ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+ 
 
 /*-------------------------------------SECTION TECHNOLIST-----------------------------------*/
 #technolist {
@@ -271,8 +549,11 @@ nav ul li a:hover:after {
   text-align: center;
   position: relative;
    padding-top: 50px;   
-  background-image: url("img/backhalt2.jpg");
+  background-image: url("img/backhalt.png");
+ background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; 
 
 }
 .carousel {
@@ -412,7 +693,7 @@ font-family: 'Newsreader', serif;
   box-sizing: border-box;
 }
 #technolist button {
-  background-color: #bc040c;
+  background-color: grey;
   text-transform: uppercase;
   text-decoration: none;  
   color: white;
@@ -423,7 +704,7 @@ font-family: 'Newsreader', serif;
   position: relative;
   top: 0;
   transition: all 300ms ease-in-out;
-  box-shadow: 0 0.3em #bc040c, 0 0.6em rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0.3em grey, 0 0.6em rgba(0, 0, 0, 0.85);
    border: 5px solid white;
   width: 150px;
   height: 66px;
@@ -615,7 +896,8 @@ font-family: 'Newsreader', serif;
 #biographic { 
   margin-top: 250px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  background: white; 
 
 }
 #section1, #section2, #section3, #section4 {
@@ -747,7 +1029,7 @@ figure img {
 .skill-bars{
   padding: 25px 30px;
   width: 600px;
-  background: black;
+  background: transparent;
   box-shadow: 5px 5px 20px rgba(0,0,0,0.2); 
   margin: auto;
   margin-top: 50px;
@@ -904,8 +1186,11 @@ figure img {
    justify-content: space-between;
    width: 100%;
    height: 900px;
-   background-image: url("img/backstranger1.jpg");
-  background-size: contain;
+   background-image: url("img/backstranger.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; 
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -1040,159 +1325,57 @@ margin-top: 0;
 }
 
 
+/*-------------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-------------------------------------SECTION TODO LIST-----------------------------------*/
-
-
-#todolist, #refonte {
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  overflow-x:hidden;
-  margin-top: 50px;
-}
-.todocontainer p {
-	font-size: 1.25em;
-	color: #100c0c;
-  margin: 0;
-}
-.todocontainer ul li div p:nth-child(1) {
-  font-size: 2.5em;
-  padding-top: 10px;
-   text-shadow: -0.5px 0 0.5px white, 0 0.5px 0.5px white, 0.5px 0 0.5px white, 0 -0.5px 10px white;
-}
-.todocontainer ul li{
-  list-style-type:none;
-  position: relative;
-  width: 8px;
+.refresh-button {
+  background-color: grey;
+  text-transform: uppercase;
+  text-decoration: none; 
+  display: flex;
   margin: auto;
-  padding-top: 50px;
-  background: #2cbcc4;
-  opacity: 0.9;
-  border-radius: 30px;
-  
-}
-.todocontainer ul li::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: inherit;
-  background: #2cbcc4;
-  transition: background .5s ease-in-out;
- }
- .todocontainer ul li div p:nth-child(2) {
-  padding-bottom: 10px;
-}
-.todocontainer ul li div{
+  color: white;
+  cursor: pointer;
+  opacity: 1.0;
+  font-size: 1em;
+  border-radius: 0.5rem;
   position: relative;
-  bottom: 0;
-  width: 350px;
-  padding: 0 15px 0 15px;  
-  background: #2cbcc4;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.7s ease-in-out;
- border-radius: 30px;
- box-shadow: inset 0px 0px 0px 6px white;
-  border: 6px solid #100c0c;
-
+  top: 0;
+  transition: all 300ms ease-in-out;
+  box-shadow: 0 0.3em grey, 0 0.6em rgba(0, 0, 0, 0.85);
+   border: 5px solid white;
+  width: 150px;
+  height: 66px;
 }
-.todocontainer ul li div::before {
-  content: '';
-  position: absolute;
-  bottom: 14px;
-  width: 0;
-  height: 0;
-  border-style: solid;
+.refresh-button button:active {
+  top: 0.6em;
+  box-shadow: 0 0.2em rgba(0, 0, 0, 0.85);
 }
 
-.todocontainer ul li:nth-child(odd) div {
-  left: 45px;
-  transform: translate3d(200px,0,0);
-}
-.todocontainer ul li:nth-child(odd) div::before {
-  left: -32px;
-  border-width: 15px 30px 15px 0;
-  border-color: transparent #100c0c transparent transparent;
 
-}
 
-.todocontainer ul li:nth-child(even) div {
-  left: -480px;
-  transform: translate3d(-200px,0,0);
-}
- 
-.todocontainer ul li:nth-child(even) div::before {
-  right: -32px;
-  border-width: 15px 0 15px 30px;
-  border-color: transparent transparent transparent #100c0c;
-}
 
-.todocontainer ul li.in-view::after {
-  background: #100c0c;
-}
 
-.todocontainer ul li.in-view div {
-  transform: none;
-  visibility: visible;
-  opacity: 1;
-}
-/*-------------------------------------SECTION REFONTE-----------------------------------*/
-#refonte .todocontainer p {
-	color: white;
-  text-shadow: -0.5px 0 0.5px white, 0 0.5px 0.5px white, 0.5px 0 0.5px white, 0 -0.5px 10px white;
-}
-#refonte .todocontainer ul li{
-  background: #100c0c;
-}
-#refonte .todocontainer ul li::after {
-  background: #100c0c;
- }
-#refonte .todocontainer ul li div{
-  background: #100c0c;
- box-shadow: inset 0px 0px 0px 6px white;
-  border: 6px solid #2cbcc4;
-}
-#refonte .todocontainer ul li:nth-child(odd) div::before {
-  border-color: transparent #2cbcc4 transparent transparent;
-}
-#refonte .todocontainer ul li:nth-child(even) div::before {
-  border-color: transparent transparent transparent #2cbcc4;
-}
-#refonte .todocontainer ul li.in-view::after {
-  background: #2cbcc4;
-}
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

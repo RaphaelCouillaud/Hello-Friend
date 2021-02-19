@@ -35,7 +35,7 @@ window.addEventListener("resize", () => location.reload());
 // TYPE SCRIPT //
 
 const title = document.getElementById('headerdescription');
-const text = "JE SUIS RAPHAËL COUILLAUD ET JE SUIS DÉVELOPPEUR WEB ";
+const text = "BIENVENUE SUR MON PORTFOLIO";
 
 let index = 0;
 
