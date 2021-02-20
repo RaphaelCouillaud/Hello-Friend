@@ -289,10 +289,11 @@ nav ul li a:hover:after {
   position: absolute;
   top: 0;
   right: 5%;
-  width: 10%; animation: spider-move 5s ease-in-out infinite forwards;
+  width: 15%;
+  animation: saucerfly 7s ease-in-out infinite forwards;
   color: transparent;
   }
-@keyframes spider-move {
+@keyframes saucerfly {
     0% {
       height: 50px; 
       top: 0;
@@ -363,23 +364,36 @@ nav ul li a:hover:after {
 
 #whosectionimg {
   width: 275px;
-  height: 275px;
-  background-image: url("img/profilpix.png");
+  height: 373PX;
+  background-image: url("img/astro.png");
   background-size: cover;
   margin: auto;
-  border-radius: 50%;
-  
-  box-shadow: -3px 0 3px white, 0 3px 3px white, 3px 0 3px white, 0 -3px 20px white;
-  transition-property: width, background;
-  transition-duration: 1s;
+ 
+  margin-top: 25px; 
+ 
+ transition-property: width, background;
+  transition-duration: 0.5s;
   transition-timing-function: linear;
   transition-delay: 0.5s;    
     -webkit-transition-property: width, background;
     -webkit-transition-duration: 1s;
     -webkit-transition-timing-function: linear;
     -webkit-transition-delay: 0.5s;  
-  mix-blend-mode: multiply; 
-  animation-name: fly;
+ /* mix-blend-mode: multiply; */
+     animation: flicker 7s ease-in-out infinite forwards;
+}
+
+@keyframes flicker {
+  0% { background-image: url("img/astro.png"); transform: rotate(8deg);} 
+  10% { transform: rotate(3deg);}  
+  25% { background-image: url("img/astro1.png"); transform: rotate(-3deg);}  
+  40% { transform: rotate(-11deg);}
+  65% { background-image: url("img/astro3.png"); transform: rotate(-6deg);}  
+  70% { background-image: url("img/astro2.png"); transform: rotate(0deg);} 
+  100% { background-image: url("img/astro1.png"); transform: rotate(5deg);}
+  
+}
+ /* animation-name: fly;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out-in;
@@ -399,7 +413,7 @@ nav ul li a:hover:after {
 #whosectionimg:hover, #whosectionimg:active {
   background-image: url("img/profil.png");
 
-}
+}*/
 #whosectiontopo {
   width: 50%;
   margin: auto;
@@ -537,7 +551,101 @@ nav ul li a:hover:after {
   opacity: 1;
 }
 
- 
+ /*-------------------------------------SECTION MENTORS-----------------------------------*/
+#mentorsection {
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  flex-wrap: wrap;
+   font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
+   text-align: center;
+   text-shadow: 3px 0 #10c4c4;
+   color: white;  
+   margin-bottom: 150px;
+   pointer-events: auto;
+  cursor: pointer;
+
+}
+.workco {  
+  width: 20%;  
+  margin: auto;  
+  text-align: left;
+  height: 400px;
+  margin: auto; 
+  transform: translateY(-50%); 
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+/* card fronts and backs */
+.cardfront, .cardback {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+   box-shadow: 2px 15px 15px 10px rgba(0, 0, 0, .8);
+   backdrop-filter: blur(5px);  
+  -webkit-backdrop-filter: blur(5px);
+  text-align: center;
+}
+.cardfront {
+ /*background: transparent;*/
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ border: none;
+ margin: auto;
+ /*background: rgba(250, 150, 250, 0.2);*/
+}
+.cardback { 
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Homenaje', sans-serif;
+  text-shadow: 1.5px 0 #10c4c4;
+}
+.cardfront h3 {  
+  margin-bottom: 50px;
+}
+.cardback h4, .cardback i {
+  font-size: 2em;
+  margin: auto;
+  padding: 15px;
+}
+.cardback p {
+  font-size: 1.5em;
+  margin: auto;
+  padding: 15px;
+}
+ .cardback i {
+  font-size: 2em;
+  margin: auto;
+  padding: 25px;
+}
+
+/* hover effect */
+.workco:hover .cardfront, .workco:active .cardfront {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+.workco:hover .cardback, .workco:active .cardfront {
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+}
+#cardimg {
+  width: 80%;
+  object-fit: cover;
+}
 
 /*-------------------------------------SECTION TECHNOLIST-----------------------------------*/
 #technolist {
@@ -742,7 +850,7 @@ font-family: 'Newsreader', serif;
 
 .pacman {
   position: absolute;
-  z-index: 99;
+  z-index: 1;
   top: 50%;
   left: -20%;
   animation: moveForward 5s linear infinite;
@@ -773,7 +881,7 @@ font-family: 'Newsreader', serif;
 
 .ghost {
   position: absolute;
-  z-index: 99;
+  z-index: 1;
   top: 50%;
   left: 20%;
   height: 70px;
@@ -811,7 +919,7 @@ font-family: 'Newsreader', serif;
   border-radius: 100%;
   top: 25px;
   left: 5px;
-  z-index: 99;
+  z-index: 1;
   animation: peepLeft 0.7s linear infinite;
 }
 
@@ -889,6 +997,158 @@ font-family: 'Newsreader', serif;
   }
 }
 
+/*-------------------------------SECTION PROJETS-------------------------*/
+#projets {
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-size: 1em; 
+  text-align: center;
+   font-size: 1.2em;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   justify-content: space-between;
+   width: 100%;
+   height: 980px;
+   background-image: url("img/backstranger.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; 
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.listeprojets {
+  width: 80%;
+  height: 75px;
+  margin: 5px;
+  margin: auto;
+  flex-grow: 1;
+    transition: flex-grow 0.4s ease-out;
+    position: relative;
+    overflow: hidden;
+   border-radius: 30px;
+  background: black;
+  box-shadow: inset 0px 0px 0px 6px white;
+   border: 6px solid grey;
+   color: white;
+   opacity: 0.9;
+    
+   
+    text-shadow: -0.5px 0 0.5px white, 0 0.5px 0.5px white, 0.5px 0 0.5px white, 0 -0.5px 10px white;
+
+}
+.active {
+    flex-grow: 10000;
+
+}
+.listeprojets * {
+  pointer-events: none;
+}
+.listeprojetstop {
+  height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+.listeprojetstop h3 {
+  font-size: 1.75em;
+}
+.listeprojetsbottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+
+
+
+.listeprojetsbottom:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.listeprojets1, .listeprojets2, .listeprojets3, .listeprojets4 {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.listeprojets4 {
+  width: 35%;
+   flex-direction: column;
+
+}
+.listeprojets1 {
+  width: 25%;
+  margin: 0 15px 0 15px;
+} 
+.listeprojets3, .listeprojets2 {
+  width: 20%;
+  margin: 0 15px 0 15px;
+} 
+
+.listeprojets video {
+ margin: auto;
+margin-top: 0;
+  height: 211px;
+  pointer-events: auto!important;
+ width: 375px;
+
+}
+.listeprojets h3, .listeprojets h4 {
+ text-shadow: -1px 0 1px white, 0 1px 1px white, 1px 0 1px white, 0 -1px 10px white;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.listeprojets a {
+ text-shadow: -0.5px 0 0.5px #bc040c, 0 0.5px 0.5px #bc040c, 0.5px 0 0.5px #bc040c, 0 -0.5px 5px #bc040c;
+ color: #bc040c;
+ pointer-events: auto!important;
+ font-size: 1.5em;
+}
+.listeprojetstop h3 i {
+  padding: 0 2px 0 2px;
+  font-size: 0.85em;
+}
+.listeprojets4 img {
+  width: 375px;
+  height: 211px;
+  margin: auto;
+  margin-top: 0;
+}
+.listeprojets2 i {
+  font-size: 1.5em;
+}
+.listeprojetstop i {
+  font-size: 1.25em;
+}
+.listeprojetstop p {
+  font-size: 1.75em;
+}
+#thethrill {
+  font-family: 'Homenaje', sans-serif; 
+}
+#groupomania {
+  font-family: 
+}
+#sopekocko {
+  font-family: 'Mali', cursive; 
+}
+#burnout {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+#orinoco {
+  font-family: 'Finger Paint', cursive;
+}
+#jack {
+  font-family: 'Electrolize', sans-serif;
+}
 
 
 /*-------------------------------------SECTION BIO-----------------------------------*/
@@ -898,9 +1158,11 @@ font-family: 'Newsreader', serif;
   display: flex;
   flex-direction: column;
   background: white; 
+  width: 80%;
+  margin: auto;
 
 }
-#section1, #section2, #section3, #section4 {
+#section1, #section2, #section3 {
   display: flex;  
   flex-direction: row;
   justify-content: space-around;
@@ -1171,158 +1433,6 @@ figure img {
 }
 
 
-/*-------------------------------SECTION PROJETS-------------------------*/
-#projets {
-  display: flex;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  font-size: 1em; 
-  text-align: center;
-   font-size: 1.2em;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   justify-content: space-between;
-   width: 100%;
-   height: 900px;
-   background-image: url("img/backstranger.png");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center; 
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.listeprojets {
-  width: 80%;
-  height: 75px;
-  margin: 5px;
-  margin: auto;
-  flex-grow: 1;
-    transition: flex-grow 0.4s ease-out;
-    position: relative;
-    overflow: hidden;
-   border-radius: 30px;
-  background: black;
-  box-shadow: inset 0px 0px 0px 6px white;
-   border: 6px solid grey;
-   color: white;
-   opacity: 0.9;
-    
-   
-    text-shadow: -0.5px 0 0.5px white, 0 0.5px 0.5px white, 0.5px 0 0.5px white, 0 -0.5px 10px white;
-
-}
-.active {
-    flex-grow: 10000;
-
-}
-.listeprojets * {
-  pointer-events: none;
-}
-.listeprojetstop {
-  height: 75px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-}
-.listeprojetstop h3 {
-  font-size: 1.75em;
-}
-.listeprojetsbottom {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-}
-
-
-
-
-.listeprojetsbottom:nth-child(odd) {
-  flex-direction: row-reverse;
-}
-.listeprojets1, .listeprojets2, .listeprojets3, .listeprojets4 {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.listeprojets4 {
-  width: 35%;
-   flex-direction: column;
-
-}
-.listeprojets1 {
-  width: 25%;
-  margin: 0 15px 0 15px;
-} 
-.listeprojets3, .listeprojets2 {
-  width: 20%;
-  margin: 0 15px 0 15px;
-} 
-
-.listeprojets video {
- margin: auto;
-margin-top: 0;
-  height: 211px;
-  pointer-events: auto!important;
- width: 375px;
-
-}
-.listeprojets h3, .listeprojets h4 {
- text-shadow: -1px 0 1px white, 0 1px 1px white, 1px 0 1px white, 0 -1px 10px white;
-  color: white;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-.listeprojets a {
- text-shadow: -0.5px 0 0.5px #bc040c, 0 0.5px 0.5px #bc040c, 0.5px 0 0.5px #bc040c, 0 -0.5px 5px #bc040c;
- color: #bc040c;
- pointer-events: auto!important;
- font-size: 1.5em;
-}
-.listeprojetstop h3 i {
-  padding: 0 2px 0 2px;
-  font-size: 0.85em;
-}
-.listeprojets4 img {
-  width: 375px;
-  height: 211px;
-  margin: auto;
-  margin-top: 0;
-}
-.listeprojets2 i {
-  font-size: 1.5em;
-}
-.listeprojetstop i {
-  font-size: 1.25em;
-}
-.listeprojetstop p {
-  font-size: 1.75em;
-}
-#thethrill {
-  font-family: 'Homenaje', sans-serif; 
-}
-#groupomania {
-  font-family: 
-}
-#sopekocko {
-  font-family: 'Mali', cursive; 
-}
-#burnout {
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-#orinoco {
-  font-family: 'Finger Paint', cursive;
-}
-#jack {
-  font-family: 'Electrolize', sans-serif;
-}
 
 
 /*-------------------------------------------*/
