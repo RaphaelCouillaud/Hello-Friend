@@ -17,10 +17,10 @@ body {
   scroll-behavior: smooth;
   
   background:  url("img/stars.png"), #04040c;
-  background-attachment: fixed;
+ background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center; 
+  background-position: top center;
 
 }
 a {
@@ -270,8 +270,8 @@ nav ul li a:hover:after {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 100px;
-   padding-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   align-items: center;
  background-image: url("img/rob.jpg");
  background-attachment: fixed;
@@ -355,12 +355,7 @@ nav ul li a:hover:after {
       right: 0%; 
        opacity: 0;    
     }
-
   }
-
- 
-
-
 
 #whosectionimg {
   width: 275px;
@@ -368,9 +363,7 @@ nav ul li a:hover:after {
   background-image: url("img/astro.png");
   background-size: cover;
   margin: auto;
- 
   margin-top: 25px; 
- 
  transition-property: width, background;
   transition-duration: 0.5s;
   transition-timing-function: linear;
@@ -391,7 +384,6 @@ nav ul li a:hover:after {
   65% { background-image: url("img/astro3.png"); transform: rotate(-6deg);}  
   70% { background-image: url("img/astro2.png"); transform: rotate(0deg);} 
   100% { background-image: url("img/astro1.png"); transform: rotate(5deg);}
-  
 }
  /* animation-name: fly;
   animation-duration: 5s;
@@ -408,11 +400,8 @@ nav ul li a:hover:after {
   100% { transform: rotate(-5deg);
   left: 20%; transform: scale(1, 0.85)}
 }
-
-
 #whosectionimg:hover, #whosectionimg:active {
   background-image: url("img/profil.png");
-
 }*/
 #whosectiontopo {
   width: 50%;
@@ -422,15 +411,29 @@ nav ul li a:hover:after {
    font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
    text-align: center;
    text-shadow: 3px 0 white;
-   color: #10c4c4;
+   color: #10c4c4; 
+    letter-spacing: 1.5px;
+   line-height: 1.5em;   
+}
+#whosectiontopo h2 {
+  font-size: 2em;
+  font-style: italic;
    letter-spacing: 1.5px;
    line-height: 1.5em;
 }
-#whosectiontopo h2 {
+#whosectiontopo h3 {
   text-shadow: 3px 0 #10c4c4;
    color: white;
+    letter-spacing: 1.5px;
+   line-height: 1.5em;
 }
-/*-------------------------------------SECTION CV-----------------------------------*/
+#whosectiontopo p {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.25em;
+  text-shadow: 1.5px 0 #10c4c4;
+   color: white;
+}
+/*-------------------------------------SECTION INTROS-----------------------------------*/
 
 .topolist {
   width: 80%;
@@ -439,12 +442,35 @@ nav ul li a:hover:after {
   flex-direction: column; 
    font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
    text-align: center;
-   text-shadow: 3px 0 #10c4c4;
-   color: white;
+   text-shadow: 3px 0 white;
+   color: #10c4c4; 
+    letter-spacing: 1.5px;
+   line-height: 1.5em; 
+   position: relative; 
+}
+.topolist h2 {
+  font-size: 2em;
+  font-style: italic;
    letter-spacing: 1.5px;
    line-height: 1.5em;
-   
 }
+.topolist h3 {
+  text-shadow: 3px 0 #10c4c4;
+   color: white;
+    letter-spacing: 1.5px;
+   line-height: 1.5em;
+}
+.topolist p {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.25em;
+  text-shadow: 1.5px 0 #10c4c4;
+   color: white;
+}
+
+
+
+
+/*-------------------------------------SECTION CV-----------------------------------*/
 #todolist {
   width: 90%;
   margin: 0 auto;
@@ -461,7 +487,7 @@ nav ul li a:hover:after {
 }
 .todocontainer ul li div p:nth-child(1) {
   font-size: 1.25em;
-  padding-top: 10px;
+  padding-top: 15px;
    padding-bottom: 10px;
    text-shadow: -0.5px 0 0.5px white, 0 0.5px 0.5px white, 0.5px 0 0.5px white, 0 -0.5px 10px white;
 }
@@ -485,11 +511,15 @@ nav ul li a:hover:after {
   height: 25px;
   border-radius: 50%;
   background: inherit;
-  background: #04040c;
+  background: white;
   transition: background .5s ease-in-out;
  }
  .todocontainer ul li div p:nth-child(2) {
   padding-bottom: 10px;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.25em;
+  text-shadow: 1.5px 0 #10c4c4;
+   color: white;
 
 }
 .todocontainer ul li div{
@@ -508,7 +538,7 @@ nav ul li a:hover:after {
 .todocontainer ul li div strong {
    font-family: MrRobot, 'Press Start 2P', Helvetica, Arial, sans-serif;
    color: #bc040c;
-   font-size: 1.5em;   
+   font-size: 1em;   
 }
 .todocontainer ul li div::before {
   content: '';
@@ -591,16 +621,18 @@ nav ul li a:hover:after {
           backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s;
           transition: transform 0.3s;
-   box-shadow: 2px 15px 15px 10px rgba(0, 0, 0, .8);
-   backdrop-filter: blur(5px);  
-  -webkit-backdrop-filter: blur(5px);
+   box-shadow: 1px 1px 20px 7px rgba(255, 255, 255, .4);
+   backdrop-filter: blur(1px);  
+  -webkit-backdrop-filter: blur(1px);
   text-align: center;
+  
+ 
 }
 .cardfront {
  /*background: transparent;*/
  display: flex;
  flex-direction: column;
- justify-content: space-between;
+ justify-content: space-around;
  border: none;
  margin: auto;
  /*background: rgba(250, 150, 250, 0.2);*/
@@ -611,8 +643,13 @@ nav ul li a:hover:after {
   display: flex; 
   flex-direction: column;
   justify-content: space-between;
-  font-family: 'Homenaje', sans-serif;
+  
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6em;
   text-shadow: 1.5px 0 #10c4c4;
+   color: white;  
+ box-shadow: 1px 1px 20px 8px #fcfc04;
+  
 }
 .cardfront h3 {  
   margin-bottom: 50px;
@@ -628,9 +665,8 @@ nav ul li a:hover:after {
   padding: 15px;
 }
  .cardback i {
-  font-size: 2em;
+  font-size: 3em;
   margin: auto;
-  padding: 25px;
 }
 
 /* hover effect */
@@ -642,9 +678,122 @@ nav ul li a:hover:after {
   -webkit-transform: rotateX(0);
           transform: rotateX(0);
 }
-#cardimg {
-  width: 80%;
+.cardimg {
+  width: 100%;
   object-fit: cover;
+  margin: auto;
+  margin-top: 0;
+}
+/*-------------------------------------SECTION FOR-----------------------------------*/
+/*------Animation points de suspension------*/
+.loading span {
+  animation-name: disappear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;  
+  font-size: 3em;
+}
+.loading span:nth-child(2) {
+  animation-delay: 0.5s;  
+}
+.loading span:nth-child(3) {
+  animation-delay: 0.8s;  
+}
+@keyframes disappear {
+  0% {
+      opacity: .2;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: .2;
+    }
+}
+.unbreakable-container {
+   width: 80%;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 5px;
+     font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
+     text-shadow: 5px 0 #10c4c4;
+   color: white; 
+   margin-top: 50px; 
+}
+.ks
+{
+    font-size: 3em;   
+    margin-top: -5px;
+    -webkit-transition: all .8s ease-in-out;
+            transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000) 8s;
+    -webkit-transform: translateX(-1000%);
+        -ms-transform: translateX(-1000%);
+            transform: translateX(-1000%);
+    text-transform: uppercase;
+     letter-spacing: 3px;
+    color: #bc040c;
+
+}
+
+.animate .ks
+{
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+}
+.unbreakable span
+{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    opacity: 0;
+    color: white;
+    filter: alpha(opacity=0);
+}
+
+.able
+{
+    -webkit-transition: all 3s cubic-bezier(.190, 1.000, .220, 1.000) 6s;
+            transition: all 3s cubic-bezier(.190, 1.000, .220, 1.000) 6s;
+}
+
+.break
+{
+    -webkit-transition: all .8s ease-in-out 4s;
+            transition: all .8s ease-in-out 4s;
+}
+
+.un
+{
+    -webkit-transition: all .5s ease-in-out 2.5s;
+            transition: all .5s ease-in-out 2.5s;
+}
+
+.animate .un
+{
+    font-size: 1.75em;
+    -webkit-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+            transform: scale(1.5,1.5);
+    opacity: 1;
+}
+
+.animate .break
+{
+    font-size: 2.75em;
+    -webkit-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+            transform: scale(1.5,1.5);
+    opacity: 1;
+    
+}
+
+.animate .able
+{
+    font-size: 2em;
+    -webkit-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+            transform: scale(1.5,1.5);
+    opacity: 1;    
 }
 
 /*-------------------------------------SECTION TECHNOLIST-----------------------------------*/
