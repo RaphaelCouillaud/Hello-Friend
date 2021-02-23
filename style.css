@@ -16,9 +16,9 @@ body {
 	font-family: Helvetica, 'Trebuchet MS', Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   
-  background:  url("img/stars.png"), #04040c;
- background-attachment: fixed;
+  background:  url("img/stars.png"), #04040c; 
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top center;
 
@@ -420,6 +420,9 @@ nav ul li a:hover:after {
   font-style: italic;
    letter-spacing: 1.5px;
    line-height: 1.5em;
+   text-shadow: 5px 0 #bc040c;
+   color: white;    
+   -webkit-text-stroke: 1.25px #10c4c4; 
 }
 #whosectiontopo h3 {
   text-shadow: 3px 0 #10c4c4;
@@ -442,8 +445,8 @@ nav ul li a:hover:after {
   flex-direction: column; 
    font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
    text-align: center;
-   text-shadow: 3px 0 white;
-   color: #10c4c4; 
+   text-shadow: 5px 0 #bc040c;
+   color: white; 
     letter-spacing: 1.5px;
    line-height: 1.5em; 
    position: relative; 
@@ -453,6 +456,7 @@ nav ul li a:hover:after {
   font-style: italic;
    letter-spacing: 1.5px;
    line-height: 1.5em;
+   -webkit-text-stroke: 1.25px #10c4c4;
 }
 .topolist h3 {
   text-shadow: 3px 0 #10c4c4;
@@ -466,10 +470,39 @@ nav ul li a:hover:after {
   text-shadow: 1.5px 0 #10c4c4;
    color: white;
 }
+/*.dots {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.dots span {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: block;
+   margin: auto; 
 
-
-
-
+}
+.dots span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transform: scale(0.15);
+  box-shadow: 0 0 10px #fcfc04, 0 0 20px #fcfc04, 0 0 40px #fcfc04, 0 0 60px #fcfc04, 0 0 80px #fcfc04;
+   border-radius: 50%;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.dots span:hover::before {
+  transform: scale(0.6);
+}*/
 /*-------------------------------------SECTION CV-----------------------------------*/
 #todolist {
   width: 90%;
@@ -478,6 +511,7 @@ nav ul li a:hover:after {
   overflow-x:hidden;
   margin-top: 50px;
   margin-bottom: 50px;
+
 }
 .todocontainer p {
   font-size: 0.85em;
@@ -497,8 +531,9 @@ nav ul li a:hover:after {
   width: 8px;
   margin: auto;
   padding-top: 50px;
-  background: #fcfc04; 
+  background: white; 
   border-radius: 30px;
+  box-shadow: 1px 1px 15px 5px #fcfc04;
   
 }
 .todocontainer ul li::after {
@@ -511,8 +546,9 @@ nav ul li a:hover:after {
   height: 25px;
   border-radius: 50%;
   background: inherit;
-  background: white;
-  transition: background .5s ease-in-out;
+  background: #10c4c4;
+  transition: background 0.75s ease-in-out;
+  box-shadow: 1px 1px 15px 5px #fcfc04;
  }
  .todocontainer ul li div p:nth-child(2) {
   padding-bottom: 10px;
@@ -530,7 +566,7 @@ nav ul li a:hover:after {
   background: #10c4c4;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.7s ease-in-out;
+  transition: all 1s ease-in-out;
  border-radius: 30px;
  box-shadow: inset 0px 0px 0px 6px white;
   border: 6px solid #fcfc04;
@@ -547,32 +583,33 @@ nav ul li a:hover:after {
   width: 0;
   height: 0;
   border-style: solid;
+
 }
 
-.todocontainer ul li:nth-child(odd) div {
+.todocontainer ul li:nth-child(even) div {
   left: 45px;
   transform: translate3d(200px,0,0);
 }
-.todocontainer ul li:nth-child(odd) div::before {
+.todocontainer ul li:nth-child(even) div::before {
   left: -32px;
   border-width: 15px 30px 15px 0;
   border-color: transparent #fcfc04 transparent transparent;
 
 }
 
-.todocontainer ul li:nth-child(even) div {
+.todocontainer ul li:nth-child(odd) div {
   left: -480px;
   transform: translate3d(-200px,0,0);
 }
  
-.todocontainer ul li:nth-child(even) div::before {
+.todocontainer ul li:nth-child(odd) div::before {
   right: -32px;
   border-width: 15px 0 15px 30px;
   border-color: transparent transparent transparent #fcfc04;
 }
 
 .todocontainer ul li.in-view::after {
-  background: #10c4c4;
+  background: white;
 }
 
 .todocontainer ul li.in-view div {
@@ -583,25 +620,28 @@ nav ul li a:hover:after {
 
  /*-------------------------------------SECTION MENTORS-----------------------------------*/
 #mentorsection {
-  position: relative;
-  width: 80%;
-  height: auto;
+  position: relative;  
+  height: 600px;
   margin: auto;
   display: flex;
   flex-direction: row; 
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
    font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
    text-align: center;
    text-shadow: 3px 0 #10c4c4;
    color: white;  
-   margin-bottom: 150px;
    pointer-events: auto;
   cursor: pointer;
-
+  background-image: url("img/backstranger.png");
+ background-attachment: fixed;
+  background-size: 60%;
+  background-repeat: repeat;
+  background-position: top center;
+  padding-bottom: 50px;
 }
 .workco {  
-  width: 20%;  
+  width: 15%;  
   margin: auto;  
   text-align: left;
   height: 400px;
@@ -613,19 +653,20 @@ nav ul li a:hover:after {
 /* card fronts and backs */
 .cardfront, .cardback {
   position: absolute;
-  top: 300px;
   left: 0;
+  top: 200px;
   width: 100%;
   height: 100%;
     -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s;
           transition: transform 0.3s;
-   box-shadow: 1px 1px 20px 7px rgba(255, 255, 255, .4);
-   backdrop-filter: blur(1px);  
-  -webkit-backdrop-filter: blur(1px);
+  box-shadow: 1px 1px 20px 7px #fcfc04;
+  border: 6px solid white;
+   backdrop-filter: blur(12px);  
+  -webkit-backdrop-filter: blur(12px);
   text-align: center;
-  
+   border-radius: 30px;
  
 }
 .cardfront {
@@ -633,7 +674,7 @@ nav ul li a:hover:after {
  display: flex;
  flex-direction: column;
  justify-content: space-around;
- border: none;
+ 
  margin: auto;
  /*background: rgba(250, 150, 250, 0.2);*/
 }
@@ -643,12 +684,14 @@ nav ul li a:hover:after {
   display: flex; 
   flex-direction: column;
   justify-content: space-between;
-  
+  border: 6px solid white;
   font-family: 'Space Mono', monospace;
   font-size: 0.6em;
   text-shadow: 1.5px 0 #10c4c4;
    color: white;  
- box-shadow: 1px 1px 20px 8px #fcfc04;
+   box-shadow: 1px 1px 20px 7px #10c4c4;
+
+ 
   
 }
 .cardfront h3 {  
@@ -683,7 +726,35 @@ nav ul li a:hover:after {
   object-fit: cover;
   margin: auto;
   margin-top: 0;
+   border-radius: 23px 23px 0  0;
 }
+#rocket img {  
+  width: 17%;
+  }
+#rocket {  
+  position: absolute;
+  bottom: -15%;
+  right: 5%;
+  z-index: -1;  
+  animation: rocketfly 5s ease-in-out infinite forwards;
+  color: transparent;
+  }
+@keyframes rocketfly {
+    0% {
+      bottom: -15%;
+    }      
+    60% {
+      bottom: -10%;
+       opacity: 0.8;
+    }     
+    80% {      
+       opacity: 0.4;      
+    }     
+    100% {
+    	bottom: 150%;
+      opacity: 0;
+    }
+  }
 /*-------------------------------------SECTION FOR-----------------------------------*/
 /*------Animation points de suspension------*/
 .loading span {
@@ -719,6 +790,8 @@ nav ul li a:hover:after {
      text-shadow: 5px 0 #10c4c4;
    color: white; 
    margin-top: 50px; 
+   padding-bottom: 50px;
+
 }
 .ks
 {
@@ -795,7 +868,75 @@ nav ul li a:hover:after {
             transform: scale(1.5,1.5);
     opacity: 1;    
 }
+/*-------------------------------------SECTION WHERE-----------------------------------*/
 
+#planetsection {
+display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-size: 1em; 
+  text-align: center;
+  position: relative;
+  padding-top: 50px;   
+}
+.planettop {
+  width: 100%;
+  margin: auto;
+}
+.planetmiddle {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.planetmiddle .planet:nth-child(1) {
+   animation: ro 120s linear infinite;
+}
+@keyframes ro{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+#planet2 {
+   animation: rotate 30s linear infinite;
+}
+@keyframes rotate{
+  from{
+    transform: rotate(270deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+}
+.planet {
+  width: 200px;
+  height: auto;  
+  margin-left: 50px;
+  margin-right: 50px;  
+  animation: rota 80s linear infinite;
+}
+@keyframes rota{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+#planetsection h2 {
+  font-size: 2em;
+  font-style: italic;
+   letter-spacing: 1.5px;
+   line-height: 1.5em;
+   text-shadow: 5px 0 #bc040c;
+   color: white;    
+   -webkit-text-stroke: 1.25px #10c4c4; 
+}
 /*-------------------------------------SECTION TECHNOLIST-----------------------------------*/
 #technolist {
   
@@ -807,10 +948,11 @@ nav ul li a:hover:after {
   position: relative;
    padding-top: 50px;   
   background-image: url("img/backhalt.png");
- background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center; 
+background-attachment: fixed;
+  background-size: 60%;
+  background-repeat: repeat;
+  background-position: top center;
+  
 
 }
 .carousel {
@@ -847,8 +989,8 @@ nav ul li a:hover:after {
    box-shadow: -3px 0 6px white, 0 3px 6px white, 3px 0 6px white, 0 -3px 30px white;
    border: 10px solid white;
    background: black;
-   background-image: url("img/screen3.jpg");
-  background-size: cover;
+   background-image: url("img/screen1.jpg");
+  background-size: contain;
 }
 .carousel-item i {
   max-width: 800px;
@@ -1161,11 +1303,11 @@ font-family: 'Newsreader', serif;
    justify-content: space-between;
    width: 100%;
    height: 980px;
-   background-image: url("img/backstranger.png");
+   background-image: url("img/backodyssey.png");
   background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center; 
+  background-size: 60%;
+  background-repeat: repeat;
+  background-position: top center;
   padding-top: 100px;
   padding-bottom: 100px;
 }
