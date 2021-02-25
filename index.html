@@ -50,11 +50,11 @@
 
         <nav id="navbar">
 		  <ul>
-		  	<li><a href="#news" data-text="What?">What?</a></li>		  	
-		  	<li><a href="#contact" data-text="For?">For?</a></li>
-		  	<li><a href="#who" data-text="Where?">Where?</a></li>
-		  	<li><a href="#contact" data-text="Why?">Why?</a></li>		  	
-		  	<li><a href="#who" data-text="Who?">Who?</a></li>		  	
+		  	<li><a href="#whosectiontopo" data-text="What?">What?</a></li>		  	
+		  	<li><a href="#forsection" data-text="For?">For?</a></li>
+		  	<li><a href="#wheresection" data-text="Where?">Where?</a></li>
+		  	<li><a href="#whysection" data-text="Why?">Why?</a></li>		  	
+		  	<li><a href="#biosection" data-text="Who?">Who?</a></li>		  	
 		  	<li><a href="#contact" data-text="Go!">Go!</a></li>
 		  </ul>
 		</nav>
@@ -118,6 +118,12 @@
                   <div>
                     <p>Comptable - Jeune Entreprise Innovante</p>
                     <p>S.A.S. Sedna - La Rochelle</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p>Autodidacte - Graphisme</p>
+                    <p>Apprentissage autonome à travers des illustrations</p>
                   </div>
                 </li>
                 <li>
@@ -203,7 +209,7 @@
 					      	</div>  
 					     </div>   
 
-					     <div class="swiper-slide">
+					     <!--<div class="swiper-slide">
 					      	<div class="testimonialBox">
 					      		<img src="img/teamlantou.jpg" class="imgmentor">
 					      			<h3>Lantou Onirina</h3> 
@@ -213,7 +219,7 @@
 	          						<span id="linkedin"><i class="fab fa-linkedin"></i></span>
 	          		   				</a> 		      			
 					      	</div>  
-					     </div> 
+					     </div> -->
 
 				    </div>				    
 				  </div>
@@ -228,7 +234,7 @@
 
 
 		<!----------------------------SECTION FOR--------------------------------->
-		<div class="topolist">
+		<div class="topolist" id="forsection">
          		<h2>Mon objectif</h2> 
          		<h3>Le Réveil de la Force</h3>           	         	
             	<p>Maintenant que je suis placé sur orbite, je ne compte pas à rester là. Mon envie de me spécialiser dans les technologies front-end ne peut résister à l'appel de la FORCE. Afin d'accompagner au mieux les artisans, les artistes, les entrepreneurs et les PME en participant à la conception de leur visibilité sur le web, je souhaite poursuivre ma progression.<br/>C'est pourquoi</p>
@@ -261,6 +267,7 @@
              <section id="ocsection">
          	<div class="workco">
                 <div class="cardfront">
+                	<i class="fas fa-laptop-code"></i>
                 	 <h3>Une formation flexible 100% en ligne</h3>                                  
                 </div>
                 <div class="cardback">
@@ -277,7 +284,8 @@
             </div>
 
             <div class="workco">
-                <div class="cardfront">                     
+                <div class="cardfront"> 
+                <i class="fas fa-chart-line"></i>                   
                      <h3>Des projets profession-<br/>nalisants</h3> 
                 </div>
                 <div class="cardback">                   
@@ -291,7 +299,8 @@
                 </div>
             </div>
             <div class="workco">
-                <div class="cardfront">                    
+                <div class="cardfront">  
+                <i class="fas fa-handshake"></i>                  
                      <h3>Des avantages pour l'employeur</h3> 
                 </div>
                 <div class="cardback">                   
@@ -315,10 +324,10 @@
 
 
  		<!----------------------------SECTION WHERE--------------------------------->
- 		<div class="topolist">
-         		<h2>Mon souhait</h2> 
-         		 <h3>Un aperçu</h3>             	         	
-            	<p>télétravail</p>            	
+ 		<div class="topolist" id="wheresection">
+         		<h2>Ma zone d'atterrissage</h2> 
+         		 <h3>"The Eagle has landed"</h3>             	         	
+            	<p>Je suis basé à <strong>La Rochelle (17)</strong> mais je peux graviter autour de ces 4 planètes. Si le poste est adaptable au télétravail voire au full remote, je suis aussi « équipé home office ». Je dispose de l'appareillage indispensable à tout bon développeur : la connexion web à haut débit, un bureau pour assurer la confidentialité des missions, un ordinateur, une cafetière à dosettes et un cerveau en ébullition.</p>            	
             </div>
 
 
@@ -326,32 +335,37 @@
  			<div class="planettop">
  					<h2>Nantes</h2>
                      <img class="planet" src="img/planet4.png" alt="logo"/>                     
-                </div>
+            </div>
             <div class="planetmiddle">
                     <div>
                      <img class="planet" src="img/planet1.png" alt="logo"/>
                      <h2>La Rochelle</h2>
                      </div> 
+                     <img class="planet" id="planetprofil" src="img/astro.png" alt="logo"/>
                      <div>
-                     <h2>Poitiers</h2>
                      <img class="planet" src="img/planet3.png" alt="logo"/>
+                      <h2>Poitiers</h2>
                      </div>
-                </div>
+            </div>
                 <div class="planettop">
                      <img class="planet" id="planet2" src="img/planet2.png" alt="logo"/>   
                      <h2>Bordeaux</h2>                 
                 </div>
 
+               <!-- <div class="planetsaucer">
+  					<img src="img/saucer1.png" alt="flying saucer">
+				</div>-->
+			<div id="planetdots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🚀</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌠</span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🎇</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span>🌌</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span>🪐</span><span></span><span>🌌</span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🪐</span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span>🎇</span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span>🚀</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🪐</span><span></span><span></span><span></span><span></span><span></span><span>🌌</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span>🪐</span><span></span><span>🌌</span><span></span><span></span><span>🛰️</span>
 			</div>
 
  		</section>
 
          <!----------------------------SECTION TECHNOS--------------------------------->
 
-		<div class="topolist">
+		<div class="topolist" id="whysection">
          		<h2>Mes compétences</h2> 
-         		 <h3>Mes jeux préférés</h3>        	         	
-            	<p>Elle est composée de projets professionnalisants, à la complexité croissante. Chaque projet doit permettre d’acquérir des compétences spécifiques.</p>  
+         		 <h3>Jeux préférés</h3>        	         	
+            	<p>Mon profil et mes connaissances me permettent d’agir sur tous les fronts du développement. Cela va de gérer le back office du site web et la base clients, puis s’occuper de la mise à jour du site en front-end, identifier les problématiques serveurs et aussi prendre en main la gestion de projet.</p>  
             </div>  
 
        <section id="technolist">           
@@ -374,11 +388,14 @@
                 <div class="carousel-item">
                   <i class="fab fa-vuejs"></i>
                 </div>
-                <div class="carousel-item">
+                <!--<div class="carousel-item">
                   <i class="fab fa-wordpress"></i>
-                </div>
+                </div>-->
                 <div class="carousel-item">
                   <i class="fab fa-bootstrap"></i>
+                </div>
+                <div class="carousel-item">
+                 <p id="express">Swiper</p>
                 </div>
                 <div class="carousel-item">
                 <p id="jquery">jQuery</p>
@@ -426,11 +443,11 @@
             </div>
 
 
-            
+            <div id="comingsoon"><p>COMING SOON : <i class="fab fa-wordpress"></i> * PrestaShop * NUXTJS * <i class="fab fa-react"></i></p>
+            </div>  
           </section>
 
-          <div class="topolist"><p>Décrire les technologies à apprendre<br/><br/></p>
-            </div>  
+          
 
  <!--------------------------PACMAN------------------------>
          
@@ -677,7 +694,7 @@
           </section> 
          <!-----------------------BIO------------------------>
         
-         <div class="topolist">
+         <div class="topolist" id="biosection">
          		<h2>Ma bio graphique</h2> 
          		 <h3>Mes jeux préférés</h3>        	         	
             	<p>Elle est composée de projets professionnalisants, à la complexité croissante. Chaque projet doit permettre d’acquérir des compétences spécifiques.</p>  

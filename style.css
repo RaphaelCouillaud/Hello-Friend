@@ -14,14 +14,13 @@ body {
 	margin: 0;
 	padding: 0;	
 	font-family: Helvetica, 'Trebuchet MS', Arial, Helvetica, sans-serif;
-  scroll-behavior: smooth;
-  
+  scroll-behavior: smooth;  
   background:  url("img/stars.png"), #04040c; 
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top center;
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
 
 }
 a {
@@ -483,9 +482,6 @@ nav ul li a:hover:after {
    border-radius: 30px;
     box-shadow: 1px 1px 10px 2.5px #fcfc04;
   }
-
-
-
 .topolist h3 {
    font-size: 1.7em;
     letter-spacing: 1.5px;
@@ -501,6 +497,7 @@ nav ul li a:hover:after {
   text-shadow: 1.5px 0 #10c4c4;
    color: white;
 }
+
 /*.dots {
   position: relative;
   width: 100%;
@@ -541,7 +538,7 @@ nav ul li a:hover:after {
   text-align: center;
   overflow-x:hidden;
   margin-top: 50px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 
 }
 .todocontainer p {
@@ -554,7 +551,8 @@ nav ul li a:hover:after {
   font-size: 1.25em;
   padding-top: 15px;
    padding-bottom: 10px;
-   text-shadow: -0.5px 0 0.5px white, 0 0.5px 0.5px white, 0.5px 0 0.5px white, 0 -0.5px 10px white;
+  text-shadow: 2.5px 0 #fcfc04;
+  color: white;
 }
 .todocontainer ul li{
   list-style-type:none;
@@ -564,7 +562,7 @@ nav ul li a:hover:after {
   padding-top: 50px;
   background: white; 
   border-radius: 30px;
-  box-shadow: 1px 1px 15px 5px #fcfc04;
+  box-shadow: 1px 1px 15px 5px #10c4c4;
   
 }
 .todocontainer ul li::after {
@@ -577,9 +575,9 @@ nav ul li a:hover:after {
   height: 25px;
   border-radius: 50%;
   background: inherit;
-  background: #10c4c4;
+  background: #fcfc04;
   transition: background 0.75s ease-in-out;
-  box-shadow: 1px 1px 15px 5px #fcfc04;
+  box-shadow: 1px 1px 15px 5px #10c4c4;
  }
  .todocontainer ul li div p:nth-child(2) {
   padding-bottom: 10px;
@@ -594,13 +592,13 @@ nav ul li a:hover:after {
   bottom: 0;
   width: 400px;
   padding: 0 15px 0 15px;  
-  background: #10c4c4;
+  background: transparent;
   visibility: hidden;
   opacity: 0;
   transition: all 1s ease-in-out;
  border-radius: 30px;
  box-shadow: inset 0px 0px 0px 6px white;
-  border: 6px solid #fcfc04;
+  border: 6px solid #10c4c4;
 }
 .todocontainer ul li div strong {
    font-family: MrRobot, 'Press Start 2P', Helvetica, Arial, sans-serif;
@@ -624,7 +622,7 @@ nav ul li a:hover:after {
 .todocontainer ul li:nth-child(even) div::before {
   left: -32px;
   border-width: 15px 30px 15px 0;
-  border-color: transparent #fcfc04 transparent transparent;
+  border-color: transparent #10c4c4 transparent transparent;
 
 }
 
@@ -636,7 +634,7 @@ nav ul li a:hover:after {
 .todocontainer ul li:nth-child(odd) div::before {
   right: -32px;
   border-width: 15px 0 15px 30px;
-  border-color: transparent transparent transparent #fcfc04;
+  border-color: transparent transparent transparent #10c4c4;
 }
 
 .todocontainer ul li.in-view::after {
@@ -772,6 +770,7 @@ nav ul li a:hover:after {
     }
     20% {
       opacity: 1;
+      text-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 35px white, 0 0 50px white, 0 0 70px white;
     }
     100% {
       opacity: .2;
@@ -909,6 +908,7 @@ nav ul li a:hover:after {
           transition: transform 0.3s;
   box-shadow: 1px 1px 20px 7px #fcfc04;
   border: 6px solid white;
+  background: rgba(255, 255, 255, 0.1);
    backdrop-filter: blur(5px);  
   -webkit-backdrop-filter: blur(5px);
   text-align: center;
@@ -917,7 +917,7 @@ nav ul li a:hover:after {
 .cardfront {
  display: flex;
  flex-direction: column;
- justify-content: space-around; 
+ justify-content: space-between; 
  margin: auto;
 }
 .cardback { 
@@ -932,14 +932,19 @@ nav ul li a:hover:after {
   text-shadow: 1.5px 0 #10c4c4;
    color: white;  
    box-shadow: 1px 1px 20px 7px #10c4c4;
-
- 
-  
 }
 .cardfront h3 {  
   margin: auto;
   padding: 25px;
   font-size: 1.5em;
+  letter-spacing: 1.5px;
+   line-height: 1.5em;
+
+}
+.cardfront i {  
+  margin: auto;
+  padding: 25px;
+  font-size: 5em;
 }
 .cardback h4 {
   font-size: 1.75em;
@@ -1011,20 +1016,22 @@ display: flex;
   font-size: 1em; 
   text-align: center;
   position: relative;
-  padding-top: 50px;   
+  margin-bottom: 50px;
 }
 .planettop {
   width: 100%;
   margin: auto;
+
 }
 .planetmiddle {
-  width: 100%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  align-items: center;
 }
+
 .planetmiddle .planet:nth-child(1) {
    animation: ro 120s linear infinite;
 }
@@ -1071,6 +1078,92 @@ display: flex;
    color: white;    
    -webkit-text-stroke: 1.25px #10c4c4; 
 }
+#planetprofil {
+   width: 120px;
+  height: 100%; 
+ 
+  object-fit: cover;
+  
+   mix-blend-mode: darken;
+}
+#planetdots {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 100%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  z-index: 0;
+  background: rgba(255, 255, 255, 0.04);
+}
+#planetdots span {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+  animation: rotate 45s linear infinite;
+
+}
+#planetdots span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: white;
+  transform: scale(0.05);
+  box-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 35px white, 0 0 50px white;
+  pointer-events: none;
+  scroll-behavior: smooth;
+  transition: 1.75s;
+  opacity: 0.75;
+}
+#planetdots span:hover::before {
+  transform: scale(0.6);
+  transition: 0s;
+   opacity: 1;
+}
+/*.planetsaucer {
+  display: block;
+  height: 0px;
+  position: absolute;
+   color: transparent;
+  width: 10%;
+  animation: planetsaucerfly 12s ease-in-out infinite forwards;
+ 
+  }
+@keyframes planetsaucerfly {
+    0% {      
+      top: 0;
+      right: 5%;
+    }      
+    25% {
+      right: 40%;
+      top: 20%;
+    } 
+    50% {
+     top: 20%; 
+     left: 25%;    
+    }
+    75% {
+      top: 50%;
+      right: 50%;
+    }        
+    100% {
+      top: 50%; 
+     right: 5%;     
+    }    
+  }
+.planetsaucer img {
+   max-width: 100%;
+}*/
 /*-------------------------------------SECTION TECHNOLIST-----------------------------------*/
 #technolist {
   
@@ -1097,7 +1190,7 @@ background-attachment: fixed;
   /*background: grey;  
    border: 12px solid black;*/
     margin: auto;
-    padding: 50px;
+    padding: 25px;
 }
 .carousel-text {
   width: 50%;
@@ -1113,7 +1206,8 @@ background-attachment: fixed;
   font-size: 1em;
   text-align: center;  
   text-shadow: -1px 0 2px #fcfc04, 0 1px 2px #fcfc04, 1px 0 2px #fcfc04, 0 -1px 10px #fcfc04;
-  color: #fcfc04;  
+  color: #fcfc04; 
+  z-index: 1; 
 }
 .carousel-item {
   display: none;
@@ -1123,7 +1217,7 @@ background-attachment: fixed;
    box-shadow: -3px 0 6px white, 0 3px 6px white, 3px 0 6px white, 0 -3px 30px white;
    border: 10px solid white;
    background: black;
-   background-image: url("img/screen1.jpg");
+   background-image: url("img/tv.gif");
   background-size: contain;
 }
 .carousel-item i {
@@ -1132,8 +1226,7 @@ background-attachment: fixed;
   box-sizing: border-box;
   font-size: 17em;
   text-align: center;
-  padding: 50px;
-  margin-top: 20px;
+  margin-top: 100px;
   text-shadow: -3px 0 6px white, 0 3px 6px white, 3px 0 6px white, 0 -3px 40px white;
   color: white;
 }
@@ -1143,7 +1236,7 @@ background-attachment: fixed;
   text-align: center;  
   text-shadow: -3px 0 6px white, 0 3px 6px white, 3px 0 6px white, 0 -3px 40px white;
   color: white;
-   margin-bottom: 0px;  
+  margin-top: 160px;
   width: 100%;  
   /*position: absolute;  */  
 }
@@ -1167,6 +1260,11 @@ font-family: 'Newsreader', serif;
    font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
    color: #fcfc04;
    text-shadow: -2px 0 4px #fcfc04, 0 2px 4px #fcfc04, 2px 0 4px #fcfc04, 0 -2px 20px #fcfc04;
+   margin-top: 150px;
+}
+#word, #prestashop, #nuxt, #react {
+   color: #fcfc04;
+   text-shadow: -2px 0 4px #fcfc04, 0 2px 4px #fcfc04, 2px 0 4px #fcfc04, 0 -2px 20px #fcfc04;
 }
 .carousel-item-visible {
   display: block;
@@ -1188,10 +1286,10 @@ font-family: 'Newsreader', serif;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   box-sizing: border-box;
   margin: auto;
-  margin-top: -20px; 
 }
 .carousel-actions button:hover {
   color: #100c0c;
@@ -1226,18 +1324,18 @@ font-family: 'Newsreader', serif;
   box-sizing: border-box;
 }
 #technolist button {
-  background-color: grey;
+  background-color: #bc040c;
   text-transform: uppercase;
   text-decoration: none;  
   color: white;
   cursor: pointer;
   opacity: 1.0;
   font-size: 2em;
-  border-radius: 0.5rem;
+  border-radius: 50%;
   position: relative;
   top: 0;
   transition: all 300ms ease-in-out;
-  box-shadow: 0 0.3em grey, 0 0.6em rgba(0, 0, 0, 0.85);
+   box-shadow: 0 0.3em #bc040c, 0 0.6em #343434, 0 0.8em black;
    border: 5px solid white;
   width: 150px;
   height: 66px;
@@ -1246,7 +1344,44 @@ font-family: 'Newsreader', serif;
   top: 0.6em;
   box-shadow: 0 0.2em rgba(0, 0, 0, 0.85);
 }
-
+#comingsoon i {
+  font-size: 1.5em;
+}
+#comingsoon {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;  
+  font-size: 2.5em;
+   font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
+  font-style: italic;
+   letter-spacing: 1.5px;
+   line-height: 1.5em;
+   text-shadow: 5px 0 #bc040c;
+   color: white;    
+   -webkit-text-stroke: 1.25px #10c4c4; 
+   overflow: hidden;
+   border-top: 10px solid #102ccc;
+  border-bottom: 10px solid #102ccc;
+  background: #fcfc04;
+  mix-blend-mode: multiply;
+  margin: 0;
+}
+#comingsoon > :first-child {
+  display: inline-block;             
+  padding-right: 2em;                 
+  padding-left: 100%;                   
+  white-space: nowrap;                 
+  animation: defil 10s infinite linear;
+  animation-timing-function: cubic-bezier(0.7, 0.4, 0.6, 0.3);
+}
+@keyframes defil {
+  0% {
+    transform: translate3d(20px,0,0); }
+  100% {
+    transform: translate3d(-100%,0,0); }
+}
 /*-------------------------------------SECTION PACMAN-----------------------------------*/
 
 .road {
