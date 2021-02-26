@@ -591,14 +591,14 @@ nav ul li a:hover:after {
   position: relative;
   bottom: 0;
   width: 400px;
-  padding: 0 15px 0 15px;  
-  background: transparent;
+  padding: 0 15px 0 15px;    
   visibility: hidden;
   opacity: 0;
   transition: all 1s ease-in-out;
  border-radius: 30px;
  box-shadow: inset 0px 0px 0px 6px white;
   border: 6px solid #10c4c4;
+   background: rgba(255, 255, 255, 0.05);
 }
 .todocontainer ul li div strong {
    font-family: MrRobot, 'Press Start 2P', Helvetica, Arial, sans-serif;
@@ -651,6 +651,7 @@ nav ul li a:hover:after {
   position: relative;   
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden; 
@@ -659,6 +660,11 @@ nav ul li a:hover:after {
    color: white; 
    box-sizing: border-box;
    padding-top: 50px;
+    background-image: url("img/backhalt.png");
+background-attachment: fixed;
+  background-size: 50%;
+  background-repeat: repeat;
+  background-position: top center;
 
 }
 .swiper-container {
@@ -677,6 +683,7 @@ nav ul li a:hover:after {
 .swiper-slide-active {
   filter: blur(0px);  
   -webkit-filter: blur(0px);
+  background: rgba(255, 255, 255, 0.05);
 
 }
 .testimonialBox {
@@ -719,6 +726,7 @@ nav ul li a:hover:after {
 .testimonialBox a {
   font-size: 2em;
   text-shadow: none;
+  color: #10c4c4;
 }
 
 .imgmentor {
@@ -878,9 +886,9 @@ nav ul li a:hover:after {
    color: white;  
    pointer-events: auto;
   cursor: pointer;
-  background-image: url("img/backstranger.png");
+  background-image: url("img/backpac.png");
  background-attachment: fixed;
-  background-size: 60%;
+  background-size: 120%;
   background-repeat: repeat;
   background-position: top center;
   margin-bottom: 150px;
@@ -906,11 +914,11 @@ nav ul li a:hover:after {
           backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s;
           transition: transform 0.3s;
-  box-shadow: 1px 1px 20px 7px #fcfc04;
+  box-shadow: 1px 1px 20px 7px white;
   border: 6px solid white;
-  background: rgba(255, 255, 255, 0.1);
-   backdrop-filter: blur(5px);  
-  -webkit-backdrop-filter: blur(5px);
+ background: rgba(255, 255, 255, 0.05);
+  /*backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px); */
   text-align: center;
    border-radius: 30px; 
 }
@@ -932,6 +940,7 @@ nav ul li a:hover:after {
   text-shadow: 1.5px 0 #10c4c4;
    color: white;  
    box-shadow: 1px 1px 20px 7px #10c4c4;
+   background: rgba(16, 196, 196, 0.5);
 }
 .cardfront h3 {  
   margin: auto;
@@ -1099,7 +1108,7 @@ display: flex;
   height: 100%;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   z-index: 0;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.05);
 }
 #planetdots span {
   position: relative;
@@ -1174,10 +1183,10 @@ display: flex;
   text-align: center;
   position: relative;
    padding-top: 50px;   
-  background-image: url("img/backhalt.png");
+  background-image: url("img/backspace.png");
 background-attachment: fixed;
-  background-size: 60%;
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: top center;
   
 
@@ -1199,14 +1208,16 @@ background-attachment: fixed;
   flex-direction: row;
   justify-content: space-around;
   position: absolute;
-  top: 100px;
+  top: 450px;
   left: 0;
   transform: translate(50%);
   font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  text-align: center;  
-  text-shadow: -1px 0 2px #fcfc04, 0 1px 2px #fcfc04, 1px 0 2px #fcfc04, 0 -1px 10px #fcfc04;
-  color: #fcfc04; 
+  letter-spacing: 1.5px;
+   line-height: 1.5em;
+   text-shadow: 5px 0 #bc040c;
+   color: #fcfc04;    
+   -webkit-text-stroke: 1px black; 
+  text-align: center;    
   z-index: 1; 
 }
 .carousel-item {
@@ -1286,7 +1297,7 @@ font-family: 'Newsreader', serif;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 50px;
   box-sizing: border-box;
   margin: auto;
@@ -1349,6 +1360,7 @@ font-family: 'Newsreader', serif;
 }
 #comingsoon {
   width: 100%;
+  height: 125px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -1358,14 +1370,14 @@ font-family: 'Newsreader', serif;
   font-style: italic;
    letter-spacing: 1.5px;
    line-height: 1.5em;
-   text-shadow: 5px 0 #bc040c;
-   color: white;    
-   -webkit-text-stroke: 1.25px #10c4c4; 
+   text-shadow: 5px 0 #10c4c4;
+   color: #fcfc04;    
+   -webkit-text-stroke: 1.25px black; 
    overflow: hidden;
    border-top: 10px solid #102ccc;
   border-bottom: 10px solid #102ccc;
-  background: #fcfc04;
-  mix-blend-mode: multiply;
+  background: #bc040c;
+  mix-blend-mode: difference;
   margin: 0;
 }
 #comingsoon > :first-child {
@@ -1373,7 +1385,7 @@ font-family: 'Newsreader', serif;
   padding-right: 2em;                 
   padding-left: 100%;                   
   white-space: nowrap;                 
-  animation: defil 10s infinite linear;
+  animation: defil 12s infinite linear;
   animation-timing-function: cubic-bezier(0.7, 0.4, 0.6, 0.3);
 }
 @keyframes defil {
@@ -1572,7 +1584,7 @@ font-family: 'Newsreader', serif;
    justify-content: space-between;
    width: 100%;
    height: 980px;
-   background-image: url("img/backodyssey.png");
+   background-image: url("img/backstranger.png");
   background-attachment: fixed;
   background-size: 60%;
   background-repeat: repeat;
@@ -1711,7 +1723,7 @@ margin-top: 0;
 }
 
 
-/*-------------------------------------SECTION BIO-----------------------------------*/
+/*-------------------------------------SECTION BIO GRAPHIQUE-----------------------------------*/
 
 #biographic { 
   margin-top: 250px;
@@ -1720,6 +1732,8 @@ margin-top: 0;
   background: white; 
   width: 80%;
   margin: auto;
+   border: 2px solid black;
+    border-width: 2px 2px 2px 3px; 
 
 }
 #section1, #section2, #section3 {
@@ -1731,9 +1745,7 @@ margin-top: 0;
 
 figure {  
   position: relative;
-  width: 45%; 
-  
-  
+  width: 45%;   
 }
 figcaption {
   font-family: 'P22 Pop Art Comic Bold Italic', cursive;
@@ -1770,25 +1782,27 @@ figure img {
   overflow: hidden;
   border: 2px solid black;
     border-width: 4px 5px 4px 6px;
-    border-radius:99% 1% 99% 1%/1% 99% 1% 99%;
-    background: url("img/backoyster3.jpg"); /*jpg*/    
-    animation: clouds_animation 25s infinite ease-in-out;
+    border-radius:99% 1% 99% 1%/1% 99% 1% 99%;    
+}
+#figurelogo img {
+  border: none;   
+}
+#figurelogo figcaption {
+  border: none;  
+  left: 25%;
+}
+#figurebirth img {
+  background: url("img/backoyster3.jpg"); /*jpg*/    
+  animation: wave 25s infinite ease-in-out;
 }
 
-@keyframes clouds_animation {
-  
-  0%  {background-position: 0 60%;}
-  
-  20%  {background-position: 0 45%;}
-  
-  40%  {background-position: 0 60%;}
- 
-  60%  {background-position: 0 35%;}
- 
-  80%  {background-position: 0 60%;}
- 
+@keyframes wave {  
+  0%  {background-position: 0 60%;}  
+  20%  {background-position: 0 45%;}  
+  40%  {background-position: 0 60%;} 
+  60%  {background-position: 0 35%;} 
+  80%  {background-position: 0 60%;} 
   100%  {background-position: 0 40%;} 
-
 }
 
 #balle {
@@ -1798,8 +1812,7 @@ figure img {
   left: 420px;
   font-size: 1.2em;
   animation: bounce 0.5s infinite linear;
-  text-shadow: 1px 1px 0px black;
-  
+  text-shadow: 1px 1px 0px black;  
     }
     @keyframes bounce {
       0% {
@@ -1807,43 +1820,38 @@ figure img {
       transform: rotate(0deg);
       transform: translateX(0);
     }
-      25%  { 
-        transform: translateY(-5px);
-      }
-        50% { 
-          transform: translateX(-5px);
-        }
-        75% {
-          transform: translateY(5px);
-        }
-        
+      25%  { transform: translateY(-5px); }
+      50% { transform: translateX(-5px); }
+      75% { transform: translateY(5px); }
       100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg); 
         transform: translateX(5px);
     }        
   }
-#compta img {  
-  margin: 0;
-  width: 100%;
-  padding: 0px 0 0 0; 
-  position: absolute;
-  overflow: hidden;
-  border: 2px solid black;
-    border-width: 4px 5px 4px 6px;
-    border-radius:99% 1% 99% 1%/1% 99% 1% 99%;
+#figureufo img {    
+    background: url("img/ufo.jpg");
+    background-size: cover;
+    animation: comptabackground 35s infinite alternate;
+}
+#figurecompta img {    
     background: url("img/comptaback.jpg");
     background-size: cover;
-    animation: compta_animation 75s linear infinite;
+    animation: comptabackground 75s linear infinite;
 }
-
-@keyframes compta_animation {
-  
+@keyframes comptabackground {  
   0%  {background-position: 0 0;}
   100%  {background-position: -2122px 0;} 
-
 }
-
+#figureopen img {    
+    background: url("img/openback.jpg");
+    background-size: cover;
+    animation: openbackground 100s linear infinite;
+}
+@keyframes openbackground {  
+  0%  {background-position: 0 0;}
+  100%  {background-position:  0 -2122px;} 
+}
 
 /*-------------------------------------SECTION SKILLS-----------------------------------*/
      
@@ -2141,132 +2149,3 @@ line-height: 125%;
 }
 
 
-/*-----------------------------DEFILEMENT FOOTER---------------------------------*/
-
-#defilfooter h1 {
-  margin: auto; 
-  padding: 12px;
-  color: #fcfc04;
-  font-family: 'Press Start 2P', cursive;
-    opacity: 0.75;
-    font-size: 20px;
-    vertical-align: middle;
-    text-shadow: 0px 0px 15px #fcfc04;
-    text-transform: uppercase;
-}
-#defilfooter {
-  width: 25%;
-  margin: auto;
-  height: 40px;
-  overflow: hidden;  /* masque tout ce qui dépasse */
-  box-shadow: /*5px 5px 2px 1px rgba(0, 0, 0, .5),*/ inset 0 0 1em .25em black;
-  background-image: url("img/board1.jpg");
-  background-size: cover;
-  border: 10px solid #100c0c;
-}
-/* le bloc défilant Le bloc défilant doit être un modèle de boîte en ligne n'autorisant 
-pas le renvoi à la ligne et être placé à droite du conteneur.
-L'animation proprement dite est définie en utilisant la propriété animation.*/
-#defilfooter > :first-child {
-  display: inline-block;             /* modèle de boîte en ligne */
-  padding-right: 2em;                   /* un peu d'espace pour la transition */
-  padding-left: 100%;                   /* placement à droite du conteneur */
-  white-space: nowrap;                  /* pas de passage à la ligne */
-  animation: defil 7s infinite linear;
-  animation-timing-function: cubic-bezier(0.15, 0.4, 0.5, 0.25);
-
-}
-@keyframes defil {
-  0% {
-    transform: translate3d(20px,0,0);      /* position initiale à droite */
-  }
-  100% {
-    transform: translate3d(-100%,0,0);  /* position finale à gauche */
-  }
-}
-
-/*-----------------------------FOOTER FIGURE---------------------------------*/
-#divfooter {
-  position: absolute;
-  width: 100%;
-  top: 160px; 
-  font-size: 4.5em;
-  display: flex;
-  justify-content: space-between;
-}
-#divfooterleft, #divfooterright {
-  display: flex;
-  justify-content: space-between; 
-  width: 23%;
-}
-#divfooterleft {
-  margin-left: 8.2%;
-  
-}
-#divfooterright {
-  margin-right: 8.3%;
-}
-#divfooter i {
-  
-    padding:0 1px 0 2px; 
-    text-shadow: -2.5px 0 #000, 0 2.5px #000, 2.5px 0 #000, 0 -2.5px #000; 
-    /*text-shadow: 5px 1px 10px rgba(0, 0, 0, .8);
-     /*animation: jump 2s infinite linear; */   
-    }
-    @keyframes jump {
-      0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-      transform: translateX(0);}
-      25%  { 
-        transform: translateY(-2px);}
-        50% { 
-          transform: translateX(2px);}
-        75% {
-          transform: translateY(-2px);}
-        
-      100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg); 
-        transform: translateX(5px);}        
-  }
-
-#github {
-  color: black;
-}
-#linkedin {
-  color: #0e76a8;
-}
-#twitter {
-  color: #1DA1F2;
-}
-#slack {
-  color: #3F0F3F;
-}
-
-
-
-
-footer figure { 
-  position: relative; 
-  width: 100%;
-  margin: 0;  
-   border-top: 3px solid black;
-}
-
-footer figure img {  
-  margin: 0;
-  width: 100%;
-  padding: 0px 0 0 0; 
-  position: absolute;
-  overflow: hidden;
-    background: url("img/seatsbackokok.jpg");
-    background-size: cover;
-    animation: compta_animation 20s linear infinite;
-}
-
-@keyframes compta_animation {
-  0%  {background-position: -2122px 0;} 
-  100%  {background-position: 0 0;}
-  
-}
