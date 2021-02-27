@@ -42,8 +42,10 @@
         <header>                      
              <canvas></canvas>
               <h1 class="glitch" data-text="HELLO FRIEND">HELLO FRIEND</h1>
-              <h2 id="headerdescription"></h2>  
-              <!--<a href="#navbar" >PRESS START</a>  -->              
+              <h2 id="headerdescription"></h2> 
+              <div>
+             	<span><i class="fas fa-chevron-down"></i></span><span><i class="fas fa-chevron-down"></i></span><span><i class="fas fa-chevron-down"></i></span>
+             </div> 
         </header>
 
 
@@ -460,7 +462,7 @@
                   <button id="carousel-button-next" aria-label="Previous slide"><i class="fas fa-angle-double-right"></i></button>
             </div>
 
-
+            <div id="screenbuttons"></div>
             <div id="comingsoon"><p>COMING SOON : <i class="fab fa-wordpress"></i> * PrestaShop * NUXTJS * <i class="fab fa-react"></i></p>
             </div>  
           </section>
@@ -748,7 +750,10 @@
             </figure>             
           </div>
 
-          <div><p>to be continued + crédits</p></div>
+          <div id="sectioncredits">          	
+          	<p>crédits</p>
+          	<p>to be continued...</p>
+          </div>
        </section>
 
 
@@ -760,7 +765,8 @@
             	<p>Elle est composée de projets professionnalisants, à la complexité croissante. Chaque projet doit permettre d’acquérir des compétences spécifiques.</p>  
             </div> 
 
-        <article class="skill-bars">
+        <section id="skillsection">
+        <div class="skill-bars">
             <div class="bar">
               <div class="info">
                 <span>Sens du détail</span>
@@ -849,10 +855,10 @@
                 <span></span>
               </div>
             </div>
-          </article>
+          </div>
 
 <button class="refresh-button">Refresh!</button>
-
+</section>
 
 
          
