@@ -51,13 +51,14 @@
 
 
         <nav id="navbar">
-		  <ul>
+		  <ul class="topnav" id="myTopnav">
 		  	<li><a href="#whosectiontopo" data-text="What?">What?</a></li>		  	
 		  	<li><a href="#forsection" data-text="For?">For?</a></li>
 		  	<li><a href="#wheresection" data-text="Where?">Where?</a></li>
 		  	<li><a href="#whysection" data-text="Why?">Why?</a></li>		  	
 		  	<li><a href="#biosection" data-text="Who?">Who?</a></li>		  	
-		  	<li><a href="#contacts" data-text="Go!">Go!</a></li>
+		  	<li><a href="#contacts" data-text="📟">📟</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="responsiveNav()"><i class="far fa-hand-spock"></i></a></li>
 		  </ul>
 		</nav>
 
@@ -166,6 +167,7 @@
 				    <div class="swiper-wrapper">
 
 					      <div class="swiper-slide">
+					      	<i class="fas fa-chevron-left"></i>
 					      	<div class="testimonialBox">
 					      		<img src="img/teamsabrina.jpeg" class="imgmentor">					      		
 					      		<h3>Sabrina Carruezco</h3> 					      		
@@ -175,9 +177,11 @@
 	          					<span id="linkedin"><i class="fab fa-linkedin"></i></span>
 	          		   			</a>	
 					      	</div>  
+					      	<i class="fas fa-chevron-right"></i>
 					     </div>   
 
 					     <div class="swiper-slide">
+					     	<i class="fas fa-chevron-left"></i>
 					      	<div class="testimonialBox">
 					      		<img src="img/teamkevin.jpg" class="imgmentor">
 					      			 <h3>Kevin Si</h3>  
@@ -187,10 +191,12 @@
           							<span id="linkedin"><i class="fab fa-linkedin"></i></span>
           		   					</a>  	      			
 					      	</div>  
+					      	<i class="fas fa-chevron-right"></i>
 					     </div> 
           
 
 					     <div class="swiper-slide">
+					     	<i class="fas fa-chevron-left"></i>
 					      	<div class="testimonialBox">
 					      		<img src="img/teamchristophe.jpg" class="imgmentor">					      		
 					      			<h3>Christophe Vallot</h3> 
@@ -200,9 +206,11 @@
 				          			<span id="linkedin"><i class="fab fa-linkedin"></i></span>
 				          		   </a> 		      			
 					      	</div>  
+					      	<i class="fas fa-chevron-right"></i>
 					     </div> 
 
 					     <div class="swiper-slide">
+					     	<i class="fas fa-chevron-left"></i>
 					      	<div class="testimonialBox">
 					      		<img src="img/teamquentin.jpg" class="imgmentor">
 					      			<h3>Quentin Laurent</h3>  
@@ -211,7 +219,8 @@
 					                <a href="https://www.linkedin.com/in/quentin-laurent-819a8167/" class="lienindex" target="_blank">
 					          		<span id="linkedin"><i class="fab fa-linkedin"></i></span>
 					          		</a> 	      			
-					      	</div>  
+					      	</div>
+					      	<i class="fas fa-chevron-right"></i>  
 					     </div>   
 
 					     <!--<div class="swiper-slide">
@@ -933,6 +942,19 @@
         </footer>   
         <script src="what.js"></script>
         <script src="index.js"></script>
+
+        <script>
+function responsiveNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <!-- Initialize Swiper -->
   <script>
