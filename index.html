@@ -42,7 +42,7 @@
         <header>                      
              <canvas></canvas>
               <h1 class="glitch" data-text="HELLO FRIEND">HELLO FRIEND</h1>
-              <h2 id="headerdescription"></h2> 
+              <h2 id="headerdescription"><span>>:</span></h2> 
               <div>
              	<span><i class="fas fa-chevron-down"></i></span><span><i class="fas fa-chevron-down"></i></span><span><i class="fas fa-chevron-down"></i></span>
              </div> 
@@ -57,7 +57,7 @@
 		  	<li><a href="#wheresection" data-text="Where?">Where?</a></li>
 		  	<li><a href="#whysection" data-text="Why?">Why?</a></li>		  	
 		  	<li><a href="#biosection" data-text="Who?">Who?</a></li>		  	
-		  	<li><a href="#contacts" data-text="📟">📟</a></li>
+		  	<li><a href="#contactarticle" data-text="📟">📟</a></li>
         <li><a href="javascript:void(0);" class="icon" onclick="responsiveNav()"><i class="far fa-hand-spock"></i></a></li>
 		  </ul>
 		</nav>
@@ -70,7 +70,7 @@
     		</div>
 
     		<div id="whosectiontopo">
-    			<h2>Mon pitch</h2>
+    			<h2>Pitch</h2>
     			<h3>Je suis <strong>Raphaël Couillaud</strong> et je suis développeur web...</h3>
     			<p>Grâce à ma sensibilité particulière pour le graphisme, j'aime créer des univers en apportant une identité visuelle unique et soignée pour l'ensemble de mes projets.</p>
     		</div>
@@ -83,7 +83,7 @@
     	<!----------------------------SECTION CV--------------------------------->
 
     	    <div class="topolist">    	    	
-            	<h2>Mon parcours</h2>
+            	<h2>Parcours</h2>
             	<h3>Un nouveau départ...</h3>
             	<p>Mon voyage vers le développement web a commencé au printemps 2020 lorsque j'ai saisi la chance de pouvoir découvrir ce métier en intégrant le programme Job'Etudes Nouvelle Aquitaine. Cela m'a permis de me concentrer pleinement sur mon objectif de reconversion professionnelle en intégrant la formation délivrée par OpenClassrooms.</p>
             	<!--<div class="dots">
@@ -148,7 +148,11 @@
 
          <!----------------------------SECTION MENTORS--------------------------------->
 
-         <div class="topolist">
+        
+            
+            <section id="mentorsection">
+
+            	  	 <div class="topolist">
          		<h2>Mes mentors</h2>
             	<h3>A.K.A. La dream team...</h3>
             	<p>L'équipe qui m'a accompagné dans ce périple aux confins de l'intégration web et de l'apprentissage du JavaScript est composée de professionnels chevronnés et aguerris qui ont su m'entourer et me guider vers l'infini et au-delà !</p>   
@@ -156,10 +160,6 @@
   					<img src="img/rocket.png" alt="rocket">
 				</div>       
          	  </div>
-            
-            <section id="mentorsection">
-
-            	  	
           
 
             	 <!-- Swiper -->
@@ -248,27 +248,33 @@
 
 
 		<!----------------------------SECTION FOR--------------------------------->
-		<div class="topolist" id="forsection">
-         		<h2>Mon objectif</h2> 
+		
+
+          
+              
+          <section class="wishsection"> 
+
+          	<div class="topolist" id="forsection">
+         		<h2>Objectif</h2> 
          		<h3>S'épanouir et progresser</h3>           	         	
             	<p>Maintenant que je suis placé sur orbite, je ne compte pas à rester là. Mon envie de me spécialiser dans les technologies front-end ne peut résister à l'appel de la FORCE. Afin d'accompagner au mieux les artisans, les artistes, les entrepreneurs et les PME en participant à la conception de leur visibilité sur le web, je souhaite poursuivre ma progression.<br/>C'est pourquoi...</p>
             	<p class="loading"><span>▫️</span><span>▫️</span><span>▫️</span><span>▫️</span><span>▫️</span><span>▫️</span></p>               	
             </div>
 
-          
-              
-          <div class="unbreakable-container">  
-              <div class="unbreakable">
-                <span class="un">Je </span><span class="break">recherche </span><span class="able">un </span><span class="break">contrat</span>
+              <div class="topsentence">
+                <span class="one">Je </span><span class="two">recherche </span><span class="three">un </span><span class="two">contrat</span>
               </div>
-              <div class="ks">de professionnalisation</div>
-          </div>
-          <div class="unbreakable-container">  
-              <div class="unbreakable">
-                <span class="un">pour </span><span class="break">décrocher </span><span class="able">le </span><span class="break">titre</span>
+              <div class="four">de professionnalisation
               </div>
-              <div class="ks">de développeur Front-End</div>
-          </div>
+         
+         
+              <div class="topsentence">
+                <span class="one">pour </span><span class="two">décrocher </span><span class="three">le </span><span class="two">titre</span>
+              </div>
+              <div class="five">de développeur Front-End
+              </div>
+
+          </section>
 
           <!--------------------------PACMAN------------------------>
          
@@ -282,7 +288,7 @@
 
           <!----------------------------SECTION OC--------------------------------->
           <div class="topolist">
-         		<h2>Ma future formation</h2> 
+         		<h2>Future formation</h2> 
          		 <h3>Un aperçu</h3>        	         	
             	<p>Elle est composée de projets professionnalisants, à la complexité croissante. Chaque projet doit permettre d’acquérir des compétences spécifiques.</p>        	
             	            	
@@ -349,7 +355,7 @@
 
  		<!----------------------------SECTION WHERE--------------------------------->
  		<div class="topolist" id="wheresection">
-         		<h2>Ma zone d'atterrissage</h2> 
+         		<h2>Zone d'atterrissage</h2> 
          		 <h3>"The Eagle has landed"</h3>             	         	
             	<p>Je suis basé à <strong>La Rochelle (17)</strong> mais je peux graviter autour de ces 4 planètes. Si le poste est adaptable au télétravail voire au full remote, je suis aussi « équipé home office ». Je dispose de l'appareillage indispensable à tout bon développeur : la connexion web à haut débit, un bureau pour assurer la confidentialité des missions, un ordinateur, une cafetière à dosettes et un cerveau en ébullition.</p>            	
             </div>
@@ -394,9 +400,9 @@
        <section id="technolist"> 
 
        <div class="topolist" id="whysection">
-         		<h2>Mes compétences</h2> 
+         		<h2>Hard Skills</h2> 
          		 <h3>Jeux préférés</h3>        	         	
-            	<p>Mon profil et mes connaissances me permettent d’agir sur tous les fronts du développement. Cela va de gérer le back office du site web et la base clients, puis s’occuper de la mise à jour du site en front-end, identifier les problématiques serveurs et aussi prendre en main la gestion de projet.</p>  
+            	<p>Mon profil et mes connaissances me permettent d’agir sur tous les fronts du développement. Cela va de gérer le back office du site web et la base clients (Node, Express, MongoDB, MySQL), puis s’occuper de la mise à jour du site en front-end (Vue), identifier les problématiques serveurs et aussi prendre en main la gestion de projet.</p>  
             </div>            
 
             <div class="carousel-text"> 
@@ -431,7 +437,10 @@
                 </div> 
                 <div class="carousel-item">
                   <i class="fab fa-sass"></i>
-                </div>  
+                </div> 
+                 <div class="carousel-item">
+                <p id="vscode">VS Code</p>
+                </div> 
                 <div class="carousel-item">
                   <i class="fab fa-google"></i>
                 </div>                 
@@ -458,7 +467,13 @@
                 </div>  
                 <div class="carousel-item">
                   <i class="fab fa-github"></i>
+                </div> 
+                <div class="carousel-item">
+                <p id="pixia">Pixia</p>
                 </div>   
+                <div class="carousel-item">
+                <p id="photofiltre">Photofiltre</p>
+                </div> 
                 <div class="carousel-item">
                  <p id="game">GAME OVER</p>
                 </div> 
@@ -482,7 +497,7 @@
        <!----------------REALISATIONS------------------------->
 
        <div class="topolist">
-         		<h2>Mes réalisations</h2> 
+         		<h2>Réalisations</h2> 
          		 <h3>Projets professionnels et personnels</h3>        	         	
             	<p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>  
             </div> 
@@ -712,10 +727,13 @@
 			    </div>
 
           </section> 
+
+          
+        
          <!-----------------------BIO------------------------>
         
          <div class="topolist" id="biosection">
-         		<h2>Ma bio graphique</h2> 
+         		<h2>Bio graphique</h2> 
          		 <h3>...Inspirée de faits réels</h3>        	         	
             	<p>bla bla bla bla</p>  
             </div>    
@@ -760,8 +778,8 @@
           </div>
 
           <div id="sectioncredits">          	
-          	<p>crédits</p>
-          	<p>to be continued...</p>
+          	<p>TEXTE ET ILLUSTRATIONS DE RAPHAEL C# 2020, 2021 ©️ RAPHAËL COUILLAUD. TOUS DROITS RÉSERVÉS.</p>
+          	<p id="continued">TO BE CONTINUED...</p>
           </div>
        </section>
 
@@ -769,7 +787,7 @@
         <!-----------------------SOFT SKILLS------------------------>
 
         <div class="topolist">
-         		<h2>Mes soft skills</h2> 
+         		<h2>Soft skills</h2> 
          		 <h3>Mes jeux préférés</h3>        	         	
             	<p>Elle est composée de projets professionnalisants, à la complexité croissante. Chaque projet doit permettre d’acquérir des compétences spécifiques.</p>  
             </div> 
@@ -870,10 +888,6 @@
 </section>
 
 
-         
-<div class="topolist" id="contacts"><p>CONTACTS<br/><br/>
-            CV LINKEDIN GITHUB TWITTER MAIL</p>
-            </div>     
 
               
 
@@ -883,63 +897,73 @@
 
 
       
- <footer>
-        <!--  <div id="divcontact">
-            <div id="horaires">
-              
-              <p>⚠️</p>
-              <p><span>La Rochelle, 17</span><br /> 
-              <span>9h-20h</span></p>
-              <p>🚭</p>
+ 		<article id="contactarticle">
+            
+            <div class="contact">
+            	<span></span>
+            	<span></span>
+            	<span></span>            	
+            	<div class="links">
+            		<i class="fas fa-envelope"></i>
+            		<a href="mailto:couillaud.raphael@neuf.fr" id="email" >couillaud.raphael@neuf.fr</a>
+            		</a>
+            	</div>
             </div>
-            <div id="defilfooter"><-- le conteneur -->
-                <!-- le contenu défilant -->
-                   <!--<h1 id="description">next stop : HELLO FRIEND</h1>
-                </div> 
-            
-            
-            <div id="adresse">
-              <p>Ⓜ️</p>   
-              <p><span>hellofriend@neuf.fr</span><br />             
-              <span>0698350642</span></p>
-              <p>📶</p>
-              
+
+            <div class="contact">
+            	<span></span>
+            	<span></span>
+            	<span></span>   
+            	<div class="links">
+            		<a href="https://www.linkedin.com/in/raphael-couillaud/" target="_blank">
+            		<i class="fab fa-linkedin-in"></i>
+            		</a>
+            	</div>
             </div>
-            
-          </div>
 
-          <figure>                          
-              <img src="img/seats1.png">
-              
-             
-            </figure>
-      <div id="divfooter">
-        <div id="divfooterleft">
-          <a href="https://github.com/RaphaelCouillaud" class="lienindex">
-          <span id="github"><i class="fab fa-github"></i></span>
-          </a>
-          <a href="https://www.linkedin.com/in/raphael-couillaud/" class="lienindex">
-          <span id="linkedin"><i class="fab fa-linkedin"></i></span>
-          </a>
-        </div>
-        <div id="divfooterright">
-          <a href="https://github.com/RaphaelCouillaud" class="lienindex">
-          <span id="twitter"><i class="fab fa-twitter-square"></i></span>
-          </a>
-          <a href="https://github.com/RaphaelCouillaud" class="lienindex">
-          <span id="slack"><i class="fab fa-slack"></i></span>
-          </a>
-        </div>
-      </div>-->
+            <div class="contact">
+            	<span></span>
+            	<span></span>
+            	<span></span>   
+            	<div class="links">
+            		<a href="https://github.com/RaphaelCouillaud" target="_blank">
+          			<i class="fab fa-github"></i>
+          			</a>
+            	</div>
+            </div>
 
-           
-            
-            
-<a href="#" class="to-top">
-     <i class="fas fa-space-shuttle"></i></a>
-            
+            <div class="contact">
+            	<span></span>
+            	<span></span>
+            	<span></span>   
+            	<div class="links">
+            		<a href="https://twitter.com/Jack0Keefe" target="_blank">
+          			<i class="fab fa-twitter"></i>
+          			</a>
+            	</div>
+            </div>
+
+            <div class="contact">
+            	<span></span>
+            	<span></span>
+            	<span></span>   
+            	<div class="links">            		
+            		<a href="cv.pdf" title="Lien vers le téléchargement du cv version pdf">
+          			<i class="fas fa-file-pdf"></i>
+          			</a>
+            	</div>
+            </div>
+        </article>
+         
+		<footer>   
+	        <p>© 2021 Raphaël Couillaud - <strong>HELLO FRIEND</strong>, Développeur web freelance.</p>
+	            
+			<a href="#" class="to-top">
+	     	<i class="fas fa-space-shuttle"></i></a>            
 
         </footer>   
+
+
         <script src="what.js"></script>
         <script src="index.js"></script>
 

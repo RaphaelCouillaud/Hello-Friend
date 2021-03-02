@@ -17,7 +17,7 @@ for (let i = 0; i < col; i++) arr[i] = 1;
 function draw() {
   $.fillStyle = "rgba(0,0,0,.05)";
   $.fillRect(0, 0, W, H);
-  $.fillStyle = "#2cbcc4";
+  $.fillStyle = "#08c404";
   $.font = font + "px system-ui";
   for (let i = 0; i < arr.length; i++) {
     let txt = matrix[Math.floor(Math.random() * matrix.length)];
@@ -34,29 +34,16 @@ window.addEventListener("resize", () => location.reload());
 
 // TYPE SCRIPT //
 
-const title = document.getElementById('headerdescription');
-const text = "BIENVENUE SUR MON PORTFOLIO";
 
-let index = 0;
+let text = "BIENVENUE SUR MON PORTFOLIO";
+    let array = Array.from(text);
 
-const randomSpeed = (min, max) => {
-	return Math.floor(Math.random() * (max - min) + min);
-};
-
-const play = () => {
-	title.innerHTML = text.slice(0, index);
-
-	index ++;
-
-	if (index > text.length) {
-		index = 0;
-	}
-
-	clearInterval(timer);
-	timer = setInterval(play, randomSpeed(50, 275));
-};
-
-let timer = setInterval(play, 300);
+    Object.keys(array).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription").innerHTML += array[key]),
+        key * 210
+      );
+    });
 
 
 
@@ -153,8 +140,19 @@ refreshButton.addEventListener('click', refreshPage)
 
 
 // FONTS CSS EFFECTS SECTION FOR //
+window.addEventListener("scroll" ,() => {
+  let content = document.querySelector('.wishsection');
+  let contentPosition = content.getBoundingClientRect().top;
+  let screenPosition = window.innerHeight /1;
+  if (contentPosition < screenPosition) {
+    content.classList.add('animate');
+  } else {
+    content.classList.remove('animate');
+  }
+});
 
-var hotbod = document.querySelector("body");
+
+/*var hotbod = document.querySelector("body");
 
 function doStuff() {
     hotbod.className += " animate";
@@ -162,7 +160,7 @@ function doStuff() {
 
 window.onload = function() {
     doStuff();
-};
+};*/
 
 
 
