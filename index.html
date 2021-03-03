@@ -51,14 +51,14 @@
 
 
         <nav id="navbar">
-		  <ul class="topnav" id="myTopnav">
-		  	<li><a href="#whosectiontopo" data-text="What?">What?</a></li>		  	
-		  	<li><a href="#forsection" data-text="For?">For?</a></li>
-		  	<li><a href="#wheresection" data-text="Where?">Where?</a></li>
-		  	<li><a href="#whysection" data-text="Why?">Why?</a></li>		  	
-		  	<li><a href="#biosection" data-text="Who?">Who?</a></li>		  	
-		  	<li><a href="#contactarticle" data-text="📟">📟</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="responsiveNav()"><i class="far fa-hand-spock"></i></a></li>
+		  <ul class="topnav">
+		  	<li><a href="#whosectiontopo" data-text="What?" title="Lien vers la section 'What?'">What?</a></li>		  	
+		  	<li><a href="#forsection" data-text="For?" title="Lien vers la section 'For?'">For?</a></li>
+		  	<li><a href="#wheresection" data-text="Where?" title="Lien vers la section 'Where?'">Where?</a></li>
+		  	<li><a href="#whysection" data-text="Why?" title="Lien vers la section 'Why?'">Why?</a></li>		  	
+		  	<li><a href="#biosection" data-text="Who?" title="Lien vers la section 'Who?'">Who?</a></li>		  	
+		  	<li><a href="#contactarticle" data-text="📟" title="Lien vers la section 'Contact'">📟</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="responsiveNav()" title="Lien vers la barre de navigation"><i class="far fa-hand-spock"></i></a></li>
 		  </ul>
 		</nav>
 
@@ -75,28 +75,23 @@
     			<p>Grâce à ma sensibilité particulière pour le graphisme, j'aime créer des univers en apportant une identité visuelle unique et soignée pour l'ensemble de mes projets.</p>
     		</div>
     		<div class="saucer">
-  				<img src="img/saucer1.png" alt="flying saucer">
+  				<img src="img/saucer1.png" alt="Flying saucer animation">
 
 			</div>
     	</section>
 
     	<!----------------------------SECTION CV--------------------------------->
 
-    	    <div class="topolist">    	    	
-            	<h2>Parcours</h2>
-            	<h3>Un nouveau départ...</h3>
-            	<p>Mon voyage vers le développement web a commencé au printemps 2020 lorsque j'ai saisi la chance de pouvoir découvrir ce métier en intégrant le programme Job'Etudes Nouvelle Aquitaine. Cela m'a permis de me concentrer pleinement sur mon objectif de reconversion professionnelle en intégrant la formation délivrée par OpenClassrooms.</p>
-            	<!--<div class="dots">
-            		<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>
-            	</div>-->
-            </div>
-
-            
-
-
-
+    	      
 
           <section id="todolist">
+
+          	 <div class="topolist">    	    	
+            	<h2>Parcours</h2>
+            	<h3>Un nouveau départ...</h3>
+            	<p>Mon voyage vers le développement web a commencé au printemps 2020 lorsque j'ai saisi la chance de pouvoir découvrir ce métier en intégrant le programme Job'Etudes Nouvelle Aquitaine. Cela m'a permis de me concentrer pleinement sur mon objectif de reconversion professionnelle en intégrant la formation délivrée par OpenClassrooms.</p>            	
+            </div>    
+
             <div class="todocontainer">
               <ul>
               	<li>
@@ -145,21 +140,19 @@
             </div>   
          </section>
 
-
          <!----------------------------SECTION MENTORS--------------------------------->
+            <div id="rocket">
+	  					<img src="img/rocket.png" alt="Rocket animation">
+					</div> 
 
-        
-            
             <section id="mentorsection">
 
-            	  	 <div class="topolist">
-         		<h2>Mes mentors</h2>
-            	<h3>A.K.A. La dream team...</h3>
-            	<p>L'équipe qui m'a accompagné dans ce périple aux confins de l'intégration web et de l'apprentissage du JavaScript est composée de professionnels chevronnés et aguerris qui ont su m'entourer et me guider vers l'infini et au-delà !</p>   
-            	<div id="rocket">
-  					<img src="img/rocket.png" alt="rocket">
-				</div>       
-         	  </div>
+            	<div class="topolist">
+	         		<h2>Mes mentors</h2>
+	            	<h3>A.K.A. La dream team...</h3>
+	            	<p>L'équipe qui m'a accompagné dans ce périple aux confins de l'intégration web et de l'apprentissage du JavaScript est composée de professionnels chevronnés et aguerris qui ont su m'entourer et me guider vers l'infini et au-delà !</p>   
+	            	      
+         	  	</div>
           
 
             	 <!-- Swiper -->
@@ -169,11 +162,11 @@
 					      <div class="swiper-slide">
 					      	<i class="fas fa-chevron-left"></i>
 					      	<div class="testimonialBox">
-					      		<img src="img/teamsabrina.jpeg" class="imgmentor">					      		
+					      		<img src="img/teamsabrina.jpeg" class="imgmentor" alt="Sabrina Carruezco">				      		
 					      		<h3>Sabrina Carruezco</h3> 					      		
 					      		<h4>Experte WordPress/Divi</h4>					      		
 					      		<p>Freelance à Lyon depuis plus de 15 ans, elle aide les entreprises à développer leur visibilité sur le net en créant des sites internet performants et à leur image.</p>	
-					      		<a href="https://www.linkedin.com/in/sabrinacarruezco/" class="lienindex" target="_blank" >
+					      		<a href="https://www.linkedin.com/in/sabrinacarruezco/" class="lienindex" target="_blank" title="Lien vers le compte LinkedIn de Sabrina Carruezco">
 	          					<span id="linkedin"><i class="fab fa-linkedin"></i></span>
 	          		   			</a>	
 					      	</div>  
@@ -183,11 +176,11 @@
 					     <div class="swiper-slide">
 					     	<i class="fas fa-chevron-left"></i>
 					      	<div class="testimonialBox">
-					      		<img src="img/teamkevin.jpg" class="imgmentor">
+					      		<img src="img/teamkevin.jpg" class="imgmentor" alt="Kevin Si">
 					      			 <h3>Kevin Si</h3>  
 					      			<h4>Product Manager</h4>
 					      			<p>3 ans en tant que développeur web et 2 années dans l'entrepreneuriat l'ont conduit à s'affirmer en tant que Product Manager.</p> 
-					      			<a href="https://www.linkedin.com/in/kevin-si/" class="lienindex" target="_blank">
+					      			<a href="https://www.linkedin.com/in/kevin-si/" class="lienindex" target="_blank" title="Lien vers le compte LinkedIn de Kevin Si">
           							<span id="linkedin"><i class="fab fa-linkedin"></i></span>
           		   					</a>  	      			
 					      	</div>  
@@ -198,11 +191,11 @@
 					     <div class="swiper-slide">
 					     	<i class="fas fa-chevron-left"></i>
 					      	<div class="testimonialBox">
-					      		<img src="img/teamchristophe.jpg" class="imgmentor">					      		
+					      		<img src="img/teamchristophe.jpg" class="imgmentor" alt="Christophe Vallot">			      		
 					      			<h3>Christophe Vallot</h3> 
 					      			<h4>Formateur, Développeur Web Indépendant</h4>
                    					<p>Concepteur et développeur d'applications orientées Web (sites vitrine, corporate, e-commerce), gestionnaire de projet, formateur/tuteur en informatique.</p>  
-				                  	<a href="https://www.linkedin.com/in/christophe-vallot/" class="lienindex" target="_blank">
+				                  	<a href="https://www.linkedin.com/in/christophe-vallot/" class="lienindex" target="_blank" title="Lien vers le compte LinkedIn de christophe Vallot">
 				          			<span id="linkedin"><i class="fab fa-linkedin"></i></span>
 				          		   </a> 		      			
 					      	</div>  
@@ -212,11 +205,11 @@
 					     <div class="swiper-slide">
 					     	<i class="fas fa-chevron-left"></i>
 					      	<div class="testimonialBox">
-					      		<img src="img/teamquentin.jpg" class="imgmentor">
+					      		<img src="img/teamquentin.jpg" class="imgmentor" alt="Quentin Laurent">
 					      			<h3>Quentin Laurent</h3>  
 					      			<h4>Développeur et CTO chez noeup'App</h4>
 					                <p>Fondateur d'une société de conseil, conception et développement d'applications logiciel et web.</p>  
-					                <a href="https://www.linkedin.com/in/quentin-laurent-819a8167/" class="lienindex" target="_blank">
+					                <a href="https://www.linkedin.com/in/quentin-laurent-819a8167/" class="lienindex" target="_blank" title="Lien vers le compte LinkedIn de Quentin Laurent">
 					          		<span id="linkedin"><i class="fab fa-linkedin"></i></span>
 					          		</a> 	      			
 					      	</div>
@@ -238,27 +231,16 @@
 				    </div>				    
 				  </div>
 
-
-
-
             </section>
 
-
-        
-
-
 		<!----------------------------SECTION FOR--------------------------------->
-		
-
-          
-              
           <section class="wishsection"> 
 
           	<div class="topolist" id="forsection">
          		<h2>Objectif</h2> 
          		<h3>S'épanouir et progresser</h3>           	         	
             	<p>Maintenant que je suis placé sur orbite, je ne compte pas à rester là. Mon envie de me spécialiser dans les technologies front-end ne peut résister à l'appel de la FORCE. Afin d'accompagner au mieux les artisans, les artistes, les entrepreneurs et les PME en participant à la conception de leur visibilité sur le web, je souhaite poursuivre ma progression.<br/>C'est pourquoi...</p>
-            	<p class="loading"><span>▫️</span><span>▫️</span><span>▫️</span><span>▫️</span><span>▫️</span><span>▫️</span></p>               	
+            	<p class="loading"><span>▫️</span><span>▫️</span><span>▫️</span><span>▫️</span><span>▫️</span><span>▫️</span></p>
             </div>
 
               <div class="topsentence">
@@ -279,38 +261,37 @@
           <!--------------------------PACMAN------------------------>
          
         <div class="road">
-  <div class="pacman"></div>
-  <div class="ghost">
-    <div class="eyes"></div>
-    <div class="skirt"></div>
-  </div>
-</div>
+		  <div class="pacman"></div>
+		  <div class="ghost">
+		    <div class="eyes"></div>
+		    <div class="skirt"></div>
+		  </div>
+		</div>
 
           <!----------------------------SECTION OC--------------------------------->
-          <div class="topolist">
-         		<h2>Future formation</h2> 
-         		 <h3>Un aperçu</h3>        	         	
-            	<p>Elle est composée de projets professionnalisants, à la complexité croissante. Chaque projet doit permettre d’acquérir des compétences spécifiques.</p>        	
-            	            	
-            </div>
+         
 
              <section id="ocsection">
-         	<div class="workco">
-                <div class="cardfront">
-                	<i class="fas fa-laptop-code"></i>
-                	 <h3>Une formation flexible 100% en ligne</h3>                                  
-                </div>
-                <div class="cardback">
-                <img id="logooc" src="img/openclassrooms1.png" alt="logo"/>                   
-                   <h4> est le premier CFA 100% digital en France et la première école en ligne sur les métiers du numérique en Europe.</h4>
-                   <p>La pédagogie conjugue :<br/>
-					* La théorie,<br/>
-					* La pratique,<br/>
-					* Un accompagnement personnalisé.<br/></p>  
-                   <p>Une fois en formation, l'école accompagne l'apprenti(e) tout au long de sa formation, en soignant la communication entre le maître d'apprentissage, l'employeur, le stagiaire et les conseillers pédagogiques.</p>
-                  <!-- <a href="https://openclassrooms.com/fr/paths/314-developpeur-front-end" class="lienindex" target="_blank">
-          			<i class="fas fa-link"></i></a>  -->                    
-                </div>
+
+             	 <div class="topolist">
+	         		<h2>Future formation</h2> 
+	         		 <h3>Un aperçu</h3>        	         	
+	            	<p>Elle est composée de projets professionnalisants, à la complexité croissante. Chaque projet doit permettre d’acquérir des compétences spécifiques.</p>  
+            </div>
+
+         		<div class="workco">
+	                <div class="cardfront">
+	                	<i class="fas fa-laptop-code"></i>
+	                	 <h3>Une formation flexible 100% en ligne</h3>                                  
+	                </div>
+                	<div class="cardback">
+		                <img id="logooc" src="img/openclassrooms2.png" alt="Logo OpenClassrooms"/>                   
+		                   <h4> est le premier CFA 100% digital en France et la première école en ligne sur les métiers du numérique en Europe.</h4>
+		                   <p>La pédagogie conjugue : théorie, pratique et accompagnement personnalisé.<br/></p>  
+		                   <p>Une fois en formation, l'école accompagne l'apprenti(e) tout au long de sa formation, en soignant la communication entre le maître d'apprentissage, l'employeur, le stagiaire et les conseillers pédagogiques.</p>
+		                  <!-- <a href="https://openclassrooms.com/fr/paths/314-developpeur-front-end" class="lienindex" target="_blank">
+		          			<i class="fas fa-link"></i></a>  -->                    
+                	</div>
             </div>
 
             <div class="workco">
@@ -319,12 +300,12 @@
                      <h3>Des projets profession-<br/>nalisants</h3> 
                 </div>
                 <div class="cardback">                   
-                   <h4>Une pédagogie basée sur la pratique pour acquérir les compétences suivantes:</h4>
-                   <p>* Choisir une solution technique adaptée à votre client et travailler en mode Agile<br/>
+                   <h4>Le but est d'acquérir les compétences suivantes:</h4>
+                   <p>* Travailler en mode Agile<br/>
 						* Créer des applications web dynamiques avec Javascript et React.<br/>
 						* Communiquer avec le back-end de l’application grâce à une API.<br/>
 						* Mettre en œuvre des test unitaires et d’intégration et débugger le code.<br/>
-						* Résoudre des problèmes techniques avec un langage de programmation et des algorithmes.<br/>
+						* Appréhender les algorithmes.<br/>
 						* Refactoriser du code pour qu’il soit plus moderne et optimisé.</p> 
                 </div>
             </div>
@@ -334,26 +315,22 @@
                      <h3>Des avantages pour l'employeur</h3> 
                 </div>
                 <div class="cardback">                   
-                   <h4>Le contrat de professionnalisation associe formation pratique et formation théorique.</h4>
-                   <p>* Flexibilité : Le contrat (CDD) ou l'action de professionnalisation (CDI) est d'une durée de 6 à 12 mois (prolongation jusqu'à 36 mois selon certains cas).<br/>
+                   <!--<h4>Le contrat de professionnalisation associe formation pratique et formation théorique.</h4>-->
+                   <p>* Flexibilité : Durée de 6 à 12 mois (prolongation jusqu'à 36 mois selon certains cas).<br/>
                    	* Réduction générale de charges patronales.<br/>
                    	* Absence de prise en compte dans les effectifs.<br/>
                    	* Les dépenses exposées pour la formation du tuteur peuventêtre prises en charge par l'OPCO.<br/>
                    	* Aide forfaitaire de Pôle emploi d'un montant maximal de 2000 €.</p>  
-                   <a href="https://www.pole-emploi.fr/employeur/aides-aux-recrutements/les-aides-a-la-formation/le-contrat-de-professionnalisati.html" class="lienindex" target="_blank">
-          			 <img id="pole" src="img/pole.png" alt="logo"/>  
+                   <a href="https://www.pole-emploi.fr/employeur/aides-aux-recrutements/les-aides-a-la-formation/le-contrat-de-professionnalisati.html" class="lienindex" target="_blank" title="Lien vers le site Pole Emploi">
+          			 <img id="pole" src="img/pole.png" alt="Logo Pole Emploi"/>  
           		   </a>                     
                 </div>
             </div>
             
-            
-            
-            
         </section>
 
-
-
  		<!----------------------------SECTION WHERE--------------------------------->
+
  		<div class="topolist" id="wheresection">
          		<h2>Zone d'atterrissage</h2> 
          		 <h3>"The Eagle has landed"</h3>             	         	
@@ -364,45 +341,37 @@
  		<section id="planetsection">
  			<div class="planettop">
  					<h2>Nantes</h2>
-                     <img class="planet" src="img/planet4.png" alt="logo"/>                     
+                     <img class="planet" src="img/planet4.png" alt="Planète Nantes"/>                     
             </div>
             <div class="planetmiddle">
                     <div>
-                     <img class="planet" src="img/planet1.png" alt="logo"/>
+                     <img class="planet" src="img/planet1.png" alt="Planète La Rochelle"/>
                      <h2>La Rochelle</h2>
                      </div> 
-                     <img class="planet" id="planetprofil" src="img/astro.png" alt="logo"/>
+                     <img class="planet" id="planetprofil" src="img/astro.png" alt="Astronaute animation"/>
                      <div>
-                     <img class="planet" src="img/planet3.png" alt="logo"/>
+                     <img class="planet" src="img/planet3.png" alt="Planète Poitiers"/>
                       <h2>Poitiers</h2>
                      </div>
             </div>
                 <div class="planettop">
-                     <img class="planet" id="planet2" src="img/planet2.png" alt="logo"/>   
+                     <img class="planet" id="planet2" src="img/planet2.png" alt="Planète Bordeaux"/>   
                      <h2>Bordeaux</h2>                 
                 </div>
-
-               <!-- <div class="planetsaucer">
-  					<img src="img/saucer1.png" alt="flying saucer">
-				</div>-->
+               
 			<div id="planetdots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🚀</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌠</span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🎇</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>👾</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span>👾</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span>🪐</span><span></span><span>🌌</span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🪐</span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span>🎇</span><span></span><span></span><span></span><span>🌟</span><span></span><span>👾</span><span></span><span></span><span></span><span>🚀</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🪐</span><span></span><span></span><span></span><span></span><span></span><span>🌌</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span>👾</span><span>🌟</span><span></span><span></span><span>🪐</span><span></span><span>🌌</span><span></span><span></span><span>🛰️</span>
 			</div>
 
  		</section>
 
- 		
-
-
          <!----------------------------SECTION TECHNOS--------------------------------->
-
-		
 
        <section id="technolist"> 
 
        <div class="topolist" id="whysection">
          		<h2>Hard Skills</h2> 
          		 <h3>Jeux préférés</h3>        	         	
-            	<p>Mon profil et mes connaissances me permettent d’agir sur tous les fronts du développement. Cela va de gérer le back office du site web et la base clients (Node, Express, MongoDB, MySQL), puis s’occuper de la mise à jour du site en front-end (Vue), identifier les problématiques serveurs et aussi prendre en main la gestion de projet.</p>  
+            	<p>Mon profil et mes connaissances me permettent d’agir sur tous les fronts du développement. Cela va de gérer le back office du site web et la base clients (NodeJS, Express, MongoDB, MySQL), puis s’occuper de la mise à jour du site en front-end (Vue), identifier les problématiques serveurs et aussi prendre en main la gestion de projet.</p>  
             </div>            
 
             <div class="carousel-text"> 
@@ -437,10 +406,7 @@
                 </div> 
                 <div class="carousel-item">
                   <i class="fab fa-sass"></i>
-                </div> 
-                 <div class="carousel-item">
-                <p id="vscode">VS Code</p>
-                </div> 
+                </div>                  
                 <div class="carousel-item">
                   <i class="fab fa-google"></i>
                 </div>                 
@@ -462,6 +428,9 @@
                 <div class="carousel-item">
                   <p id="mongo">mongoDB®️</p>
                 </div>    
+                <div class="carousel-item">
+                <p id="vscode">VS Code</p>
+                </div> 
                 <div class="carousel-item">
                   <i class="fab fa-git-alt"></i>
                 </div>  
@@ -490,9 +459,6 @@
             <div id="comingsoon"><p>COMING SOON : <i class="fab fa-wordpress"></i> * PrestaShop * NUXTJS * <i class="fab fa-react"></i></p>
             </div>  
           </section>
-
-          
-
  
        <!----------------REALISATIONS------------------------->
 
@@ -502,40 +468,14 @@
             	<p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>  
             </div> 
 
-  <section id="projets">
+  		<section id="projets">
 
+                       
             <div class="listeprojets active">
-               <div class="listeprojetstop">
-               		<p>🎞️</p>
-	                <h3 id="thethrill">the thrill of losing</h3> 
-	                <a href="https://raphaelcouillaud.github.io/thethrilloflosing" class="lienindex" target="_blank">
-	               <i class="far fa-play-circle"></i>
-	                </a>                            
-              </div>
-              <div class="listeprojetsbottom">
-	              <div class="listeprojets1">
-	                <h4>Mission</h4>
-	                <p>👉 Conception d’un portfolio numérique pour une artiste photographe<br/>✔️ Intégration web d'éléments à partir d'un compte Instagram<br/>✔️ Design 100% original<br/>✔️ Site en anglais</p>
-	              </div>
-	              <div class="listeprojets2">
-	                <h4>Technos</h4>
-	                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/><i class="fab fa-js"></i><br/>jQuery<br/></p>                  
-	              </div>
-	              <div class="listeprojets3">          
-	                 <h4>Avis client(e)</h4>
-	                <p></p>
-	             </div>  
-	             <div class="listeprojets4"> 
-	             	 <img src="img/sitelmc.jpg" alt="logo" />   
-	             </div>  
-	          </div>
-	        </div>
-            
-            <div class="listeprojets">
                 <div class="listeprojetstop">
 	                <p>🌐</p>
 	                <h3 id="groupomania">Groupomania C<i class="fas fa-globe"></i>nnect</h3>  
-	                 <a href="https://github.com/RaphaelCouillaud/P7-Groupomania" class="lienindex" target="_blank">
+	                 <a href="https://github.com/RaphaelCouillaud/P7-Groupomania" class="lienindex" target="_blank" title="Lien vers le projet Groupomania Connect">
 	                <i class="far fa-play-circle"></i>
 	                </a>                          
               </div>
@@ -553,7 +493,34 @@
 	                <p>"Bonne sécurisation des données / Bonne communication frontend/backend / Belles interfaces utilisateur / Utilisation d'une librairie gérant la partie SQL."<br/>-<br/>Ibrahima Ciss, Engineer</p>
 	             </div> 
 	             <div class="listeprojets4">  
-	                <video src="exemple.webm" controls poster="img/siteconnect.jpg"></video>  
+	                <video src="exemple.webm" controls poster="img/siteconnect.jpg" alt="Preview site"></video>  
+	             </div>  
+	          </div>
+	        </div>
+
+	         <div class="listeprojets">
+               <div class="listeprojetstop">
+               		<p>🎞️</p>
+	                <h3 id="thethrill">the thrill of losing</h3> 
+	                <a href="https://raphaelcouillaud.github.io/thethrilloflosing" class="lienindex" target="_blank" title="Lien vers le site the thrill of losing">
+	               <i class="far fa-play-circle"></i>
+	                </a>                            
+              </div>
+              <div class="listeprojetsbottom">
+	              <div class="listeprojets1">
+	                <h4>Mission</h4>
+	                <p>👉 Conception d’un portfolio numérique pour une artiste photographe<br/>✔️ Intégration web d'éléments à partir d'un compte Instagram<br/>✔️ Design 100% original<br/>✔️ Site en anglais</p>
+	              </div>
+	              <div class="listeprojets2">
+	                <h4>Technos</h4>
+	                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/><i class="fab fa-js"></i><br/>jQuery<br/></p>                  
+	              </div>
+	              <div class="listeprojets3">          
+	                 <h4>Avis client(e)</h4>
+	                <p></p>
+	             </div>  
+	             <div class="listeprojets4"> 
+	             	 <img src="img/sitelmc.jpg" alt="Preview site"/>   
 	             </div>  
 	          </div>
 	        </div>
@@ -562,7 +529,7 @@
                <div class="listeprojetstop">
                	<p>🌶️</p>
                 <h3 id="sopekocko">So Pekocko</h3> 
-                 <a href="https://github.com/RaphaelCouillaud/P6-So_Pekocko" class="lienindex" target="_blank">
+                 <a href="https://github.com/RaphaelCouillaud/P6-So_Pekocko" class="lienindex" target="_blank" title="Lien vers le projet So Pekocko">
                <i class="far fa-play-circle"></i>
                 </a> 
               </div>
@@ -581,7 +548,7 @@
 	                <p>"Excellent P6 réalisé qui répond à l'ensemble du cahier des charges du projet. Présentation orale, professionnelle et claire."<br/>-<br/>Joffrey Hernandez, Développeur fullstack</p>
 	             </div> 
 	             <div class="listeprojets4">  
-	               <video src="exemple.webm" controls poster="img/siteso.jpg"></video>     
+	               <video src="exemple.webm" controls poster="img/siteso.jpg" alt="Preview site"></video>     
 	             </div>  
 	          </div>
 	        </div>
@@ -590,7 +557,7 @@
                 <div class="listeprojetstop">
                 	<p>🧠</p>
 	                <h3 id="burnout">Burnout : Parlons Reconstruction</h3>
-	                 <a href="https://burnoutparlonsreconstruction.fr/" class="lienindex" target="_blank">
+	                 <a href="https://burnoutparlonsreconstruction.fr/" class="lienindex" target="_blank" title="Lien vers le site Burnout : Parlons Reconstruction">
 	               <i class="far fa-play-circle"></i>
 	                </a>
               </div>
@@ -609,7 +576,7 @@
 	                <p>"Je vous remercie encore d'avoir accepté et pris le temps de réaliser ce site."<br/>-<br/>Aurélie Barribault, Psychologue du travail</p>
 	             </div>   
 	           	  <div class="listeprojets4"> 
-	           	  <img src="img/siteburn.jpg" alt="logo" /> 
+	           	  <img src="img/siteburn.jpg" alt="Preview site" /> 
 	             </div>  
 	          </div>
 	        </div>
@@ -618,7 +585,7 @@
 	               <div class="listeprojetstop">
 		               	<p>🪑</p>
 		                <h3 id="orinoco">Orinoco</h3>
-		                 <a href="https://github.com/RaphaelCouillaud/P5-Orinoco" class="lienindex" target="_blank">
+		                 <a href="https://github.com/RaphaelCouillaud/P5-Orinoco" class="lienindex" target="_blank" title="Lien vers le projet Orinoco">
 		               <i class="far fa-play-circle"></i>
 		                </a>                             
 	              </div>
@@ -636,7 +603,7 @@
 		                <p>"Projet structuré et bien argumenté. Respect du cahier des charges."<br/>-<br/>Wenceslas Baridon, Développeur Back-End</p>
 	             </div>   
 	            <div class="listeprojets4">  
-	             <video src="exemple.webm" controls poster="img/siteori.jpg"></video>  
+	             <video src="exemple.webm" controls poster="img/siteori.jpg" alt="Preview site"></video>  
 	             </div>  
 	          </div>
 	        </div>
@@ -645,7 +612,7 @@
                 <div class="listeprojetstop">
 	                <p>🎨</p>
 	                <h3 id="jack">Portfolio Jack O'Keefe</h3>
-	                 <a href="https://raphaelcouillaud.github.io/Portfolio/" class="lienindex" target="_blank">
+	                 <a href="https://raphaelcouillaud.github.io/Portfolio/" class="lienindex" target="_blank" title="Lien vers le site Jack O'Keefe">
 	               <i class="far fa-play-circle"></i>
 	                </a>
               	</div>
@@ -664,7 +631,7 @@
 	                <p>"Super boulot ! Un développeur vraiment au top ! Je le recommande évidemment."<br/>-<br/>Raphaël Couillaud, Développeur Web</p>
 	             </div>   
 		            <div class="listeprojets4"> 
-		            	<img src="img/sitejack.jpg" alt="logo" />
+		            	<img src="img/sitejack.jpg" alt="Preview site" />
 			        </div>  
 			      </div>
 			    </div>
@@ -675,7 +642,7 @@
              <div class="listeprojetstop">
              	 <p>🦉</p>
                 <h3 id="chouette">La Chouette Agence</h3>
-                 <a href="https://raphaelcouillaud.github.io/P4-La-Chouette/" class="lienindex" target="_blank">
+                 <a href="https://raphaelcouillaud.github.io/P4-La-Chouette/" class="lienindex" target="_blank" title="Lien vers le site La Chouette Agence">
                <i class="far fa-play-circle"></i>
                 </a>
               </div>
@@ -694,7 +661,7 @@
 		                <p>"Le site est responsive, la sémantique HTML a été modifiée, les recommandations sont pertinentes, utilisation d'un support de présentation."<br/>-<br/>Hugo Dumont, Développeur</p>
 		             </div>              
 		         <div class="listeprojets4"> 
-		          		<img src="img/chouette.jpg" alt="logo" />
+		          		<img src="img/chouette.jpg" alt="Preview site" />
 			        </div>  
 			      </div>
 			    </div>
@@ -703,7 +670,7 @@
              <div class="listeprojetstop">
              	 <p>🍽️</p>
                 <h3 id="chouette">ohmyfood</h3>
-                 <a href="https://raphaelcouillaud.github.io/P3-Ohmyfood/" class="lienindex" target="_blank">
+                 <a href="https://raphaelcouillaud.github.io/P3-Ohmyfood/" class="lienindex" target="_blank" title="Lien vers le site Oh My Food">
                <i class="far fa-play-circle"></i>
                 </a>
               </div>
@@ -721,7 +688,7 @@
 		                <p>"Les livrables sont conformes aux attentes. Le code est bien réalisé, bonne indentation, code valide au w3c."<br/>-<br/>Aurélien Antonio, Développeur Freelance</p>
 		             </div>              
 		         <div class="listeprojets4"> 
-		          		<img src="img/siteoh.jpg" alt="logo" />
+		          		<img src="img/siteoh.jpg" alt="Preview site" />
 			        </div>  
 			      </div>
 			    </div>
@@ -731,22 +698,22 @@
           
         
          <!-----------------------BIO------------------------>
-        
+        <section id="sectionbio">
          <div class="topolist" id="biosection">
          		<h2>Bio graphique</h2> 
          		 <h3>...Inspirée de faits réels</h3>        	         	
             	<p>bla bla bla bla</p>  
             </div>    
         
-        <section id="biographic"> 
+        <div id="biographic"> 
           <div id="section1">  
             <figure id="figurelogo">                          
-              <img src="img/logofigure.jpg">
+              <img src="img/logofigure.jpg" alt="Logo comics Raphaël C#">
               <figcaption></figcaption>
             </figure>
 
             <figure id="figurebirth">                          
-				<img src="img/oystersea1.png">
+				<img src="img/oystersea1.png" alt="Océan animation">
               <figcaption>blabla Naissance</figcaption>
               <i class="fas fa-disease"></i>
 			</figure>  
@@ -754,13 +721,13 @@
           
           <div id="section2">
             <figure id="figureping">               
-             <img src="img/ping.jpg">
+             <img src="img/ping.jpg" alt="Ping pong animation">
               <figcaption>10 ans plus tard</figcaption>
               <i class="fas fa-circle" id="balle"></i>
             </figure>
 
             <figure id="figureufo">                          
-              <img src="img/ufoback.png">
+              <img src="img/ufoback.png" alt="Ufo animation">
               <figcaption>20 ans plus tard</figcaption>
             </figure>             
           </div>
@@ -768,11 +735,11 @@
              
           <div id="section3">
             <figure id="figurecompta">                          
-              <img src="img/compta.png">
+              <img src="img/compta.png" alt="Comptabilité animation">
               <figcaption>30 ans plus tard</figcaption>              
             </figure> 
             <figure id="figureopen">                          
-              <img src="img/open.png">
+              <img src="img/open.png" alt="Formation animation">
               <figcaption>40 ans plus tard</figcaption>
             </figure>             
           </div>
@@ -781,18 +748,19 @@
           	<p>TEXTE ET ILLUSTRATIONS DE RAPHAEL C# 2020, 2021 ©️ RAPHAËL COUILLAUD. TOUS DROITS RÉSERVÉS.</p>
           	<p id="continued">TO BE CONTINUED...</p>
           </div>
+       </div>
        </section>
-
 
         <!-----------------------SOFT SKILLS------------------------>
 
-        <div class="topolist">
+        <section id="skillsection">
+
+        	 <div class="topolist">
          		<h2>Soft skills</h2> 
-         		 <h3>Mes jeux préférés</h3>        	         	
-            	<p>Elle est composée de projets professionnalisants, à la complexité croissante. Chaque projet doit permettre d’acquérir des compétences spécifiques.</p>  
+         		 <h3>Source Aksis : modèle RIASEC (2019)</h3>        	         	
+            	<p>Le profil RIASEC découle de la typologie de Holland. Selon cet auteur, le choix d’un métier ou d’une profession est une forme d’expression de la personnalité d’un individu. Mon profil oscille entre l'Investigateur (réfléchir, apprendre, approfondir les connaissances, faire valoir son expertise …) et l'Artistique (concevoir, inventer, imaginer, créer…).</p>  
             </div> 
 
-        <section id="skillsection">
         <div class="skill-bars">
             <div class="bar">
               <div class="info">
@@ -905,7 +873,7 @@
             	<span></span>            	
             	<div class="links">
             		<i class="fas fa-envelope"></i>
-            		<a href="mailto:couillaud.raphael@neuf.fr" id="email" >couillaud.raphael@neuf.fr</a>
+            		<a href="mailto:couillaud.raphael@neuf.fr" id="email" title="Lien vers le mail couillaud.raphael@neuf.fr">couillaud.raphael@neuf.fr</a>
             		</a>
             	</div>
             </div>
@@ -915,7 +883,7 @@
             	<span></span>
             	<span></span>   
             	<div class="links">
-            		<a href="https://www.linkedin.com/in/raphael-couillaud/" target="_blank">
+            		<a href="https://www.linkedin.com/in/raphael-couillaud/" target="_blank" title="Lien vers le compte LinkedIn">
             		<i class="fab fa-linkedin-in"></i>
             		</a>
             	</div>
@@ -926,7 +894,7 @@
             	<span></span>
             	<span></span>   
             	<div class="links">
-            		<a href="https://github.com/RaphaelCouillaud" target="_blank">
+            		<a href="https://github.com/RaphaelCouillaud" target="_blank" title="Lien vers le compte Github">
           			<i class="fab fa-github"></i>
           			</a>
             	</div>
@@ -937,7 +905,7 @@
             	<span></span>
             	<span></span>   
             	<div class="links">
-            		<a href="https://twitter.com/Jack0Keefe" target="_blank">
+            		<a href="https://twitter.com/Jack0Keefe" target="_blank" title="Lien vers le compte Twitter">
           			<i class="fab fa-twitter"></i>
           			</a>
             	</div>
@@ -947,18 +915,19 @@
             	<span></span>
             	<span></span>
             	<span></span>   
-            	<div class="links">            		
-            		<a href="cv.pdf" title="Lien vers le téléchargement du cv version pdf">
-          			<i class="fas fa-file-pdf"></i>
+            	<div class="links"> 
+            		<a href="cv.pdf" id="pdficon" title="Lien vers le téléchargement du cv version pdf">
+          			<i class="fas fa-file-pdf" ></i>
           			</a>
+          			<p>CV</p> 
             	</div>
             </div>
         </article>
          
 		<footer>   
-	        <p>© 2021 Raphaël Couillaud - <strong>HELLO FRIEND</strong>, Développeur web freelance.</p>
+	        <p>© 2021 Raphaël Couillaud - <strong>HELLO FRIEND</strong>, Développeur web.</p>
 	            
-			<a href="#" class="to-top">
+			<a href="#" class="to-top" title="Lien vers le sommet du site">
 	     	<i class="fas fa-space-shuttle"></i></a>            
 
         </footer>   

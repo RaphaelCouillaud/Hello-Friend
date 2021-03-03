@@ -15,7 +15,7 @@ let font = 11,
 for (let i = 0; i < col; i++) arr[i] = 1;
 
 function draw() {
-  $.fillStyle = "rgba(0,0,0,.05)";
+  $.fillStyle = "rgba(0,0,0,.1)";
   $.fillRect(0, 0, W, H);
   $.fillStyle = "#08c404";
   $.font = font + "px system-ui";
@@ -34,14 +34,13 @@ window.addEventListener("resize", () => location.reload());
 
 // TYPE SCRIPT //
 
-
 let text = "BIENVENUE SUR MON PORTFOLIO";
     let array = Array.from(text);
 
     Object.keys(array).map((key) => {
       setTimeout(
         () => (document.getElementById("headerdescription").innerHTML += array[key]),
-        key * 210
+        key * 250
       );
     });
 
@@ -93,7 +92,7 @@ function nextSlide() {
     slidePos++;
   }
   displaySlide(slides, "carousel-item-visible");
-  displaySlide(navigation, "nav-current");
+  //displaySlide(navigation, "nav-current");//
 }
 
 function prevSlide() {
@@ -103,7 +102,7 @@ function prevSlide() {
     slidePos--;
   }
   displaySlide(slides, "carousel-item-visible");
-  displaySlide(navigation, "nav-current");
+  //displaySlide(navigation, "nav-current");//
 }
 
 /*function slideNavigation() {
@@ -151,6 +150,15 @@ window.addEventListener("scroll" ,() => {
   }
 });
 
+// CHANGE COLOR NAV FONTS ON SCROLL SECTIONS //
+/*window.addEventListener("scroll" ,() => {
+   let detection = document.querySelector('.checkwhosection');
+  if (window.scrollY > 450) {
+    detection.classList.add('checkwho');
+  } else {
+    detection.classList.remove('checkwho');
+  }
+});*/
 
 /*var hotbod = document.querySelector("body");
 
