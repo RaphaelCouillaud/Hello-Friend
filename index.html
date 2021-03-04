@@ -51,14 +51,14 @@
 
 
         <nav id="navbar">
-		  <ul class="topnav">
+		  <ul class="topnav" id="myTopnav">
 		  	<li><a href="#whosectiontopo" data-text="What?" title="Lien vers la section 'What?'">What?</a></li>		  	
 		  	<li><a href="#forsection" data-text="For?" title="Lien vers la section 'For?'">For?</a></li>
 		  	<li><a href="#wheresection" data-text="Where?" title="Lien vers la section 'Where?'">Where?</a></li>
 		  	<li><a href="#whysection" data-text="Why?" title="Lien vers la section 'Why?'">Why?</a></li>		  	
 		  	<li><a href="#biosection" data-text="Who?" title="Lien vers la section 'Who?'">Who?</a></li>		  	
 		  	<li><a href="#contactarticle" data-text="📟" title="Lien vers la section 'Contact'">📟</a></li>
-        <li><a href="javascript:void(0);" class="icon" onclick="responsiveNav()" title="Lien vers la barre de navigation"><i class="far fa-hand-spock"></i></a></li>
+        	<li><a href="javascript:void(0);" class="icon" onclick="responsiveNav()" title="Lien vers la barre de navigation"><i class="far fa-hand-spock"></i></a></li>
 		  </ul>
 		</nav>
 
@@ -121,7 +121,7 @@
                 <li>
                   <div>
                     <p>Autodidacte - Graphisme</p>
-                    <p>Apprentissage autonome à travers des illustrations</p>
+                    <p>Apprentissage autonome à travers diverses illustrations</p>
                   </div>
                 </li>
                 <li>
@@ -148,8 +148,8 @@
             <section id="mentorsection">
 
             	<div class="topolist">
-	         		<h2>Mes mentors</h2>
-	            	<h3>A.K.A. La dream team...</h3>
+	         		<h2>Références</h2>
+	            	<h3>Mes mentors</h3>
 	            	<p>L'équipe qui m'a accompagné dans ce périple aux confins de l'intégration web et de l'apprentissage du JavaScript est composée de professionnels chevronnés et aguerris qui ont su m'entourer et me guider vers l'infini et au-delà !</p>   
 	            	      
          	  	</div>
@@ -258,15 +258,7 @@
 
           </section>
 
-          <!--------------------------PACMAN------------------------>
          
-        <div class="road">
-		  <div class="pacman"></div>
-		  <div class="ghost">
-		    <div class="eyes"></div>
-		    <div class="skirt"></div>
-		  </div>
-		</div>
 
           <!----------------------------SECTION OC--------------------------------->
          
@@ -274,10 +266,10 @@
              <section id="ocsection">
 
              	 <div class="topolist">
-	         		<h2>Future formation</h2> 
-	         		 <h3>Un aperçu</h3>        	         	
-	            	<p>Elle est composée de projets professionnalisants, à la complexité croissante. Chaque projet doit permettre d’acquérir des compétences spécifiques.</p>  
-            </div>
+    	         		<h2>Future formation</h2> 
+    	         		 <h3>Un aperçu</h3>        	         	
+    	            	<p>Elle est composée de projets professionnalisants, à la complexité croissante. Chaque projet doit permettre d’acquérir des compétences spécifiques.</p>  
+              </div>
 
          		<div class="workco">
 	                <div class="cardfront">
@@ -311,8 +303,8 @@
             </div>
             <div class="workco">
                 <div class="cardfront">  
-                <i class="fas fa-handshake"></i>                  
-                     <h3>Des avantages pour l'employeur</h3> 
+                  <i class="fas fa-handshake"></i>                  
+                  <h3>Des avantages pour l'employeur</h3> 
                 </div>
                 <div class="cardback">                   
                    <!--<h4>Le contrat de professionnalisation associe formation pratique et formation théorique.</h4>-->
@@ -363,6 +355,16 @@
 			</div>
 
  		</section>
+
+ 		 <!--------------------------PACMAN------------------------>
+         
+        <div class="road">
+		  <div class="pacman"></div>
+		  <div class="ghost">
+		    <div class="eyes"></div>
+		    <div class="skirt"></div>
+		  </div>
+		</div>
 
          <!----------------------------SECTION TECHNOS--------------------------------->
 
@@ -456,19 +458,21 @@
             </div>
 
             <div id="screenbuttons"></div>
-            <div id="comingsoon"><p>COMING SOON : <i class="fab fa-wordpress"></i> * PrestaShop * NUXTJS * <i class="fab fa-react"></i></p>
+            <div id="comingsoon"><p>COMING SOON : <i class="fab fa-wordpress"></i> * PrestaShop * NUXTJS * Jamstack * <i class="fab fa-react"></i></p>
             </div>  
           </section>
  
        <!----------------REALISATIONS------------------------->
 
-       <div class="topolist">
+       
+
+  		<section id="projets">
+
+  			<div class="topolist" id="projetstopo">
          		<h2>Réalisations</h2> 
          		 <h3>Projets professionnels et personnels</h3>        	         	
             	<p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>  
             </div> 
-
-  		<section id="projets">
 
                        
             <div class="listeprojets active">
@@ -695,63 +699,7 @@
 
           </section> 
 
-          
-        
-         <!-----------------------BIO------------------------>
-        <section id="sectionbio">
-         <div class="topolist" id="biosection">
-         		<h2>Bio graphique</h2> 
-         		 <h3>...Inspirée de faits réels</h3>        	         	
-            	<p>bla bla bla bla</p>  
-            </div>    
-        
-        <div id="biographic"> 
-          <div id="section1">  
-            <figure id="figurelogo">                          
-              <img src="img/logofigure.jpg" alt="Logo comics Raphaël C#">
-              <figcaption></figcaption>
-            </figure>
-
-            <figure id="figurebirth">                          
-				<img src="img/oystersea1.png" alt="Océan animation">
-              <figcaption>blabla Naissance</figcaption>
-              <i class="fas fa-disease"></i>
-			</figure>  
-          </div>
-          
-          <div id="section2">
-            <figure id="figureping">               
-             <img src="img/ping.jpg" alt="Ping pong animation">
-              <figcaption>10 ans plus tard</figcaption>
-              <i class="fas fa-circle" id="balle"></i>
-            </figure>
-
-            <figure id="figureufo">                          
-              <img src="img/ufoback.png" alt="Ufo animation">
-              <figcaption>20 ans plus tard</figcaption>
-            </figure>             
-          </div>
-              
-             
-          <div id="section3">
-            <figure id="figurecompta">                          
-              <img src="img/compta.png" alt="Comptabilité animation">
-              <figcaption>30 ans plus tard</figcaption>              
-            </figure> 
-            <figure id="figureopen">                          
-              <img src="img/open.png" alt="Formation animation">
-              <figcaption>40 ans plus tard</figcaption>
-            </figure>             
-          </div>
-
-          <div id="sectioncredits">          	
-          	<p>TEXTE ET ILLUSTRATIONS DE RAPHAEL C# 2020, 2021 ©️ RAPHAËL COUILLAUD. TOUS DROITS RÉSERVÉS.</p>
-          	<p id="continued">TO BE CONTINUED...</p>
-          </div>
-       </div>
-       </section>
-
-        <!-----------------------SOFT SKILLS------------------------>
+           <!-----------------------SOFT SKILLS------------------------>
 
         <section id="skillsection">
 
@@ -855,6 +803,62 @@
 <button class="refresh-button">Refresh!</button>
 </section>
 
+        
+         <!-----------------------BIO------------------------>
+        <section id="sectionbio">
+         <div class="topolist" id="biosection">
+         		<h2>Bio graphique</h2> 
+         		 <h3>...Inspirée de faits réels</h3>        	         	
+            	<p>bla bla bla bla</p>  
+            </div>    
+        
+        <div id="biographic"> 
+          <div id="section1">  
+            <figure id="figurelogo">                          
+              <img src="img/logofigure.jpg" alt="Logo comics Raphaël C#">
+              <figcaption></figcaption>
+            </figure>
+
+            <figure id="figurebirth">                          
+				<img src="img/oystersea1.png" alt="Océan animation">
+              <figcaption>blabla Naissance</figcaption>
+              <i class="fas fa-disease"></i>
+			</figure>  
+          </div>
+          
+          <div id="section2">
+            <figure id="figureping">               
+             <img src="img/ping.jpg" alt="Ping pong animation">
+              <figcaption>10 ans plus tard</figcaption>
+              <i class="fas fa-circle" id="balle"></i>
+            </figure>
+
+            <figure id="figureufo">                          
+              <img src="img/ufoback.png" alt="Ufo animation">
+              <figcaption>20 ans plus tard</figcaption>
+            </figure>             
+          </div>
+              
+             
+          <div id="section3">
+            <figure id="figurecompta">                          
+              <img src="img/compta.png" alt="Comptabilité animation">
+              <figcaption>30 ans plus tard</figcaption>              
+            </figure> 
+            <figure id="figureopen">                          
+              <img src="img/open.png" alt="Formation animation">
+              <figcaption>40 ans plus tard</figcaption>
+            </figure>             
+          </div>
+
+          <div id="sectioncredits">          	
+          	<p>TEXTE ET ILLUSTRATIONS DE RAPHAEL C# 2020, 2021 ©️ RAPHAËL COUILLAUD. TOUS DROITS RÉSERVÉS.</p>
+          	<p id="continued">TO BE CONTINUED...</p>
+          </div>
+       </div>
+       </section>
+
+       
 
 
               
