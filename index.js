@@ -44,6 +44,15 @@ let text = "BIENVENUE SUR MON PORTFOLIO";
       );
     });
 
+   // NAVBAR RESPONSIVE //
+function responsiveNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
 
 // NAV TOP SCROLL //
@@ -64,6 +73,50 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+//INTERSECTION OBSERVER//
+const ratio = 0.1
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: ratio
+}
+const handleIntersect = function (entries, observer) {
+	entries.forEach(function (entry) {
+		if (entry.intersectionRatio > ratio) {
+			entry.target.classList.add('reveal-visible')
+			observer.unobserve(entry.target)			
+		}
+		})
+}
+const observer = new IntersectionObserver(handleIntersect, options);
+document.querySelectorAll('[class*="reveal-"]').forEach(function (revealTitle) {
+	observer.observe(revealTitle)
+})
+
+//  LIST //
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+var items = document.querySelectorAll(".todocontainer li");
+// code for the isElementInViewport function
+ 
+function callbackFunc() {
+  for (var i = 0; i < items.length; i++) {
+    if (isElementInViewport(items[i])) {
+      items[i].classList.add("in-view");
+    }
+  }
+}
+ 
+window.addEventListener("load", callbackFunc);
+window.addEventListener("scroll", callbackFunc);
 
 
 // SLIDER ARCADE //
