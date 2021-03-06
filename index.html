@@ -71,14 +71,33 @@
     		</div>
 
     		<div id="whosectiontopo">
-    			<h2>Pitch</h2>
-    			<h3>Je suis <strong>Raphaël Couillaud</strong> et je suis développeur web...</h3>
-    			<p>Grâce à ma sensibilité particulière pour le graphisme, j'aime créer des univers en apportant une identité visuelle unique et soignée pour l'ensemble de mes projets.</p>
+    			<h2 class="reveal-1">Pitch</h2>
+    			<h3 class="reveal-4">Je suis <strong>Raphaël Couillaud</strong> et je suis développeur web...</h3>
+    			<p class="reveal-5">Grâce à ma sensibilité particulière pour le graphisme, j'aime créer des univers en apportant une identité visuelle unique et soignée pour l'ensemble de mes projets.</p>
     		</div>
     		<div class="saucer">
   				<img src="img/saucer1.png" alt="Flying saucer animation">
-
 			</div>
+			<div class="parallaxeffect">
+				<img src="img/space1.png" data-speed="-5" alt="Flying saucer animation" class="layer">
+				<img src="img/space2.png" data-speed="5" alt="Flying saucer animation" class="layer">
+				<img src="img/space3.png" data-speed="2" alt="Flying saucer animation" class="layer">
+				<img src="img/space4.png" data-speed="-7" alt="Flying saucer animation" class="layer">
+				<img src="img/space5.png" data-speed="-2" alt="Flying saucer animation" class="layer">
+				<img src="img/space6.png" data-speed="-8" alt="Flying saucer animation" class="layer">
+				<img src="img/space7.png" data-speed="5" alt="Flying saucer animation" class="layer">
+				<img src="img/space8.png" data-speed="-6" alt="Flying saucer animation" class="layer">
+				<img src="img/space9.png" data-speed="4" alt="Flying saucer animation" class="layer">
+				<img src="img/space10.png" data-speed="3" alt="Flying saucer animation" class="layer">
+				<img src="img/space11.png" data-speed="-5" alt="Flying saucer animation" class="layer">
+				<img src="img/space12.png" data-speed="-9" alt="Flying saucer animation" class="layer">
+				<img src="img/space12.png" data-speed="-9" alt="Flying saucer animation" class="layer">
+				<img src="img/space12.png" data-speed="-9" alt="Flying saucer animation" class="layer">
+				<img src="img/space12.png" data-speed="-9" alt="Flying saucer animation" class="layer">
+				<img src="img/space12.png" data-speed="-9" alt="Flying saucer animation" class="layer">
+			</div>
+			<div id="milkyway"></div>
+			<div id="milkyaway"></div>
     	</section>
 
     	<!----------------------------SECTION CV--------------------------------->
@@ -406,6 +425,9 @@
                   <i class="fab fa-bootstrap"></i>
                 </div>
                 <div class="carousel-item">
+                 <p id="vanilla">Vanilla JS</p>
+                </div>
+                <div class="carousel-item">
                  <p id="express">Swiper</p>
                 </div>
                 <div class="carousel-item">
@@ -479,8 +501,33 @@
             	<p class="reveal-3">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>  
             </div> 
 
-                       
             <div class="listeprojets active">
+                <div class="listeprojetstop">
+	                <p>👽</p>
+	               <h3 id="hello">HELLO FRIEND</h3> 
+	                 <a href="https://github.com/RaphaelCouillaud/Hello-Friend" class="lienindex" target="_blank" title="Lien vers le projet Hello Friend">
+	                <i class="far fa-play-circle"></i>
+	                </a>                          
+              </div>
+               <div class="listeprojetsbottom">
+	              <div class="listeprojets1">
+	                <h4>Mission</h4>
+	                <p>👉 Création d'un portfolio<br/>✔️ Utiliser de nouvelles technologies front-end<br/>✔️ Gérer l'affichage au scroll<br/>✔️ Illustrer le concept avec des créations originales</p>
+	              </div>
+	              <div class="listeprojets2">
+	                <h4>Technos</h4>
+	                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/><i class="fab fa-js"></i><br/>Swiper<br/>Vanilla JS<br/>Photofiltre</p> 
+	              </div>
+	              <div class="listeprojets3">          
+	                <h4>Avis client(e)</h4>
+	                <p></p>
+	             </div> 
+	             <div class="listeprojets4">  
+	                <img src="img/sitehello.jpg" alt="Preview site"/>   
+	             </div>  
+	          </div>
+	        </div>          
+            <div class="listeprojets">
                 <div class="listeprojetstop">
 	                <p>🌐</p>
 	                <h3 id="groupomania">Groupomania C<i class="fas fa-globe"></i>nnect</h3>  
@@ -619,7 +666,7 @@
 
              <div class="listeprojets">
                 <div class="listeprojetstop">
-	                <p>🎨</p>
+	                <p>🖌️</p>
 	                <h3 id="jack">Portfolio Jack O'Keefe</h3>
 	                 <a href="https://raphaelcouillaud.github.io/Portfolio/" class="lienindex" target="_blank" title="Lien vers le site Jack O'Keefe">
 	               <i class="far fa-play-circle"></i>
@@ -938,18 +985,31 @@
 	            
 			<a href="#" class="to-top" title="Lien vers le sommet du site">
 	     	<i class="fas fa-space-shuttle"></i></a>            
-
+	     	
         </footer>   
 
 
        
         <script src="index.js"></script>
 
-     
+     <!-- VanillaJs Parallax -->
+         <script type="text/javascript">
+         	document.addEventListener("mousemove" , showParallax);
+         	function showParallax(e){
+         		this.querySelectorAll('.layer').forEach(layer => {
+         			const speed = layer.getAttribute('data-speed')
 
+         			const xScreen = (window.innerWidth - e.pageX*speed)/100
+         			const yScreen = (window.innerHeight - e.pageY*speed)/100
 
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <!-- Initialize Swiper -->
+         			layer.style.transform = `translateX(${xScreen}px) translateY(${yScreen}px)`
+         		})
+         	}
+
+         </script>
+
+         <!-- Initialize Swiper -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>        
   <script>
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',

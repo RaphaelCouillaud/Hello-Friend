@@ -349,14 +349,132 @@ nav ul li:nth-child(7) {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;  
   align-items: center; 
   position: relative;
+  height: 100vh;
+  align-content: center;
+ mix-blend-mode: multiply;
 }
 #whosection img {
   max-width: 100%;
+}
+.parallaxeffect {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;	
+	z-index: -1;
+}
+.parallaxeffect img {
+	object-fit: cover;
+	position: absolute;
+}
+.parallaxeffect img:nth-child(1) {
+	top: 8%;
+	left: 5%;
+}
+.parallaxeffect img:nth-child(11) {
+	bottom: 5%;
+	left: 5%;
+	width: 4%;
+}
+.parallaxeffect img:nth-child(3) {
+	top: 35%;
+	left: 25%;
+}
+.parallaxeffect img:nth-child(8) {
+	bottom: 15%;
+	right: 25%;
+	width: 3%;	
+}
+.parallaxeffect img:nth-child(7) {
+	bottom: 5%;
+	right: 45%;
+}
+.parallaxeffect img:nth-child(6) {
+	bottom: 25%;
+	right: 12%;
+}
+.parallaxeffect img:nth-child(5) {
+	top: 10%;
+	right: 10%;
+	width: 5%;
+}
+.parallaxeffect img:nth-child(9) {
+	top: 5%;
+	right: 25%;
+	 animation: turn 80s linear infinite;
+}
+@keyframes turn{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.parallaxeffect img:nth-child(4) {
+	top: 12%;
+	left: 40%;
+}
+.parallaxeffect img:nth-child(10) {
+	bottom: 10%;
+	left: 30%;
+	
+
+}
+.parallaxeffect img:nth-child(2) {
+	bottom: 40%;
+	right: 30%;
+	
+}
+.parallaxeffect img:nth-child(12) {
+	bottom: 30%;
+	left: 30%;
+	width: 0.75%;
+}
+.parallaxeffect img:nth-child(13) {
+	bottom: 40%;
+	left: 22%;
+	width: 1%;	
+
+}
+.parallaxeffect img:nth-child(14) {
+	top: 0%;
+	left: 15%;
+	width: 1.5%;
+}
+.parallaxeffect img:nth-child(15) {
+	top: 30%;
+	right: 33%;
+	width: 0.8%;
+}
+.parallaxeffect img:nth-child(16) {
+	bottom: 10%;
+	right: 45%;
+	width: 0.5%;
+}
+#milkyway {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60%;
+	height: 75%;	
+	z-index: -2;	
+	clip-path: polygon(0% 35%, 25% 19%, 37% 15%, 46% 13%, 56% 13%, 65% 14%, 74% 15%, 90% 26%, 100% 32%, 94% 30%, 64% 21%, 48% 24%, 37% 25%, 8% 49%, 23% 44%, 33% 52%, 41% 45%, 40% 39%, 70% 41%, 70% 48%, 87% 66%, 67% 55%, 9% 68%, 0 74%);
+	 background: rgba(255, 255, 255, 0.05);
+}
+#milkyaway {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 50%;
+	height: 100%;	
+	z-index: -2;	
+	clip-path: polygon(100% 23%, 94% 24%, 86% 29%, 83% 38%, 56% 35%, 42% 31%, 28% 25%, 21% 33%, 10% 43%, 22% 39%, 30% 36%, 39% 42%, 53% 40%, 73% 50%, 67% 43%, 89% 49%, 91% 41%, 96% 33%, 100% 29%);
+	 background: rgba(255, 255, 255, 0.05);
 }
 .saucer {
   display: block;
@@ -583,12 +701,17 @@ nav ul li:nth-child(7) {
   transform: translateY(0);
   transition: 1.5s cubic-bezier(0.5, 0, 0, 1);
 }
-
 .reveal-2 {
   transition-delay: 0.15s;
 }
 .reveal-3 {
   transition-delay: 0.27s;
+}
+.reveal-4 {
+  transition-delay: 0.35s;
+}
+.reveal-5 {
+  transition-delay: 0.6s;
 }
 /*-------------------------------------SECTION CV-----------------------------------*/
 #todolist {
@@ -734,7 +857,7 @@ nav ul li:nth-child(7) {
  background-attachment: scroll;
   background-size: cover;
   background-repeat: repeat;
-  background-position: center center;
+  background-position: top center;
    
 }
 #rocket img {  
@@ -742,7 +865,7 @@ nav ul li:nth-child(7) {
   }
 #rocket {  
   position: absolute;
-  bottom: -380%;
+  bottom: -430%;
   right: 5%;
   z-index: 99;  
   animation: rocketfly 4s ease-in-out infinite forwards;
@@ -750,7 +873,7 @@ nav ul li:nth-child(7) {
   }
 @keyframes rocketfly {
     0% {
-      bottom: -370%;
+      bottom: -420%;
     }      
     10% {
       
@@ -760,7 +883,7 @@ nav ul li:nth-child(7) {
        opacity: 0.4;      
     }     
     100% {
-      bottom: -250%;
+      bottom: -300%;
       opacity: 0;
     }
   }
@@ -1343,11 +1466,11 @@ nav ul li a {
   width: 15%;
   }
 #rocket {    
-  bottom: -270%;
+  bottom: -340%;
   }
 @keyframes rocketfly {
     0% {
-      bottom: -260%;
+      bottom: -330%;
     }      
     10% {      
        opacity: 0.8;
@@ -1356,7 +1479,8 @@ nav ul li a {
        opacity: 0.4;      
     }     
     100% {
-      bottom: -100%;     
+      bottom: -100%;   
+      opacity: 0;  
     }
   }
 .imgmentor {
@@ -1409,7 +1533,7 @@ nav ul li a {
     flex-direction: column;
     width: 100%;  
     margin: auto; 
-    min-height: 100vh;
+    min-height: 50vh;
   }
   .topnav.responsive a.icon {
     position: absolute;
@@ -1579,7 +1703,7 @@ background-attachment: fixed;
     transform: rotate(360deg);
   }
 }*/
-#planetsection h2 {
+#planets h2 {
   font-size: 2em;
   font-style: italic;
    letter-spacing: 1.5px;
@@ -1720,7 +1844,7 @@ background-attachment: fixed;
   width: 100%;  
   /*position: absolute;  */  
 }
-#express {
+#express, #vanilla {
    font-weight: lighter;
 }
 #jquery {
@@ -1847,7 +1971,7 @@ font-family: 'Newsreader', serif;
    border-top: 10px solid #102ccc;
   border-bottom: 10px solid #102ccc;
   background: #bc040c;
-  mix-blend-mode: hard-light;
+  mix-blend-mode: difference;
   margin: 0;
 }
 #comingsoon > :first-child {
@@ -1883,7 +2007,7 @@ font-family: 'Newsreader', serif;
    font-size: 1.1em; 
    justify-content: space-between;
    width: 100%;
-   height: 1325px;  
+   height: 1425px;  
    background-image: url("img/backtron.png");
 background-attachment: fixed;
   background-size: cover;
@@ -2029,6 +2153,9 @@ margin-top: 0;
 #jack {
   font-family: 'Electrolize', sans-serif;
 }
+#hello {
+	font-family: MrRobot, 'Press Start 2P', Helvetica, Arial, sans-serif;
+}
 
 
 
@@ -2131,6 +2258,7 @@ figure img {
 #figurebirth img {
   background: url("img/backoyster3.jpg"); /*jpg*/    
   animation: wave 25s infinite ease-in-out;
+  filter: contrast(130%);
 }
 
 @keyframes wave {  
@@ -2436,8 +2564,9 @@ background-image: url("img/backhalt.png");
 }
 
 /*-------------------------------FOOTER-------------------------*/
-/*article {
+article {
   position: relative;
+  height: 300px;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -2445,6 +2574,7 @@ background-image: url("img/backhalt.png");
   align-items: center;
   color: white;
   padding-top: 100px;
+  
 }
 #email {
   display: none;
@@ -2570,6 +2700,7 @@ footer {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 25px;
+  position: relative;
 }
 footer p {
  color: white;
@@ -2578,5 +2709,6 @@ footer p {
 footer p strong {
 font-family: MrRobot, 'Press Start 2P', Helvetica, Arial, sans-serif;
    color: #bc040c;
-   }*/
+   }
+
 
