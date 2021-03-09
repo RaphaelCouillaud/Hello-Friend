@@ -50,16 +50,16 @@
 
 
 
-        <nav id="navbar">
+         <nav id="navbar">
 		  <ul class="topnav" id="myTopnav">
-		  	<li><a href="#whosectiontopo"title="Lien vers la section 'What?'" class="icon"><img src="img/hello.png" alt="Flying saucer animation"></a></li>		
-		  	<li><a href="#whosectiontopo" data-text="What?" title="Lien vers la section 'What?'">What?</a></li>		  	
-		  	<li><a href="#forsection" data-text="For?" title="Lien vers la section 'For?'">For?</a></li>
-		  	<li><a href="#wheresection" data-text="Where?" title="Lien vers la section 'Where?'">Where?</a></li>
-		  	<li><a href="#whysection" data-text="Why?" title="Lien vers la section 'Why?'">Why?</a></li>		  	
-		  	<li><a href="#biosection" data-text="Who?" title="Lien vers la section 'Who?'">Who?</a></li>		  	
-		  	<li><a href="#contactarticle" data-text="📟" title="Lien vers la section 'Contact'">📟</a></li>
-        	<li><a href="javascript:void(0);" class="icon" onclick="responsiveNav()" title="Lien vers la barre de navigation"><i class="far fa-hand-spock"></i></a></li>
+		  	<li class="template__nav-item"><a href="#whosectiontopo" title="Lien vers la section 'What?'" class="icon"><img src="img/hello.png" alt="Logo Hello Friend"></a></li>		
+		  	<li class="template__nav-item"><a href="#todolist" data-text="What?" title="Lien vers la section 'What?'">What?</a></li>		  	
+		  	<li class="template__nav-item"><a href="#wishsection" data-text="For?" title="Lien vers la section 'For?'">For?</a></li>
+		  	<li class="template__nav-item"><a href="#planetsection" data-text="Where?" title="Lien vers la section 'Where?'">Where?</a></li>
+		  	<li class="template__nav-item"><a href="#technolist" data-text="Why?" title="Lien vers la section 'Why?'">Why?</a></li>		  	
+		  	<li class="template__nav-item"><a href="#skillsection" data-text="Who?" title="Lien vers la section 'Who?'">Who?</a></li>		  	
+		  	<li class="template__nav-item"><a href="#contactarticle" data-text="📟" title="Lien vers la section 'Contact'">📟</a></li>
+        	<li><a href="javascript:void(0);" class="icon" onclick="responsiveNav()" title="Lien vers la barre de navigation"><i class="fas fa-fingerprint"></i></a></li>
 		  </ul>
 		</nav>
 
@@ -104,12 +104,12 @@
 
     	      
 
-          <section id="todolist">
+          <section id="todolist" class="template__section">
 
           	 <div class="topolist">    	    	
             	<h2 class="reveal-1">Parcours</h2>
             	<h3 class="reveal-2">Un nouveau départ...</h3>
-            	<p class="reveal-3">Mon voyage vers le développement web a commencé au printemps 2020 lorsque j'ai saisi la chance de pouvoir découvrir ce métier en intégrant le programme Job'Etudes Nouvelle Aquitaine. Cela m'a permis de me concentrer pleinement sur mon objectif de reconversion professionnelle en intégrant la formation délivrée par OpenClassrooms.</p>            	
+            	<p class="reveal-3">Mon voyage vers le développement web a commencé au printemps 2020 lorsque j'ai saisi la chance de pouvoir m'initier à ce métier en intégrant le programme Job'Études Nouvelle Aquitaine. Cela m'a permis de me concentrer pleinement sur mon objectif de reconversion professionnelle en intégrant la formation délivrée par OpenClassrooms.</p>            	
             </div>    
 
             <div class="todocontainer">
@@ -140,16 +140,10 @@
                 </li>
                 <li>
                   <div>
-                    <p>Autodidacte - Graphisme</p>
-                    <p>Apprentissage autonome à travers diverses illustrations</p>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <p>Freelance - Développeur Web</p>
+                    <p>Freelance - Graphiste / Illustrateur</p>
                     <p><strong>HELLO FRIEND</strong> - La Rochelle</p>
                   </div>
-                </li>
+                </li>                
                 <li>
                   <div>
                     <p>Diplôme Développeur Web (RNCP niveau 5)</p>
@@ -157,7 +151,10 @@
                   </div>
                 </li>
               </ul>
-            </div>   
+            </div>  
+            <div id="milkyway1"></div> 
+            <div id="milkyway2"></div> 
+            <div id="milkyway3"></div> 
          </section>
 
          <!----------------------------SECTION MENTORS--------------------------------->
@@ -173,7 +170,7 @@
 	            	<p class="reveal-3">L'équipe qui m'a accompagné dans ce périple aux confins de l'intégration web et de l'apprentissage du JavaScript est composée de professionnels chevronnés et aguerris qui ont su m'entourer et me guider vers l'infini et au-delà !</p>   
 	            	      
          	  	</div>
-          
+          			<div id="milkyway7"></div> 
 
             	 <!-- Swiper -->
 				  <div class="swiper-container">
@@ -254,7 +251,7 @@
             </section>
 
 		<!----------------------------SECTION FOR--------------------------------->
-          <section class="wishsection"> 
+          <section id="wishsection" class="template__section"> 
 
           	<div class="topolist" id="forsection">
          		<h2 class="reveal-1">Objectif</h2> 
@@ -276,6 +273,8 @@
               <div class="five">de développeur Front-End
               </div>
 
+               <div id="milkyway4"></div> 
+                <div id="milkyway9"></div> 
           </section>
 
          
@@ -338,22 +337,25 @@
           		   </a>                     
                 </div>
             </div>
-            
+            <div id="milkyway5"></div> 
+             <div id="milkyway6"></div>
         </section>
 
  		<!----------------------------SECTION WHERE--------------------------------->
 
  		
 
- 		<section id="planetsection">
+ 		<section id="planetsection" class="template__section">
 
  			<div class="topolist" id="wheresection">
          		<h2 class="reveal-1">Zone d'atterrissage</h2> 
          		 <h3 class="reveal-2">"The Eagle has landed"</h3>             	         	
-            	<p class="reveal-3">Je suis basé à <strong>La Rochelle (17)</strong> mais je peux graviter autour de ces 4 planètes. Si le poste est adaptable au télétravail voire au full remote, je suis aussi « équipé home office ». Je dispose de l'appareillage indispensable à tout bon développeur : la connexion web à haut débit, un bureau pour assurer la confidentialité des missions, un ordinateur, une cafetière à dosettes et un cerveau en ébullition.</p>            	
+            	<p class="reveal-3">Je suis basé à <strong>La Rochelle (17)</strong> mais je peux graviter autour de ces 4 planètes. Si le poste est adaptable au télétravail voire au full remote, je suis aussi « équipé home office ». Je dispose de l'appareillage indispensable à tout bon développeur : la connexion web à haut débit, un bureau pour assurer la confidentialité des missions, un ordinateur, une cafetière à dosettes et un cerveau en ébullition.</p>
             </div>
 
-            <div id="planets">
+            <div id="milkyway8"></div> 
+
+           <div id="planets">
 	 			<div class="planettop">
 	 					<h2>Nantes</h2>
 	                     <img class="planet" src="img/planet4.png" alt="Planète Nantes"/>                     
@@ -374,7 +376,7 @@
 	                     <h2>Bordeaux</h2>                 
 	                </div>
 	               
-				<div id="planetdots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🚀</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌠</span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🎇</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>👾</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span>👾</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span>🪐</span><span></span><span>🌌</span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🪐</span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span>🎇</span><span></span><span></span><span></span><span>🌟</span><span></span><span>👾</span><span></span><span></span><span></span><span>🚀</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🪐</span><span></span><span></span><span></span><span></span><span></span><span>🌌</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span>👾</span><span>🌟</span><span></span><span></span><span>🪐</span><span></span><span>🌌</span><span></span><span></span><span>🛰️</span>
+				<div id="planetdots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🚀</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌠</span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🎇</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>👾</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span>👾</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span>🪐</span><span></span><span>🌌</span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🪐</span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span>🎇</span><span></span><span></span><span></span><span>🌟</span><span></span><span>👾</span><span></span><span></span><span></span><span>🚀</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🪐</span><span></span><span></span><span></span><span></span><span></span><span>🌌</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span>👾</span><span>🌟</span><span></span><span></span><span>🪐</span><span></span><span>🌌</span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span>🪐</span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span>🎇</span><span></span><span></span><span></span><span>🌟</span><span></span><span>👾</span><span></span><span></span><span></span><span>🚀</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🪐</span><span></span><span></span><span></span><span></span><span></span><span>🌌</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span>👾</span><span>🌟</span><span></span><span></span><span>🪐</span><span></span><span>🌌</span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span>🪐</span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span>🎇</span><span></span><span></span><span></span><span>🌟</span><span></span><span>👾</span><span></span><span></span><span></span><span>🚀</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span>🛸</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🪐</span><span></span><span></span><span></span><span></span><span></span><span>🌌</span><span></span><span></span><span></span><span></span><span></span><span></span><span>🌟</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span>🛰️</span><span></span><span></span><span></span><span></span><span></span><span></span><span>👾</span><span>🌟</span><span></span><span></span><span>🪐</span><span></span><span>🌌</span><span></span><span></span><span>🛰️</span>
 				</div>
 			</div>
 
@@ -392,7 +394,7 @@
 
          <!----------------------------SECTION TECHNOS--------------------------------->
 
-       <section id="technolist"> 
+       <section id="technolist" class="template__section"> 
 
        <div class="topolist" id="whysection">
          		<h2 class="reveal-1">Hard Skills</h2> 
@@ -504,10 +506,7 @@
             <div class="listeprojets active">
                 <div class="listeprojetstop">
 	                <p>👽</p>
-	               <h3 id="hello">HELLO FRIEND</h3> 
-	                 <a href="https://github.com/RaphaelCouillaud/Hello-Friend" class="lienindex" target="_blank" title="Lien vers le projet Hello Friend">
-	                <i class="far fa-play-circle"></i>
-	                </a>                          
+	               <h3 id="hello">HELLO FRIEND</h3> 	                                           
               </div>
                <div class="listeprojetsbottom">
 	              <div class="listeprojets1">
@@ -516,24 +515,25 @@
 	              </div>
 	              <div class="listeprojets2">
 	                <h4>Technos</h4>
-	                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/><i class="fab fa-js"></i><br/>Swiper<br/>Vanilla JS<br/>Photofiltre</p> 
+	                <p><i class="fab fa-js"></i><br/>Intersection Observer API<br/>Swiper<br/>Vanilla JS<br/>Photofiltre</p> 
 	              </div>
 	              <div class="listeprojets3">          
 	                <h4>Avis client(e)</h4>
 	                <p></p>
 	             </div> 
-	             <div class="listeprojets4">  
+	             <div class="listeprojets4"> 
+	             <a href="https://github.com/RaphaelCouillaud/Hello-Friend" class="lienindex" target="_blank" title="Lien vers le projet Hello Friend">
+	                <i class="fas fa-eye"></i>
+	                </a> 
 	                <img src="img/sitehello.jpg" alt="Preview site"/>   
 	             </div>  
 	          </div>
 	        </div>          
+            
             <div class="listeprojets">
                 <div class="listeprojetstop">
 	                <p>🌐</p>
-	                <h3 id="groupomania">Groupomania C<i class="fas fa-globe"></i>nnect</h3>  
-	                 <a href="https://github.com/RaphaelCouillaud/P7-Groupomania" class="lienindex" target="_blank" title="Lien vers le projet Groupomania Connect">
-	                <i class="far fa-play-circle"></i>
-	                </a>                          
+	                <h3 id="groupomania">Groupomania C<i class="fas fa-globe"></i>nnect</h3>  	                                
               </div>
                <div class="listeprojetsbottom">
 	              <div class="listeprojets1">
@@ -542,13 +542,16 @@
 	              </div>
 	              <div class="listeprojets2">
 	                <h4>Technos</h4>
-	                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/><i class="fab fa-vuejs"></i><br/><i class="fab fa-js"></i><br/><i class="fab fa-node"></i><br/>MySQL<br/></p> 
+	                <p><i class="fab fa-vuejs"></i><br/><i class="fab fa-js"></i><br/><i class="fab fa-node"></i><br/>MySQL<br/>Sequelize</p> 
 	              </div>
 	              <div class="listeprojets3">          
 	                <h4>Avis évaluateur</h4>
 	                <p>"Bonne sécurisation des données / Bonne communication frontend/backend / Belles interfaces utilisateur / Utilisation d'une librairie gérant la partie SQL."<br/>-<br/>Ibrahima Ciss, Engineer</p>
 	             </div> 
-	             <div class="listeprojets4">  
+	             <div class="listeprojets4"> 
+	              <a href="https://github.com/RaphaelCouillaud/P7-Groupomania" class="lienindex" target="_blank" title="Lien vers le projet Groupomania Connect">
+	                <i class="fas fa-eye"></i>
+	                </a>           
 	                <video src="exemple.webm" controls poster="img/siteconnect.jpg" alt="Preview site"></video>  
 	             </div>  
 	          </div>
@@ -558,9 +561,7 @@
                <div class="listeprojetstop">
                		<p>🎞️</p>
 	                <h3 id="thethrill">the thrill of losing</h3> 
-	                <a href="https://raphaelcouillaud.github.io/thethrilloflosing" class="lienindex" target="_blank" title="Lien vers le site the thrill of losing">
-	               <i class="far fa-play-circle"></i>
-	                </a>                            
+	                                          
               </div>
               <div class="listeprojetsbottom">
 	              <div class="listeprojets1">
@@ -569,13 +570,16 @@
 	              </div>
 	              <div class="listeprojets2">
 	                <h4>Technos</h4>
-	                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/><i class="fab fa-js"></i><br/>jQuery<br/></p>                  
+	                <p><i class="fab fa-js"></i><br/>jQuery<br/></p>                  
 	              </div>
 	              <div class="listeprojets3">          
 	                 <h4>Avis client(e)</h4>
 	                <p></p>
 	             </div>  
-	             <div class="listeprojets4"> 
+	             <div class="listeprojets4">
+	             <a href="https://raphaelcouillaud.github.io/thethrilloflosing" class="lienindex" target="_blank" title="Lien vers le site the thrill of losing">
+	              <i class="fas fa-eye"></i>
+	                </a>   
 	             	 <img src="img/sitelmc.jpg" alt="Preview site"/>   
 	             </div>  
 	          </div>
@@ -585,9 +589,7 @@
                <div class="listeprojetstop">
                	<p>🌶️</p>
                 <h3 id="sopekocko">So Pekocko</h3> 
-                 <a href="https://github.com/RaphaelCouillaud/P6-So_Pekocko" class="lienindex" target="_blank" title="Lien vers le projet So Pekocko">
-               <i class="far fa-play-circle"></i>
-                </a> 
+                
               </div>
                <div class="listeprojetsbottom">
 	              <div class="listeprojets1">
@@ -596,7 +598,7 @@
 	              </div>
 	              <div class="listeprojets2">
 	                <h4>Technos</h4>
-	                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/><i class="fab fa-js"></i><br/><i class="fab fa-node"></i><br/>Express<br/>MondoDB<br/></p>  
+	                <p><i class="fab fa-js"></i><br/><i class="fab fa-node"></i><br/>Express<br/>MongoDB<br/>Postman</p>  
 	                  
 	              </div>
 	              <div class="listeprojets3">          
@@ -604,6 +606,9 @@
 	                <p>"Excellent P6 réalisé qui répond à l'ensemble du cahier des charges du projet. Présentation orale, professionnelle et claire."<br/>-<br/>Joffrey Hernandez, Développeur fullstack</p>
 	             </div> 
 	             <div class="listeprojets4">  
+	             	 <a href="https://github.com/RaphaelCouillaud/P6-So_Pekocko" class="lienindex" target="_blank" title="Lien vers le projet So Pekocko">
+               <i class="fas fa-eye"></i>
+                </a> 
 	               <video src="exemple.webm" controls poster="img/siteso.jpg" alt="Preview site"></video>     
 	             </div>  
 	          </div>
@@ -613,9 +618,7 @@
                 <div class="listeprojetstop">
                 	<p>🧠</p>
 	                <h3 id="burnout">Burnout : Parlons Reconstruction</h3>
-	                 <a href="https://burnoutparlonsreconstruction.fr/" class="lienindex" target="_blank" title="Lien vers le site Burnout : Parlons Reconstruction">
-	               <i class="far fa-play-circle"></i>
-	                </a>
+	                
               </div>
               <div class="listeprojetsbottom">
 	              <div class="listeprojets1">
@@ -632,6 +635,9 @@
 	                <p>"Je vous remercie encore d'avoir accepté et pris le temps de réaliser ce site."<br/>-<br/>Aurélie Barribault, Psychologue du travail</p>
 	             </div>   
 	           	  <div class="listeprojets4"> 
+	           	  	 <a href="https://burnoutparlonsreconstruction.fr/" class="lienindex" target="_blank" title="Lien vers le site Burnout : Parlons Reconstruction">
+	              <i class="fas fa-eye"></i>
+	                </a>
 	           	  <img src="img/siteburn.jpg" alt="Preview site" /> 
 	             </div>  
 	          </div>
@@ -641,9 +647,7 @@
 	               <div class="listeprojetstop">
 		               	<p>🪑</p>
 		                <h3 id="orinoco">Orinoco</h3>
-		                 <a href="https://github.com/RaphaelCouillaud/P5-Orinoco" class="lienindex" target="_blank" title="Lien vers le projet Orinoco">
-		               <i class="far fa-play-circle"></i>
-		                </a>                             
+		                                            
 	              </div>
                <div class="listeprojetsbottom">
 	              	<div class="listeprojets1">
@@ -658,7 +662,10 @@
 		                <h4>Avis évaluateur</h4>
 		                <p>"Projet structuré et bien argumenté. Respect du cahier des charges."<br/>-<br/>Wenceslas Baridon, Développeur Back-End</p>
 	             </div>   
-	            <div class="listeprojets4">  
+	            <div class="listeprojets4"> 
+	            <a href="https://github.com/RaphaelCouillaud/P5-Orinoco" class="lienindex" target="_blank" title="Lien vers le projet Orinoco">
+		              <i class="fas fa-eye"></i>
+		                </a>   
 	             <video src="exemple.webm" controls poster="img/siteori.jpg" alt="Preview site"></video>  
 	             </div>  
 	          </div>
@@ -668,9 +675,7 @@
                 <div class="listeprojetstop">
 	                <p>🖌️</p>
 	                <h3 id="jack">Portfolio Jack O'Keefe</h3>
-	                 <a href="https://raphaelcouillaud.github.io/Portfolio/" class="lienindex" target="_blank" title="Lien vers le site Jack O'Keefe">
-	               <i class="far fa-play-circle"></i>
-	                </a>
+	                
               	</div>
                <div class="listeprojetsbottom">
 	              <div class="listeprojets1">
@@ -687,6 +692,9 @@
 	                <p>"Super boulot ! Un développeur vraiment au top ! Je le recommande évidemment."<br/>-<br/>Raphaël Couillaud, Développeur Web</p>
 	             </div>   
 		            <div class="listeprojets4"> 
+		            	 <a href="https://raphaelcouillaud.github.io/Portfolio/" class="lienindex" target="_blank" title="Lien vers le site Jack O'Keefe">
+	              <i class="fas fa-eye"></i>
+	                </a>
 		            	<img src="img/sitejack.jpg" alt="Preview site" />
 			        </div>  
 			      </div>
@@ -698,9 +706,7 @@
              <div class="listeprojetstop">
              	 <p>🦉</p>
                 <h3 id="chouette">La Chouette Agence</h3>
-                 <a href="https://raphaelcouillaud.github.io/P4-La-Chouette/" class="lienindex" target="_blank" title="Lien vers le site La Chouette Agence">
-               <i class="far fa-play-circle"></i>
-                </a>
+                 
               </div>
                <div class="listeprojetsbottom">
 		              <div class="listeprojets1">
@@ -709,7 +715,7 @@
 		              </div>
 		              <div class="listeprojets2">
 		                <h4>Technos</h4>
-		                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/>Lighthouse<br/>GT Metrics<br/>Google Search Console<br/>Google Analytics</p>
+		                <p><i class="fab fa-html5"></i><br/><i class="fab fa-css3-alt"></i><br/>Lighthouse<br/>GT Metrics<br/>Search Console<br/>Google Analytics</p>
 		                   
 		              </div>
 		              <div class="listeprojets3">          
@@ -717,6 +723,9 @@
 		                <p>"Le site est responsive, la sémantique HTML a été modifiée, les recommandations sont pertinentes, utilisation d'un support de présentation."<br/>-<br/>Hugo Dumont, Développeur</p>
 		             </div>              
 		         <div class="listeprojets4"> 
+		         	<a href="https://raphaelcouillaud.github.io/P4-La-Chouette/" class="lienindex" target="_blank" title="Lien vers le site La Chouette Agence">
+               <i class="fas fa-eye"></i>
+                </a>
 		          		<img src="img/chouette.jpg" alt="Preview site" />
 			        </div>  
 			      </div>
@@ -725,10 +734,7 @@
 			    <div class="listeprojets">
              <div class="listeprojetstop">
              	 <p>🍽️</p>
-                <h3 id="chouette">ohmyfood</h3>
-                 <a href="https://raphaelcouillaud.github.io/P3-Ohmyfood/" class="lienindex" target="_blank" title="Lien vers le site Oh My Food">
-               <i class="far fa-play-circle"></i>
-                </a>
+                <h3 id="chouette">ohmyfood</h3>                 
               </div>
                <div class="listeprojetsbottom">
 		              <div class="listeprojets1">
@@ -744,6 +750,8 @@
 		                <p>"Les livrables sont conformes aux attentes. Le code est bien réalisé, bonne indentation, code valide au w3c."<br/>-<br/>Aurélien Antonio, Développeur Freelance</p>
 		             </div>              
 		         <div class="listeprojets4"> 
+		         		<a href="https://raphaelcouillaud.github.io/P3-Ohmyfood/" class="lienindex" target="_blank" title="Lien vers le site Oh My Food">
+               <i class="fas fa-eye"></i></a>
 		          		<img src="img/siteoh.jpg" alt="Preview site" />
 			        </div>  
 			      </div>
@@ -753,7 +761,7 @@
 
            <!-----------------------SOFT SKILLS------------------------>
 
-        <section id="skillsection">
+        <section id="skillsection" class="template__section">
 
         	 <div class="topolist">
          		<h2 class="reveal-1">Soft skills</h2> 
@@ -852,7 +860,7 @@
             </div>
           </div>
 
-<button class="refresh-button">Refresh!</button>
+<button class="refresh-button"><i class="fas fa-play"></i></button>
 </section>
 
         
@@ -921,7 +929,7 @@
 
 
       
- 		<article id="contactarticle">
+ 		<article id="contactarticle" class="template__section">
             
             <div class="contact">
             	<span></span>
