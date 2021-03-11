@@ -376,7 +376,7 @@ nav ul li:nth-child(7) {
 	left: 5%;
 }
 .parallaxeffect img:nth-child(11) {
-	bottom: 15%;
+	bottom: 10%;
 	left: 5%;
 	width: 4%;
 }
@@ -390,7 +390,7 @@ nav ul li:nth-child(7) {
 	width: 3%;	
 }
 .parallaxeffect img:nth-child(7) {
-	bottom: 15%;
+	bottom: 5%;
 	right: 45%;
 }
 .parallaxeffect img:nth-child(6) {
@@ -398,12 +398,12 @@ nav ul li:nth-child(7) {
 	right: 12%;
 }
 .parallaxeffect img:nth-child(5) {
-	top: 20%;
+	top: 28%;
 	right: 10%;
 	width: 5%;
 }
 .parallaxeffect img:nth-child(9) {
-	top: 10%;
+	top: 20%;
 	right: 25%;
 	 animation: turn 80s linear infinite;
 }
@@ -426,7 +426,7 @@ nav ul li:nth-child(7) {
 
 }
 .parallaxeffect img:nth-child(2) {
-	bottom: 40%;
+	bottom: 25%;
 	right: 30%;
 	
 }
@@ -677,7 +677,7 @@ nav ul li:nth-child(7) {
     box-shadow: 1px 1px 10px 2.5px #fcfc04;
   }
 .topolist h3 {
-   font-size: 1.7em;
+   font-size: 1.25em;
     letter-spacing: 1.5px;
    line-height: 1.5em;
    text-shadow: 5px 0 #bc040c;
@@ -897,7 +897,7 @@ clip-path: polygon(100% 26%, 93% 30%, 85% 35%, 80% 41%, 73% 39%, 61% 35%, 55% 30
   width: 70%;
   height: 50%;  
   z-index: -2;  
-clip-path: polygon(59% 12%, 39% 17%, 29% 32%, 28% 48%, 48% 65%, 72% 58%, 86% 36%, 81% 18%, 72% 5%, 80% 29%, 75% 45%, 52% 59%, 38% 41%, 40% 24%, 60% 20%, 55% 31%, 45% 28%, 58% 39%, 67% 14%);
+clip-path: polygon(0% 39%, 6% 45%, 10% 51%, 17% 57%, 26% 59%, 33% 60%, 41% 60%, 51% 58%, 65% 54%, 83% 58%, 95% 63%, 77% 49%, 66% 44%, 62% 44%, 54% 48%, 48% 52%, 33% 49%, 29% 44%, 27% 40%, 24% 32%, 19% 24%, 12% 18%, 4% 15%, 0% 15%);
    background: rgba(255, 255, 255, 0.05);
 }
 #rocket img {  
@@ -2095,7 +2095,7 @@ font-family: 'Newsreader', serif;
    font-size: 1.1em; 
    justify-content: space-between;
    width: 100%;
-   height: 1475px;  
+   height: 1550px;  
    background-image: url("img/backtron.png");
 background-attachment: fixed;
   background-size: cover;
@@ -2645,6 +2645,49 @@ figure img {
   top: 0.6em;
   box-shadow: 0 0.2em rgba(0, 0, 0, 0.85);
 }
+/*-------------------------------SECTION QUOTE-------------------------*/
+#quotesection {
+    display: flex;
+  flex-wrap: wrap;  
+  flex-direction: column;
+  margin: auto;  
+   margin-bottom: 50px;
+   justify-content: space-between;
+   position: relative;
+}
+#memento {
+  width: 60%;
+  margin: auto;
+}
+.fa-quote-left {
+  font-size: 2.5em;
+  padding: 0 15px 0 0;
+  font-style: italic;
+}
+.fa-quote-right {
+  font-size: 1.75em;
+  padding: 0 0 0 15px;
+  text-shadow: 5px 0 #bc040c;
+   color: white;    
+   -webkit-text-stroke: 1px #fcfc04;
+} 
+#memento span {  
+   text-shadow: 5px 0 #bc040c;
+   color: white;    
+   -webkit-text-stroke: 1px #fcfc04;
+   font-style: italic; 
+}
+/*#milkyway10 {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  width: 30%;
+  height: 50%;  
+  z-index: -2;  
+ clip-path: polygon(0% 0%, 0% 100%, 5% 100%, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 100%, 100% 100%, 100% 0%);
+   background: #102ccc;
+   opacity: 0.5;*/
+}
 /*-------------------------------NAV FOOTER-------------------------*/
 .to-top {
   position: fixed;
@@ -2652,19 +2695,20 @@ figure img {
   right: 10px;
   font-size: 50px;
   color: #fcfc04; 
-  -webkit-text-stroke: 3px black; 
+  -webkit-text-stroke: 0.5px black; 
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   pointer-events: none;
+  transform: rotate(180deg);
   transition: all 0.4s;
 }
 .to-top.active {
   bottom: 50px;
   pointer-events: auto;
   opacity: 1;
-  transform: rotate(270deg);
+  transform: rotate(0deg);
   text-shadow: -1px 0 2px white, 0 1px 2px white, 1px 0 2px white, 0 -1px 10px white;
 }
 
@@ -2678,7 +2722,8 @@ article {
   justify-content: center;
   align-items: center;
   color: white;
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   font-family: 'Space Mono', monospace;
   
 }
@@ -2828,5 +2873,16 @@ footer p strong {
 font-family: MrRobot, 'Press Start 2P', Helvetica, Arial, sans-serif;
    color: #bc040c;
    }
-
+#rocket2 {
+	width: 350px;
+	height: auto;
+	position: absolute;
+  bottom: -15%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+}
+#rocket2 img {
+	width: 100%;
+	object-fit: cover;
+}
 
