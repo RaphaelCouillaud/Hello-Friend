@@ -2677,17 +2677,75 @@ figure img {
    -webkit-text-stroke: 1px #fcfc04;
    font-style: italic; 
 }
-/*#milkyway10 {
-  position: absolute;
-  top: 40%;
-  left: 35%;
-  width: 30%;
-  height: 50%;  
-  z-index: -2;  
- clip-path: polygon(0% 0%, 0% 100%, 5% 100%, 5% 5%, 95% 5%, 95% 95%, 5% 95%, 5% 100%, 100% 100%, 100% 0%);
-   background: #102ccc;
-   opacity: 0.5;*/
+
+/*-------------------------------IMG MOUSE CROLL-------------------------*/
+#portraitsection {
+  max-width: 33%;
+  margin: auto;
+  border: 3px solid red;
+  text-align: center;
+  margin-bottom: 50px;
+
+
 }
+#portraitsection a { 
+  display: block; 
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  }
+#portraitsection img {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+  transform: translateX(-50%)  translateY(-50%); 
+  pointer-events: none;
+   max-height: 50%;
+   max-width: 50%;
+   object-fit: cover;
+}
+#portraitsection img.scrollable {
+  visibility: visible;
+  z-index: 99;
+
+
+  
+}
+
+#portraitsection .imagehover p {
+  z-index: -1;
+  font-family: 'Space Mono', monospace;
+  font-size: 2.25em;
+  text-shadow: 1.5px 0 #10c4c4;
+   color: white;
+
+
+}
+
+#portraitsection .imagehover {
+  z-index: 9;
+  transition: 0.5s ease-in-out;
+
+}
+
+#portraitsection .imagehover.scrollable p {
+  z-index: 999;
+  position: relative;
+  text-shadow: 5px 0 #bc040c;
+   color: white;    
+   -webkit-text-stroke: 1px #fcfc04;
+   font-style: italic; 
+  
+   transform: scale(1.25);
+
+  
+
+}
+
+
+
+
+
 /*-------------------------------NAV FOOTER-------------------------*/
 .to-top {
   position: fixed;

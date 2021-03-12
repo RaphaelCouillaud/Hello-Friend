@@ -311,3 +311,18 @@ vid.forEach(video => {
     })
 })
 ////////////////////////////////////////////////////////////////////////////////
+
+// MOUSE IMG SCROLL //
+jQuery(function($){$('.imagehover').mousemove(function(e){
+  $(this).find('img').addClass('scrollable');
+   $(this).addClass('scrollable');
+  $(this).find('img').css({
+      left:e.pageX, top:e.pageY
+    });
+}).mouseleave(function(){
+  
+  $(this).removeClass('scrollable');
+   $(this).find('p').removeClass('scrollable');
+  $(this).find('img').removeClass('scrollable');
+});
+})
