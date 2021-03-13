@@ -646,7 +646,7 @@ nav ul li:nth-child(7) {
 
 }
 .topolist h2 {
-  font-size: 2.5em;  
+  font-size: 2.7em;  
    letter-spacing: 1.5px;
    line-height: 1.5em;
    -webkit-text-stroke: 1.5px white;
@@ -687,7 +687,7 @@ nav ul li:nth-child(7) {
 }
 .topolist p {
   font-family: 'Space Mono', monospace;
-  font-size: 1.25em;
+  font-size: 1em;
   text-shadow: 1.5px 0 #10c4c4;
    color: white;
 }
@@ -1257,7 +1257,7 @@ clip-path: polygon(1% 24%, 53% 23%, 69% 23%, 87% 15%, 100% 13%, 72% 13%, 46% 11%
   height: 70px;
   width: 60px;
   margin-top: -35px;
-  background: #08c404;
+  background: #bc040c;
   border-top-left-radius: 70px;
   border-top-right-radius: 70px;
   animation: moveForward 5s linear infinite, blink 0.5s linear infinite;
@@ -1283,7 +1283,7 @@ clip-path: polygon(1% 24%, 53% 23%, 69% 23%, 87% 15%, 100% 13%, 72% 13%, 46% 11%
 .eyes::after {
   content: "";
   position: absolute;
-  background: blue;
+  background: #102ccc;
   height: 10px;
   width: 10px;
   border-radius: 100%;
@@ -1411,7 +1411,7 @@ background-attachment: fixed;
           transition: transform 0.3s;
   box-shadow: 1px 1px 20px 7px white;
   border: 6px solid white;
- background: rgba(255, 255, 255, 0.25);
+ background: rgba(255, 255, 255, 0.15);
   /*backdrop-filter: blur(15px);
       -webkit-backdrop-filter: blur(15px); */
   text-align: center;
@@ -1438,13 +1438,13 @@ background-attachment: fixed;
   text-shadow: 1px 0 #10c4c4;
    color: white;  
    box-shadow: 1px 1px 20px 7px #102ccc;
-   background: rgba(16,44,204, 0.5);
+   background: rgba(16,44,204, 0.25);
    margin: auto;
 }
 .cardfront h3 {  
   margin: auto 0;
   padding-bottom: 25px;
-  font-size: 1.5em;
+  font-size: 1em;
   letter-spacing: 1.5px;
    line-height: 1.5em;
    text-align: center;
@@ -1868,7 +1868,7 @@ background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding-bottom: 50px;
+  
   
 
 }
@@ -1880,7 +1880,8 @@ background-attachment: fixed;
   /*background: grey;  
    border: 12px solid black;*/
     margin: auto;
-    padding: 25px;
+    padding: 50px 25px 25px 25px;
+
 }
 .carousel-text {
   width: 50%;
@@ -1932,7 +1933,7 @@ background-attachment: fixed;
   width: 100%;  
   /*position: absolute;  */  
 }
-#express, #vanilla {
+#express, #vanilla, #token {
    font-weight: lighter;
 }
 #jquery {
@@ -2079,7 +2080,7 @@ font-family: 'Newsreader', serif;
 #screenbuttons {
   clip-path: polygon(15% 90%, 85% 90%, 100% 100%, 0% 100%);  
   position: absolute;
-  bottom: 14.5%;   
+  bottom: 11%;   
   width: 100%;
   height: 80%;
   z-index: 0;
@@ -2095,7 +2096,7 @@ font-family: 'Newsreader', serif;
    font-size: 1.1em; 
    justify-content: space-between;
    width: 100%;
-   height: 1550px;  
+   height: 1575px;  
    background-image: url("img/backtron.png");
 background-attachment: fixed;
   background-size: cover;
@@ -2124,9 +2125,8 @@ background-attachment: fixed;
 }
 #projets .active {
     flex-grow: 10000;
-     box-shadow: 1px 1px 20px 7px #10c4c4;
-   background: rgba(16, 196, 196, 0.2);
-    mix-blend-mode: screen;
+     box-shadow: 1px 1px 20px 7px #102ccc;
+   background: rgba(16,44,204, 0.25);
 }
 .listeprojets * {
   pointer-events: none;
@@ -2134,7 +2134,7 @@ background-attachment: fixed;
 .listeprojetstop {
   height: 75px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: center;
     margin: auto;
@@ -2142,6 +2142,7 @@ background-attachment: fixed;
 }
 .listeprojetstop h3 {
   font-size: 1.75em;
+  margin-left: 10px;
 
 }
 .listeprojetsbottom {
@@ -2479,8 +2480,10 @@ figure {
 }
 figcaption {
    font-family: 'Open Sans Condensed', sans-serif;
+   text-align: center;
   text-transform: uppercase;
-  font-size: 1.5em; 
+  font-size: 1.1em; 
+  font-weight: bolder;
   font-style: italic;
   background: white;
   padding: 0px 5px 0px 0px;  
@@ -2491,7 +2494,7 @@ figcaption {
   left: 10px;
   border: 2px solid black;
     border-width: 2px 2px 2px 3px;
-    border-radius: 97% 1% 97% 1%/1% 97% 1% 97%;   
+    border-radius: 100% 0.5% 100% 0.5%/0.5% 100% 0.5% 100%;   
 }
 .fa-disease {  
   position: absolute; 
@@ -2541,6 +2544,9 @@ figure img {
   80%  {background-position: 0 60%;} 
   100%  {background-position: 0 40%;} 
 }
+#figureping figcaption {
+  width: 50%;   
+}
 
 #balle {
   color: white;
@@ -2574,8 +2580,8 @@ figure img {
     animation: ufobackground 10s alternate infinite;
 }
 @keyframes ufobackground {  
-  0%  {background-position: 0px 15px;}
-  100%  {background-position: -275px -15px;} 
+  0%  {background-position: 0px 50px;}
+  100%  {background-position: -275px 35px;} 
 }
 #figurecompta img {    
     background: url("img/comptaback.jpg");
@@ -2680,11 +2686,11 @@ figure img {
 
 /*-------------------------------IMG MOUSE CROLL-------------------------*/
 #portraitsection {
-  max-width: 33%;
+  max-width: 35%;
   margin: auto;
-  border: 3px solid red;
   text-align: center;
   margin-bottom: 50px;
+  padding-top: 50px;
 
 
 }
@@ -2701,12 +2707,14 @@ figure img {
   transform: translateX(-50%)  translateY(-50%); 
   pointer-events: none;
    max-height: 50%;
-   max-width: 50%;
+   max-width: 40%;
    object-fit: cover;
+   
 }
 #portraitsection img.scrollable {
   visibility: visible;
   z-index: 99;
+  mix-blend-mode: hard-light;
 
 
   
@@ -2715,11 +2723,20 @@ figure img {
 #portraitsection .imagehover p {
   z-index: -1;
   font-family: 'Space Mono', monospace;
-  font-size: 2.25em;
-  text-shadow: 1.5px 0 #10c4c4;
-   color: white;
+  font-size: 2.25em;  
+   margin: 0;
+   text-transform: uppercase;
+}
 
-
+#portraitsection .imagehover:nth-child(odd) {
+  text-shadow: 5px 0 #bc040c;
+   color: white;    
+   -webkit-text-stroke: 1px #fcfc04;
+}
+#portraitsection .imagehover:nth-child(even) {
+  text-shadow: 5px 0 #bc040c;
+   color: white;    
+   -webkit-text-stroke: 1px #10c4c4;
 }
 
 #portraitsection .imagehover {
@@ -2731,12 +2748,9 @@ figure img {
 #portraitsection .imagehover.scrollable p {
   z-index: 999;
   position: relative;
-  text-shadow: 5px 0 #bc040c;
-   color: white;    
-   -webkit-text-stroke: 1px #fcfc04;
-   font-style: italic; 
-  
-   transform: scale(1.25);
+  opacity: 0.25;
+  font-style: italic;
+  transform: scale(1.25);
 
   
 
@@ -2780,8 +2794,8 @@ article {
   justify-content: center;
   align-items: center;
   color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;  
+  margin-bottom: 25px;
   font-family: 'Space Mono', monospace;
   
 }
