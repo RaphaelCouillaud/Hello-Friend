@@ -1,0 +1,352 @@
+/*----------------------------------------------------------------------*/
+/*----------------------RESPONSIVE 1024---------------------------------*/
+@media screen and (max-width: 1024px) 
+{
+* {
+  font-size: 0.95em;  
+}
+h1 { 
+  font-size: 5em;    
+}
+#headerdescription {  
+  font-size: 1em; 
+ border-right: 10px solid #08c404;
+}
+nav ul li a {  
+  font-size: 1.75em;  
+  -webkit-text-stroke: 0.75px white;
+}
+#whosectionimg {
+ width: 203px;
+  height: 275px;
+}
+.todocontainer ul li div {  
+  width: 300px;  
+  font-size: 1.1em;
+}
+.todocontainer ul li:nth-child(odd) div {
+  left: -180px;
+  transform: translate3d(-200px,0,0);
+}
+#rocket img {  
+  width: 15%;
+  }
+#rocket {    
+  bottom: -300%;
+  right: 0%;
+  }
+@keyframes rocketfly {
+    0% {
+      bottom: -290%;
+    }      
+    10% {      
+       opacity: 0.8;
+    }     
+    80% {      
+       opacity: 0.4;      
+    }     
+    100% {
+      bottom: -200%;   
+      opacity: 0;  
+    }
+  }
+.imgmentor {
+  width: 150px;
+  height: 150px;
+}
+.testimonialBox { 
+  font-size: 1.15em;
+}
+.workco {
+  width: 25%;    
+  height: 400px;
+  }
+  #ocsection {  
+  height: 800px;
+}
+.cardfront, .cardback {  
+  top: 200px;
+}
+.planetmiddle {
+  width: 90%;
+}
+.planet {
+  width: 125px;
+}
+#planetprofil {
+   width: 80px;
+}
+#planets h2 {
+  font-size: 1em;
+}
+/*-------------------------------------SECTION PACMAN-----------------------------------*/
+
+.road {  
+  height: 125px;
+}
+
+.road::after {  
+  border-top: 8px dotted white;
+}
+.pacman::before,
+.pacman::after {   
+  border: solid 25px #fcfc04;
+  margin-top: -25px; 
+  border-right-color: transparent;
+  border-bottom-color: transparent;  
+}
+.pacman::after {
+  border-color: #fcfc04;
+  border-right-color: transparent;
+  border-top-color: transparent; 
+}
+.ghost {  
+  height: 60px;
+  width: 50px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+}
+.ghost::before,
+.ghost::after {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 20px;
+  width: 15px;
+  border-radius: 100%;
+  top: 15px;
+  left: 4px;
+}
+
+.ghost::after {
+  left: 28px;
+}
+.eyes::before,
+.eyes::after {  
+  height: 8px;
+  width: 8px;  
+}
+.carousel {
+  width: 80%;
+   height: 500px;
+}
+.carousel-text {
+  width: 60%; 
+  top: 400px;
+  left: -100px; 
+}
+#technolist button { 
+  font-size: 1.7em;  
+   border: 4px solid white;
+  width: 120px;
+  height: 50px;
+}
+#screenbuttons { 
+  bottom: 11.5%;   
+}
+#comingsoon {  
+  height: 100px; 
+}
+
+#projets {  
+   height: 1480px;  
+}
+.listeprojets video {
+  height: 135px;
+  pointer-events: auto!important;
+ width: 240px;
+ border: 3px solid white;
+}
+.listeprojets4 img {
+  width: 240px;
+  height: 135px;  
+  border: 3px solid white;
+}
+#biographic {    
+  width: 90%; 
+}
+#section1, #section2, #section3 {
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-around;
+  height: 300px;
+   position: relative;  
+    padding-bottom: 15px;
+    padding-top: 25px;   
+}
+figcaption {
+  font-size: 1em;   
+}
+.fa-disease { 
+  bottom: 20%;
+   }
+#balle {
+  font-size: 0.9em;
+  left: 320px;
+  }
+  #figureufo img {      
+    animation: ufobackground 13s alternate infinite;
+}
+@keyframes ufobackground {  
+  0%  {background-position: 0px 50px;}
+  100%  {background-position: -200px 35px;} 
+}
+#continued { 
+  bottom: 100px;
+}
+#portraitsection {
+  max-width: 50%;
+}
+#portraitsection img {  
+   max-height: 40%;
+   max-width: 30%;   
+}
+/*-------------------------------FOOTER-------------------------*/
+.contact {
+  
+  width: 100px;
+  height: 100px;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------RESPONSIVE 768--------fleches-------------------------*/
+@media screen and (max-width: 768px) 
+{
+* {
+   font-size: 0.9em;
+}
+h1 { 
+  font-size: 4em;  
+}
+#headerdescription {  
+  font-size: 0.75em; 
+   border-right: 7px solid #08c404;
+}
+header div span {
+    font-size: 1.5em;
+}
+
+nav ul {   
+    padding: 0;
+}
+nav ul li a {
+   font-size: 2em;
+   -webkit-text-stroke: 1px white;
+  margin: auto;
+  text-align: center;
+}
+.topnav a {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+     font-size: 4em;
+  }
+  .topnav.responsive {
+    position: relative;
+    flex-direction: column;
+    width: 100%;  
+    margin: auto; 
+    min-height: 50vh;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 50px;
+    top: 0;
+  }
+  .topnav.responsive a.icon img {
+    position: absolute;
+    left: 50px;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #whosectionimg {
+ width: 147px;
+  height: 200px;
+}
+.todocontainer ul li div {  
+  width: 220px;  
+  font-size: 1.25em;
+}
+.todocontainer ul li:nth-child(odd) div {
+  left: -100px;
+  transform: translate3d(-200px,0,0);
+}
+#rocket img {  
+  width: 10%;
+  }
+#rocket {    
+  bottom: -300%;
+  right: -10%;
+  }
+@keyframes rocketfly {
+    0% {
+      bottom: -290%;
+    }      
+    10% {      
+       opacity: 0.8;
+    }     
+    80% {      
+       opacity: 0.4;      
+    }     
+    100% {
+      bottom: -150%;     
+    }
+  }
+.imgmentor {
+  width: 120px;
+  height: 120px;
+}
+.testimonialBox p { 
+  font-size: 1.25em;
+}
+#ocsection {  
+  flex-direction: column; 
+  height: 100%;
+  padding-bottom: 50px;
+}
+.workco {  
+  width: 80%;  
+  margin: auto;  
+  text-align: center;
+  height: 275px;
+  justify-content: flex-start;
+  transform: translateY(-50%); 
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    margin-bottom: 40px;   
+}
+.cardback {
+   font-size: 0.85em;
+}
+.cardfront {
+   font-size: 1.15em;
+}
+#pole {
+ width: 12%;  
+}
+#logooc {
+  width: 30%;
+}
+}
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/

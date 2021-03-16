@@ -287,14 +287,17 @@ nav ul li a {
   display: flex;
   color: black; /*transparent*/
   -webkit-text-stroke: 1px white;
-  font-size: 2.5em;
-  font-weight: 900;
-  line-height: 1.2em;
+  font-size: 2.2em;
+  font-weight: bolder;
 }
-nav ul li a:hover, .detected {
+nav ul li a:hover {
   color: white;
   -webkit-text-stroke: 1px black;
   transition: 0.5s;
+}
+.detected {
+  color: #bc040c;
+   -webkit-text-stroke: 1px black;
 }
 nav ul li a:before, nav ul li a:after {
   content: attr(data-text);
@@ -303,19 +306,19 @@ nav ul li a:before, nav ul li a:after {
   left: 0;
   transition: 0.5s;
 }
-nav ul li a:hover:before, .detected {
+nav ul li a:hover:before {
   color: #10c4c4;
   z-index: 1;
   -webkit-text-stroke: 1px black;
   transform: translate(20px, -20px);
-  transform: scale(1.25);
+  transform: scale(1.15);
 }
-nav ul li a:hover:after, .detected {
+nav ul li a:hover:after {
   color: #bc040c;
   z-index: 2;
   -webkit-text-stroke: 1px black;
   transform: translate(50px, -50px);
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .topnav .icon {
   display: none;
@@ -905,7 +908,7 @@ clip-path: polygon(0% 39%, 6% 45%, 10% 51%, 17% 57%, 26% 59%, 33% 60%, 41% 60%, 
   }
 #rocket {  
   position: absolute;
-  bottom: -430%;
+  bottom: -380%;
   right: 5%;
   z-index: 99;  
   animation: rocketfly 4s ease-in-out infinite forwards;
@@ -913,7 +916,7 @@ clip-path: polygon(0% 39%, 6% 45%, 10% 51%, 17% 57%, 26% 59%, 33% 60%, 41% 60%, 
   }
 @keyframes rocketfly {
     0% {
-      bottom: -420%;
+      bottom: -370%;
     }      
     10% {
       
@@ -923,7 +926,7 @@ clip-path: polygon(0% 39%, 6% 45%, 10% 51%, 17% 57%, 26% 59%, 33% 60%, 41% 60%, 
        opacity: 0.4;      
     }     
     100% {
-      bottom: -300%;
+      bottom: -250%;
       opacity: 0;
     }
   }
@@ -1494,7 +1497,7 @@ background-attachment: fixed;
   top: 10%;
   right: 0%;
   width: 50%;
-  height: 40%;  
+  height: 70%;  
   z-index: -2;  
 clip-path: polygon(100% 27%, 87% 24%, 72% 26%, 59% 23%, 54% 15%, 44% 10%, 35% 8%, 22% 9%, 14% 17%, 11% 25%, 23% 16%, 29% 13%, 41% 16%, 55% 30%, 66% 38%, 84% 38%, 93% 34%, 100% 44%);
    background: rgba(255, 255, 255, 0.05);
@@ -1510,196 +1513,6 @@ clip-path: polygon(0% 35%, 8% 33%, 24% 30%, 39% 30%, 54% 32%, 62% 36%, 70% 50%, 
    background: rgba(255, 255, 255, 0.05);
 }
 
-/*----------------------------------------------------------------------*/
-/*----------------------RESPONSIVE 1024---------------------------------*/
-@media screen and (max-width: 1024px) 
-{
-* {
-  font-size: 0.95em;  
-}
-h1 { 
-  font-size: 5em;    
-}
-#headerdescription {  
-  font-size: 1em; 
- border-right: 10px solid #08c404;
-}
-nav ul li a {  
-  font-size: 1.75em;  
-  -webkit-text-stroke: 0.75px white;
-}
-#whosectionimg {
- width: 203px;
-  height: 275px;
-}
-.todocontainer ul li div {  
-  width: 300px;  
-  font-size: 1.1em;
-}
-.todocontainer ul li:nth-child(odd) div {
-  left: -180px;
-  transform: translate3d(-200px,0,0);
-}
-#rocket img {  
-  width: 15%;
-  }
-#rocket {    
-  bottom: -340%;
-  }
-@keyframes rocketfly {
-    0% {
-      bottom: -330%;
-    }      
-    10% {      
-       opacity: 0.8;
-    }     
-    80% {      
-       opacity: 0.4;      
-    }     
-    100% {
-      bottom: -100%;   
-      opacity: 0;  
-    }
-  }
-.imgmentor {
-  width: 150px;
-  height: 150px;
-}
-.testimonialBox { 
-  font-size: 1.15em;
-}
-.planettop .planet, .planetmiddle .planet{
-  width: 125px;
-}
-}
-/*----------------------RESPONSIVE 768--------fleches-------------------------*/
-@media screen and (max-width: 768px) 
-{
-* {
-   font-size: 0.9em;
-}
-h1 { 
-  font-size: 4em;  
-}
-#headerdescription {  
-  font-size: 0.75em; 
-   border-right: 7px solid #08c404;
-}
-header div span {
-    font-size: 1.5em;
-}
-
-nav ul {   
-    padding: 0;
-}
-nav ul li a {
-   font-size: 2em;
-   -webkit-text-stroke: 1px white;
-  margin: auto;
-  text-align: center;
-}
-.topnav a {
-    display: none;
-  }
-
-  .topnav a.icon {
-    float: right;
-    display: block;
-     font-size: 4em;
-  }
-  .topnav.responsive {
-    position: relative;
-    flex-direction: column;
-    width: 100%;  
-    margin: auto; 
-    min-height: 50vh;
-  }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 50px;
-    top: 0;
-  }
-  .topnav.responsive a.icon img {
-    position: absolute;
-    left: 50px;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  #whosectionimg {
- width: 147px;
-  height: 200px;
-}
-.todocontainer ul li div {  
-  width: 220px;  
-  font-size: 1.25em;
-}
-.todocontainer ul li:nth-child(odd) div {
-  left: -100px;
-  transform: translate3d(-200px,0,0);
-}
-#rocket img {  
-  width: 10%;
-  }
-#rocket {    
-  bottom: -300%;
-  right: -10%;
-  }
-@keyframes rocketfly {
-    0% {
-      bottom: -290%;
-    }      
-    10% {      
-       opacity: 0.8;
-    }     
-    80% {      
-       opacity: 0.4;      
-    }     
-    100% {
-      bottom: -150%;     
-    }
-  }
-.imgmentor {
-  width: 120px;
-  height: 120px;
-}
-.testimonialBox p { 
-  font-size: 1.25em;
-}
-#ocsection {  
-  flex-direction: column; 
-  height: 100%;
-  padding-bottom: 50px;
-}
-.workco {  
-  width: 80%;  
-  margin: auto;  
-  text-align: center;
-  height: 275px;
-  justify-content: flex-start;
-  transform: translateY(-50%); 
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    margin-bottom: 40px;   
-}
-.cardback {
-   font-size: 0.85em;
-}
-.cardfront {
-   font-size: 1.15em;
-}
-#pole {
- width: 12%;  
-}
-#logooc {
-  width: 30%;
-}
-}
-/*----------------------------------------------------------------------*/
-/*----------------------------------------------------------------------*/
 
 /*-------------------------------------SECTION WHERE-----------------------------------*/
 
@@ -1720,11 +1533,11 @@ background-attachment: fixed;
 #milkyway8 {
   position: absolute;
   top: 0%;
-  right: 0%;
-  width: 60%;
-  height: 30%;  
+  left: 0%;
+  width: 30%;
+  height: 40%;  
   z-index: -2;  
-  clip-path: polygon(100% 18%, 89% 14%, 71% 11%, 63% 11%, 50% 13%, 39% 17%, 27% 24%, 13% 26%, 4% 20%, 2% 14%, 3% 29%, 7% 35%, 12% 40%, 23% 41%, 29% 36%, 35% 31%, 39% 24%, 48% 19%, 71% 18%, 79% 20%, 88% 23%, 97% 23%, 100% 26%);
+  clip-path: ellipse(36% 37% at 0% 48%);
    background: rgba(255, 255, 255, 0.05);
 }
 .planettop {
@@ -2442,8 +2255,6 @@ background-image: url("img/backhalt.png");
   margin: auto;  
    margin-bottom: 50px;
    justify-content: space-between;
-  
-   
    background-image: url("img/backbubbles.png");
 background-attachment: fixed;
   background-size: 60%;
@@ -2486,7 +2297,7 @@ figcaption {
   font-weight: bolder;
   font-style: italic;
   background: white;
-  padding: 0px 5px 0px 0px;  
+  padding: 0px 5px 0px 5px;  
   display: block;
   float: left;
   position: absolute;
@@ -2497,23 +2308,22 @@ figcaption {
     border-radius: 100% 0.5% 100% 0.5%/0.5% 100% 0.5% 100%;   
 }
 .fa-disease {  
-  position: absolute; 
-  display: block; 
-  top: 300px;
-  left: 60px;
+  position: absolute;   
+  bottom: 10%;
+  right: 35%;
   font-size: 2.25em;
   color: #DE3A17;
   -webkit-text-stroke: 1.25px black; 
   text-shadow: 0px 2px 5px grey;
-  animation: jump 10s infinite ease-in-out; 
+  /*animation: jump 10s infinite ease-in-out; */
    }
-    @keyframes jump {
+   /* @keyframes jump {
       0% { top: 301px; left: 61px; }
       25% { top: 300px; left: 60px; }
         50% { top: 302px; left: 59px; }
         75% { top: 300px; left: 58px;}        
       100% { top: 302px; left: 61px;}        
-  }
+  }*/
 figure img {  
   margin: 0;
   width: 100%;
@@ -2532,8 +2342,8 @@ figure img {
 }
 #figurebirth img {
   background: url("img/backoyster3.jpg"); /*jpg*/    
-  animation: wave 25s infinite ease-in-out;
-  filter: contrast(120%);
+  animation: wave 20s infinite ease-in-out;
+  filter: contrast(115%);
 }
 
 @keyframes wave {  
@@ -2544,9 +2354,7 @@ figure img {
   80%  {background-position: 0 60%;} 
   100%  {background-position: 0 40%;} 
 }
-#figureping figcaption {
-  width: 50%;   
-}
+
 
 #balle {
   color: white;
@@ -2607,23 +2415,25 @@ figure img {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
+  margin-top: 25px;
 }
 #sectioncredits p:nth-child(1) {
 	padding-left: 20px;
 }
 #continued {
 	position: absolute;
-	bottom: 70px;
+	bottom: 75px;
 	right: 40px;
 	border: 2px solid black;
     border-width: 2px 2px 2px 3px;
     border-radius: 97% 1% 97% 1%/1% 97% 1% 97%;  
      font-family: 'Open Sans Condensed', sans-serif;
   text-transform: uppercase;
-  font-size: 1.5em; 
+  font-size: 1.1em; 
   font-style: italic;
   padding: 0px 5px 0px 0px; 
   background: white;
+  font-weight: bolder;
 }
 
 /*-------------------------------------------*/
@@ -2651,38 +2461,7 @@ figure img {
   top: 0.6em;
   box-shadow: 0 0.2em rgba(0, 0, 0, 0.85);
 }
-/*-------------------------------SECTION QUOTE-------------------------*/
-#quotesection {
-    display: flex;
-  flex-wrap: wrap;  
-  flex-direction: column;
-  margin: auto;  
-   margin-bottom: 50px;
-   justify-content: space-between;
-   position: relative;
-}
-#memento {
-  width: 60%;
-  margin: auto;
-}
-.fa-quote-left {
-  font-size: 2.5em;
-  padding: 0 15px 0 0;
-  font-style: italic;
-}
-.fa-quote-right {
-  font-size: 1.75em;
-  padding: 0 0 0 15px;
-  text-shadow: 5px 0 #bc040c;
-   color: white;    
-   -webkit-text-stroke: 1px #fcfc04;
-} 
-#memento span {  
-   text-shadow: 5px 0 #bc040c;
-   color: white;    
-   -webkit-text-stroke: 1px #fcfc04;
-   font-style: italic; 
-}
+
 
 /*-------------------------------IMG MOUSE CROLL-------------------------*/
 #portraitsection {
@@ -2714,7 +2493,7 @@ figure img {
 #portraitsection img.scrollable {
   visibility: visible;
   z-index: 99;
-  mix-blend-mode: hard-light;
+  mix-blend-mode: luminosity;
 
 
   
