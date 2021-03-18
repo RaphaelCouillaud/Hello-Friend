@@ -11,7 +11,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;	
-  font-family: 'Space Mono', monospace;	  
+  font-family: 'Audiowide', cursive;
   background:  url("img/stars.png"), #04040c; 
   background-size: cover;
   background-attachment: fixed;
@@ -49,7 +49,7 @@ h1 {
  margin: auto;
   text-align: center;
   font-size: 8em;   
-   font-family: MrRobot, 'Press Start 2P', Helvetica, Arial, sans-serif;
+   font-family: MrRobot, 'Audiowide', Helvetica, Arial, sans-serif;
    color: #bc040c;   
    z-index: 1;
    opacity: 0;
@@ -163,7 +163,6 @@ h1 {
   margin: auto;
   color: #08c404;
    border-right: 15px solid #08c404;
-  /*text-shadow: 2px 0 white;*/
   animation: typing 0.75s step-end infinite;
   padding-right: 5px;
 }
@@ -190,7 +189,7 @@ header div {
   justify-content: flex-end;
   width: auto;
   position: absolute;   
-  bottom: -5%;
+  bottom: 0;
   left: 50%; /* à 50%/50% du parent référent */
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
@@ -252,20 +251,15 @@ header div span:nth-child(6) {
   padding: 14px;
   text-decoration: none;
 }*/
-/* Page content */
-.content {
- padding: 16px;
-}
+
+
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
-  position: fixed; /*fixed*/
-  top: 0;
-  width: 100%;
+  position: sticky;
+  top: 0;  
+  max-width: 100%;
 }
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
 .topnav li img {
   width: 75px;
   height: 100%;
@@ -274,8 +268,7 @@ header div span:nth-child(6) {
 nav ul {
    display: flex;
     flex-direction: row;
-    justify-content: space-between;   
-    padding-right: 0;
+     
     max-width: 100%;
 }
 nav ul li {
@@ -425,13 +418,10 @@ nav ul li:nth-child(7) {
 .parallaxeffect img:nth-child(10) {
 	bottom: 5%;
 	left: 30%;
-	
-
 }
 .parallaxeffect img:nth-child(2) {
 	bottom: 25%;
 	right: 30%;
-	
 }
 .parallaxeffect img:nth-child(12) {
 	bottom: 30%;
@@ -442,7 +432,6 @@ nav ul li:nth-child(7) {
 	bottom: 40%;
 	left: 22%;
 	width: 1%;	
-
 }
 .parallaxeffect img:nth-child(14) {
 	top: -5%;
@@ -625,11 +614,12 @@ nav ul li:nth-child(7) {
    color: white;
     letter-spacing: 1.5px;
    line-height: 1.5em;
+   font-family: 'Audiowide', cursive;
 }
 #whosectiontopo p {
-  font-family: 'Space Mono', monospace;
-  font-size: 1.25em;
-  text-shadow: 1.5px 0 #10c4c4;
+ font-family: 'Audiowide', cursive;
+  font-size: 1em;
+  text-shadow: 2px 0 #10c4c4;
    color: white;
 }
 
@@ -680,18 +670,19 @@ nav ul li:nth-child(7) {
     box-shadow: 1px 1px 10px 2.5px #fcfc04;
   }
 .topolist h3 {
-   font-size: 1.25em;
+   font-size: 1.75em;
     letter-spacing: 1.5px;
    line-height: 1.5em;
    text-shadow: 5px 0 #bc040c;
    color: white;    
    -webkit-text-stroke: 1px #10c4c4;
-   font-style: italic; 
+   font-style: italic;
+   font-family: 'Audiowide', cursive; 
 }
 .topolist p {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Audiowide', cursive;
   font-size: 1em;
-  text-shadow: 1.5px 0 #10c4c4;
+  text-shadow: 2px 0 #10c4c4;
    color: white;
 }
 /*-------------------------------------INTERSECTION OBSERVER----------------------------------*/
@@ -721,16 +712,14 @@ nav ul li:nth-child(7) {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  overflow-x:hidden;
-  
+  overflow-x:hidden;  
   padding-bottom: 100px;
-  background-image: url("img/backspace.png");
+  background-image: url("img/backspace1.png");
  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
   position: relative;
-  
 }
 .todocontainer p {
   font-size: 0.85em;
@@ -753,7 +742,7 @@ nav ul li:nth-child(7) {
   padding-top: 50px;
   background: white; 
   border-radius: 30px;
-  box-shadow: 1px 1px 15px 5px #10c4c4;
+ box-shadow: 1px 1px 20px 7px #102ccc;
   
 }
 .todocontainer ul li::after {
@@ -768,12 +757,12 @@ nav ul li:nth-child(7) {
   background: inherit;
   background: #fcfc04;
   transition: background 0.75s ease-in-out;
-  box-shadow: 1px 1px 15px 5px #10c4c4;
+  box-shadow: 1px 1px 15px 5px #102ccc;
  }
  .todocontainer ul li div p:nth-child(2) {
   padding-bottom: 10px;
-  font-family: 'Space Mono', monospace;
-  font-size: 1.25em;
+  font-family: 'Audiowide', cursive;
+  font-size: 1em;
   text-shadow: 1.5px 0 #10c4c4;
    color: white;
 
@@ -787,16 +776,16 @@ nav ul li:nth-child(7) {
   opacity: 0;
   transition: all 1s ease-in-out;
  border-radius: 30px;
- box-shadow: 1px 1px 20px 7px #10c4c4;
+ box-shadow: 1px 1px 20px 7px #102ccc;
  /*box-shadow: inset 0px 0px 0px 6px white;*/
   border: 6px solid white;
-   background: rgba(255, 255, 255, 0.05);
+   background: rgba(16,44,204, 0.25);
   /* backdrop-filter: blur(0.5px);  
   -webkit-backdrop-filter: blur(0.5px);*/
   
 }
 .todocontainer ul li div strong {
-   font-family: MrRobot, 'Press Start 2P', Helvetica, Arial, sans-serif;
+   font-family: MrRobot, 'Audiowide', Helvetica, Arial, sans-serif;
    color: #bc040c;
    text-shadow: none;
    font-size: 1em;   
@@ -810,6 +799,8 @@ nav ul li:nth-child(7) {
   border-style: solid;
 
 }
+
+ 
 
 .todocontainer ul li:nth-child(even) div {
   left: 45px;
@@ -842,36 +833,7 @@ nav ul li:nth-child(7) {
   visibility: visible;
   opacity: 1;
 }
-#milkyway1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 40%;  
-  z-index: -2;  
- clip-path: polygon(0% 23%, 6% 23%, 22% 24%, 36% 27%, 47% 34%, 62% 41%, 78% 46%, 88% 48%, 100% 58%, 72% 47%, 54% 41%, 33% 31%, 14% 35%, 11% 41%, 4% 43%, 24% 53%, 56% 68%, 28% 62%, 16% 67%, 11% 64%, 17% 79%, 0% 62%);
-   background: rgba(255, 255, 255, 0.05);
-}
-#milkyway2 {
-  position: absolute;
-  top: 30%;
-  left: 5%;
-  width: 80%;
-  height: 60%;  
-  z-index: -2;  
- clip-path: polygon(13% 25%, 26% 21%, 42% 20%, 57% 20%, 75% 22%, 93% 20%, 87% 23%, 66% 27%, 49% 25%, 37% 24%, 24% 28%, 17% 30%, 4% 28%, 1% 24%);
-   background: rgba(255, 255, 255, 0.05);
-}
-#milkyway3 {
-  position: absolute;
-  bottom: 0%;
-  right: 0%;
-  width: 80%;
-  height: 60%;  
-  z-index: -2;  
-clip-path: polygon(100% 26%, 93% 30%, 85% 35%, 80% 41%, 73% 39%, 61% 35%, 55% 30%, 44% 30%, 34% 31%, 33% 37%, 23% 44%, 23% 56%, 25% 61%, 31% 41%, 46% 37%, 58% 39%, 72% 48%, 100% 68%, 100% 58%);
-   background: rgba(255, 255, 255, 0.05);
-}
+
 
 
  /*-------------------------------------SECTION OC -----------------------------------*/
@@ -893,16 +855,7 @@ clip-path: polygon(100% 26%, 93% 30%, 85% 35%, 80% 41%, 73% 39%, 61% 35%, 55% 30
   background-repeat: repeat;
   background-position: top center;   
 }
-#milkyway7 {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 70%;
-  height: 50%;  
-  z-index: -2;  
-clip-path: polygon(0% 39%, 6% 45%, 10% 51%, 17% 57%, 26% 59%, 33% 60%, 41% 60%, 51% 58%, 65% 54%, 83% 58%, 95% 63%, 77% 49%, 66% 44%, 62% 44%, 54% 48%, 48% 52%, 33% 49%, 29% 44%, 27% 40%, 24% 32%, 19% 24%, 12% 18%, 4% 15%, 0% 15%);
-   background: rgba(255, 255, 255, 0.05);
-}
+
 #rocket img {  
   width: 17%;
   }
@@ -996,16 +949,16 @@ clip-path: polygon(0% 39%, 6% 45%, 10% 51%, 17% 57%, 26% 59%, 33% 60%, 41% 60%, 
    
 }
 .testimonialBox h4 {
- font-family: 'Space Mono', monospace;
-  font-size: 1.4em;
+ font-family: 'Audiowide', cursive;
+  font-size: 1.25em;
   text-shadow: 2.5px 0 #fcfc04;
   margin: 10px;
   font-style: italic;
   
 }
 .testimonialBox p {
- font-family: 'Space Mono', monospace;
-  font-size: 1.15em;
+ font-family: 'Audiowide', cursive;
+  font-size: 1.1em;
   text-shadow: none;
    margin: 10px;
   
@@ -1099,7 +1052,7 @@ clip-path: polygon(0% 39%, 6% 45%, 10% 51%, 17% 57%, 26% 59%, 33% 60%, 41% 60%, 
     text-transform: uppercase;
      letter-spacing: 3px;
       -webkit-text-stroke: 1.25px white; 
-    color: #bc040c;
+    color: #fcfc04;
      text-shadow: 5px 0 #10c4c4;
 }
 .five {
@@ -1113,7 +1066,7 @@ clip-path: polygon(0% 39%, 6% 45%, 10% 51%, 17% 57%, 26% 59%, 33% 60%, 41% 60%, 
     text-transform: uppercase;
      letter-spacing: 3px;
       -webkit-text-stroke: 1.25px white; 
-    color: #bc040c;
+    color: #fcfc04;
      text-shadow: 5px 0 #10c4c4;
 }
 .animate .four, .animate .five {
@@ -1175,26 +1128,7 @@ clip-path: polygon(0% 39%, 6% 45%, 10% 51%, 17% 57%, 26% 59%, 33% 60%, 41% 60%, 
     opacity: 1;    
 }
 
-#milkyway4 {
-  position: absolute;
-  top: 10%;
-  right: 0%;
-  width: 80%;
-  height: 80%;  
-  z-index: -2;  
-clip-path: polygon(1% 24%, 53% 23%, 69% 23%, 87% 15%, 100% 13%, 72% 13%, 46% 11%, 22% 9%, 35% 16%, 23% 16%, 10% 14%, 13% 19%, 31% 20%);
-   background: rgba(255, 255, 255, 0.05);
-}
-#milkyway9 {
-  position: absolute;
-  bottom: 0%;
-  left: -10%;
-  width: 80%;
-  height: 60%;  
-  z-index: -2;  
- clip-path: polygon(100% 24%, 84% 21%, 70% 38%, 60% 49%, 38% 57%, 24% 61%, 6% 60%, 0 68%, 33% 64%, 51% 59%, 66% 61%, 69% 53%, 76% 43%, 81% 31%, 87% 25%);
-   background: rgba(255, 255, 255, 0.05);
-}
+
 
 /*-------------------------------------SECTION PACMAN-----------------------------------*/
 
@@ -1436,7 +1370,7 @@ background-attachment: fixed;
   flex-direction: column;
   justify-content: space-around;
   border: 6px solid white;
-  font-family: 'Space Mono', monospace;
+ font-family: 'Audiowide', cursive;
   font-size: 0.6em;
   text-shadow: 1px 0 #10c4c4;
    color: white;  
@@ -1492,26 +1426,8 @@ background-attachment: fixed;
   margin-bottom: 0;
   margin-top: 10px;
 }
-#milkyway5 {
-  position: absolute;
-  top: 10%;
-  right: 0%;
-  width: 50%;
-  height: 70%;  
-  z-index: -2;  
-clip-path: polygon(100% 27%, 87% 24%, 72% 26%, 59% 23%, 54% 15%, 44% 10%, 35% 8%, 22% 9%, 14% 17%, 11% 25%, 23% 16%, 29% 13%, 41% 16%, 55% 30%, 66% 38%, 84% 38%, 93% 34%, 100% 44%);
-   background: rgba(255, 255, 255, 0.05);
-}
-#milkyway6 {
-  position: absolute;
-  bottom: 25%;
-  left: 0%;
-  width: 70%;
-  height: 50%;  
-  z-index: -2;  
-clip-path: polygon(0% 35%, 8% 33%, 24% 30%, 39% 30%, 54% 32%, 62% 36%, 70% 50%, 81% 64%, 47% 48%, 51% 44%, 47% 36%, 25% 40%, 17% 36%, 6% 48%, 16% 65%, 6% 59%, 0 51%, 0 39%);
-   background: rgba(255, 255, 255, 0.05);
-}
+
+
 
 
 /*-------------------------------------SECTION WHERE-----------------------------------*/
@@ -1530,16 +1446,7 @@ background-attachment: fixed;
   background-repeat: repeat;
   background-position: center right;*/
 }
-#milkyway8 {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 30%;
-  height: 40%;  
-  z-index: -2;  
-  clip-path: ellipse(36% 37% at 0% 48%);
-   background: rgba(255, 255, 255, 0.05);
-}
+
 .planettop {
   width: 100%;
   margin: auto;
@@ -1667,8 +1574,7 @@ background-attachment: fixed;
 }
 
 /*-------------------------------------SECTION TECHNOLIST-----------------------------------*/
-#technolist {
-  
+#technolist {  
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -1681,9 +1587,6 @@ background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  
-  
-
 }
 .carousel {
   width: 66%;
@@ -1694,7 +1597,6 @@ background-attachment: fixed;
    border: 12px solid black;*/
     margin: auto;
     padding: 50px 25px 25px 25px;
-
 }
 .carousel-text {
   width: 50%;
@@ -2054,7 +1956,7 @@ margin-top: 20px;
   font-family: 'Electrolize', sans-serif;
 }
 #hello {
-	font-family: MrRobot, 'Press Start 2P', Helvetica, Arial, sans-serif;
+	font-family: MrRobot, 'Audiowide', Helvetica, Arial, sans-serif;
 }
 
 
@@ -2072,18 +1974,16 @@ background-image: url("img/backhalt.png");
   background-position: top center;
   padding-bottom: 50px;
 }
-
 .skill-bars{
   padding: 25px 30px;
   width: 50%;
   background: rgba(255, 255, 255, 0.05);
-  box-shadow: 5px 5px 20px rgba(0,0,0,0.2); 
+  
   margin: auto;
   margin-top: 50px;  
     border-radius: 30px;   
- box-shadow: 1px 1px 20px 7px white;
+ box-shadow: 1px 1px 12px 5px white;
   border: 6px solid white;
-
   }
 .skill-bars .bar{
   margin: 20px 0;
@@ -2166,9 +2066,8 @@ background-image: url("img/backhalt.png");
   width: 125%;
 }
 .bar .progress-line.humour span{
-  width: 22%;
+  width: 28%;
 }
-
 .progress-line span::after{
   position: absolute;
   top: -45px;
@@ -2221,25 +2120,25 @@ background-image: url("img/backhalt.png");
   content: "😒";
 }
 #skillsection button {
-  background-color: #fcfc04; 
+  background-color: #bc040c; 
   display: flex; 
   text-decoration: none; 
-  text-align: center; 
-  color: black;
+  text-align: center;   
   cursor: pointer;
   font-size: 1.75em;
   border-radius: 50%;
   position: relative;
   transition: all 300ms ease-in-out;
-   box-shadow: 0 0.3em #666605, 0 0.6em #343434, 0 0.8em black;
-   border: 5px solid black;
-  width: 120px;
-  height: 60px;
+   box-shadow: 0 0.3em #7d0107, 0 0.6em #343434, 0 0.8em black;
+   border: 5px solid white;
+  width: 150px;
+  height: 66px;
   margin: auto;
   margin-top: 25px;
 }
 #skillsection button i {
   margin: auto;
+  color: white;
 }
 #skillsection button:active {
   top: 0.6em;
@@ -2253,7 +2152,7 @@ background-image: url("img/backhalt.png");
   flex-wrap: wrap;  
   flex-direction: column;
   margin: auto;  
-   margin-bottom: 50px;
+   padding-bottom: 50px;
    justify-content: space-between;
    background-image: url("img/backbubbles.png");
 background-attachment: fixed;
@@ -2342,7 +2241,7 @@ figure img {
 }
 #figurebirth img {
   background: url("img/backoyster3.jpg"); /*jpg*/    
-  animation: wave 20s infinite ease-in-out;
+  animation: wave 25s infinite ease-in-out;
   filter: contrast(115%);
 }
 
@@ -2438,40 +2337,25 @@ figure img {
 
 /*-------------------------------------------*/
 
-.refresh-button {
-  background-color: grey;
-  text-transform: uppercase;
-  text-decoration: none; 
-  display: flex;
-  margin: auto;
-  color: white;
-  cursor: pointer;
-  opacity: 1.0;
-  font-size: 1em;
-  border-radius: 0.5rem;
-  position: relative;
-  top: 0;
-  transition: all 300ms ease-in-out;
-  box-shadow: 0 0.3em grey, 0 0.6em rgba(0, 0, 0, 0.85);
-   border: 5px solid white;
-  width: 150px;
-  height: 66px;
-}
-.refresh-button button:active {
-  top: 0.6em;
-  box-shadow: 0 0.2em rgba(0, 0, 0, 0.85);
-}
 
 
 /*-------------------------------IMG MOUSE CROLL-------------------------*/
+#portrait {
+	display: flex; 
+  flex-direction: column;  
+   justify-content: space-between;   
+	background-image: url("img/neonlines.png");
+ background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top; 
+  padding-bottom: 50px; 
+}
 #portraitsection {
   max-width: 35%;
   margin: auto;
-  text-align: center;
-  margin-bottom: 50px;
+  text-align: center; 
   padding-top: 50px;
-
-
 }
 #portraitsection a { 
   display: block; 
@@ -2488,25 +2372,19 @@ figure img {
    max-height: 50%;
    max-width: 40%;
    object-fit: cover;
-   
 }
 #portraitsection img.scrollable {
   visibility: visible;
   z-index: 99;
   mix-blend-mode: luminosity;
-
-
-  
 }
-
 #portraitsection .imagehover p {
   z-index: -1;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Audiowide', cursive;
   font-size: 2.25em;  
    margin: 0;
    text-transform: uppercase;
 }
-
 #portraitsection .imagehover:nth-child(odd) {
   text-shadow: 5px 0 #bc040c;
    color: white;    
@@ -2517,28 +2395,17 @@ figure img {
    color: white;    
    -webkit-text-stroke: 1px #10c4c4;
 }
-
 #portraitsection .imagehover {
   z-index: 9;
   transition: 0.5s ease-in-out;
-
 }
-
 #portraitsection .imagehover.scrollable p {
   z-index: 999;
   position: relative;
   opacity: 0.25;
   font-style: italic;
   transform: scale(1.25);
-
-  
-
 }
-
-
-
-
-
 /*-------------------------------NAV FOOTER-------------------------*/
 .to-top {
   position: fixed;
@@ -2575,7 +2442,7 @@ article {
   color: white;
   padding-top: 40px;  
   margin-bottom: 25px;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Audiowide', cursive;
   
 }
 #email {
@@ -2602,15 +2469,16 @@ article {
   left: 0;
   width: 100%;
   height: 100%;
-   background: rgba(0, 0, 0, 0.25);
-  border: 0px solid white;
-  box-shadow: 1px 1px 15px 5px #10c4c4;
+   background: rgba(16,44,204, 0.05);
+  /*background: rgba(0, 0, 0, 0.25);*/
+  border: 1px solid white;
+  box-shadow: 1px 1px 15px 5px #102ccc;
   border-radius: 28% 72% 73% 27% / 21% 24% 79% 76%;
   transition: 0.5s ease-in-out;
   animation: circles 4s linear infinite;
 }
 .contact:hover span:nth-child(1), .contact:active span:nth-child(1) {
-  background: #10c4c4;
+  background: #102ccc;
   border: none;
    opacity: 0.33;
 }
@@ -2620,14 +2488,15 @@ article {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 0px solid white;
-  box-shadow: 2px 2px 25px 10px white;
+   background: rgba(16,44,204, 0.05);
+  border: 2px solid white;
+  box-shadow: 2px 2px 25px 10px #102ccc;
   border-radius: 48% 52% 53% 47% / 31% 34% 69% 66%;
   transition: 0.5s ease-in-out;
   animation: circles 2s linear infinite;
 }
 .contact:hover span:nth-child(2), .contact:active span:nth-child(2) {
-  background: #10c4c4;
+  background: #102ccc;
   border: none;
   opacity: 0.67;
 }
@@ -2637,15 +2506,16 @@ article {
   left: 0;
   width: 100%;
   height: 100%;
-   background: rgba(0, 0, 0, 0.25);
-  border: 0px solid white;
-  box-shadow: 1px 1px 15px 7px #10c4c4;
+   background: rgba(16,44,204, 0.05);
+  /*background: rgba(0, 0, 0, 0.25);*/
+  border: 3px solid white;
+  box-shadow: 1px 1px 15px 7px #102ccc;
   border-radius: 28% 72% 73% 27% / 21% 24% 79% 76%;
   transition: 0.5s ease-in-out;
   animation: circles1 6s linear infinite;
 }
 .contact:hover span:nth-child(3), .contact:active span:nth-child(3) {
-  background: #10c4c4;
+  background: #102ccc;
   border: none;
 }
 @keyframes circles {  
@@ -2708,7 +2578,7 @@ background-attachment: scroll;
   background-position: center right;
   padding-top: 50px;
   position: relative;
-   font-family: 'Space Mono', monospace;
+  font-family: 'Audiowide', cursive;
   
 }
 footer p {
@@ -2721,7 +2591,7 @@ footer p {
   transform: translate(-50%, -50%);
 }
 footer p strong {
-font-family: MrRobot, 'Press Start 2P', Helvetica, Arial, sans-serif;
+font-family: MrRobot, 'Audiowide', Helvetica, Arial, sans-serif;
    color: #bc040c;
    }
 #rocket2 {
