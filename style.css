@@ -716,7 +716,7 @@ nav ul li:nth-child(7) {
   padding-bottom: 100px;
   background-image: url("img/backspace1.png");
  background-attachment: fixed;
-  background-size: 80%;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position: bottom center;
   position: relative;
@@ -833,8 +833,6 @@ nav ul li:nth-child(7) {
   visibility: visible;
   opacity: 1;
 }
-
-
 
  /*-------------------------------------SECTION OC -----------------------------------*/
 #mentorsection {
@@ -1811,7 +1809,7 @@ font-family: 'Newsreader', serif;
    font-size: 1.1em; 
    justify-content: space-between;
    width: 100%;
-   height: 1575px;  
+   height: 1550px;  
    background-image: url("img/backtron.png");
 background-attachment: fixed;
   background-size: cover;
@@ -1849,16 +1847,18 @@ background-attachment: fixed;
 .listeprojetstop {
   height: 75px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     margin: auto;
-    width: 50%;
 }
 .listeprojetstop h3 {
-  font-size: 1.75em;
-  margin-left: 10px;
-
+  font-size: 1.75em;  
+  margin: auto;
+}
+.listeprojetstop h3 span {
+  padding-right: 15px;
+  text-shadow: none;
 }
 .listeprojetsbottom {
   width: 100%;
@@ -1877,7 +1877,6 @@ background-attachment: fixed;
 .listeprojets4 {
   width: 35%;
    flex-direction: column;
-   margin: 0 10px 0 10px;
 }
 .listeprojets1 {
   width: 30%;
@@ -1891,35 +1890,24 @@ background-attachment: fixed;
   width: 10%;
   margin: 0 10px 0 10px;
 }
-.listeprojets video {
- margin: auto;
-margin-top: 20px;
-  height: 211px;
-  pointer-events: auto!important;
- width: 375px;
- border: 5px solid white;
-  border-radius: 30px;
-}
 .listeprojets h3, .listeprojets h4 {
   text-shadow: 5px 0 #bc040c;
-  color: white;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  color: white; 
+  margin: 0;
 }
 .listeprojets a, .listeprojets4 i {
  text-shadow: -0.5px 0 0.5px #bc040c, 0 0.5px 0.5px #bc040c, 0.5px 0 0.5px #bc040c, 0 -0.5px 5px #bc040c;
  color: white;
  pointer-events: auto!important;
  font-size: 1.25em;
- margin-top: 10px;
 }
 .listeprojetstop h3 i {
   padding: 0 2px 0 2px;
   font-size: 0.85em;
 }
 .listeprojets4 img {
-  width: 375px;
-  height: 211px;
+  width: 75%;
+  height: auto;
   margin: auto;
  margin-top: 20px; 
   border: 5px solid white;
@@ -1960,190 +1948,7 @@ margin-top: 20px;
 }
 
 
-/*-------------------------------------SECTION SKILLS-----------------------------------*/
 
-#skillsection  {  
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-background-image: url("img/backhalt.png");
-  background-attachment: fixed;
-  background-size: 66%;
-  background-repeat: repeat;
-  background-position: top center;
-  padding-bottom: 50px;
-}
-.skill-bars{
-  padding: 25px 30px;
-  width: 50%;
-  background: rgba(255, 255, 255, 0.05);
-  
-  margin: auto;
-  margin-top: 50px;  
-    border-radius: 30px;   
- box-shadow: 1px 1px 12px 5px white;
-  border: 6px solid white;
-  }
-.skill-bars .bar{
-  margin: 20px 0;
-}
-.skill-bars .bar:first-child{
-  margin-top: 0px;
-}
-.skill-bars .bar .info{
-  margin-bottom: 5px;
-}
-.skill-bars .bar .info span{  
-  opacity: 0;
-   font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
-  letter-spacing: 1.5px;
-   line-height: 1.5em;
-   text-shadow: 5px 0 #bc040c;
-   color: white;     
-  animation: showText 0.5s 1s linear forwards;  
-}
-@keyframes showText {
-  100%{
-    opacity: 1;
-  }
-}
-.skill-bars .bar .progress-line{
-  height: 10px;
-  width: 100%;
-  background: transparent;
-  position: relative;
-  transform: scaleX(0);
-  transform-origin: left;
-  border-radius: 30px;
-  box-shadow: inset 0 2px 2px rgba(0,0,0,0.05),
-              0 2px rgba(255,255,255,0.8);
-  animation: animate 3s cubic-bezier(1,0,0.5,1) forwards;
-}
-@keyframes animate {
-  100%{
-    transform: scaleX(1);
-  }
-}
-.bar .progress-line span{
-  height: 100%;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: left;
-  background: white;
-    border-radius: 30px;   
- box-shadow: 1px 1px 12px 6px #10c4c4;
-  animation: animate 3s 1s cubic-bezier(1,0,0.5,1) forwards;
-}
-.bar .progress-line.sens span{
-  width: 90%;
-}
-.bar .progress-line.relationnel span{
-  width: 70%;
-}
-.bar .progress-line.adapt span{
-  width: 85%;
-}
-.bar .progress-line.curio span{
-  width: 70%;
-}
-.bar .progress-line.crea span{
-  width: 75%;
-}
-.bar .progress-line.force span{
-  width: 75%;
-}
-.bar .progress-line.veille span{
-  width: 75%;
-}
-.bar .progress-line.esprit span{
-  width: 85%;
-}
-.bar .progress-line.depass span{
-  width: 110%;
-}
-.bar .progress-line.respect span{
-  width: 125%;
-}
-.bar .progress-line.humour span{
-  width: 28%;
-}
-.progress-line span::after{
-  position: absolute;
-  top: -45px;
-  right: 0;
-  font-weight: 500;
-  /*background: #000;*/
-  color: #fff;
-  padding: 1px 8px;
-  font-size: 30px;
-  border-radius: 3px;
-  opacity: 0;
-  animation: showText2 0.5s 1.5s linear forwards;
-}
-@keyframes showText2 {
-  100%{
-    opacity: 1;
-  }
-}
-.progress-line.sens span::after{
-  content: "👍";
-}
-.progress-line.relationnel span::after{
-  content: "🤗";
-}
-.progress-line.adapt span::after{
-  content: "🔌";
-}
-.progress-line.curio span::after{
-  content: "👁️";
-}
-.progress-line.crea span::after{
-  content: "🧠";
-}
-.progress-line.force span::after{
-  content: "💪";
-}
-.progress-line.veille span::after{
-  content: "💡";
-}
-.progress-line.esprit span::after{
-  content: "🎯";
-}
-.progress-line.depass span::after{
-  content: "🙄";
-}
-.progress-line.respect span::after{
-  content: "🤔";
-}
-.progress-line.humour span::after{
-  content: "😒";
-}
-#skillsection button {
-  background-color: #bc040c; 
-  display: flex; 
-  text-decoration: none; 
-  text-align: center;   
-  cursor: pointer;
-  font-size: 1.75em;
-  border-radius: 50%;
-  position: relative;
-  transition: all 300ms ease-in-out;
-   box-shadow: 0 0.3em #7d0107, 0 0.6em #343434, 0 0.8em black;
-   border: 5px solid white;
-  width: 150px;
-  height: 66px;
-  margin: auto;
-  margin-top: 25px;
-}
-#skillsection button i {
-  margin: auto;
-  color: white;
-}
-#skillsection button:active {
-  top: 0.6em;
-  box-shadow: 0 0.2em rgba(0, 0, 0, 0.85);
-}
 
 
 /*-------------------------------------SECTION BIO GRAPHIQUE-----------------------------------*/
@@ -2160,8 +1965,6 @@ background-attachment: fixed;
   background-repeat: repeat;
   background-position: center center;
 }
-
-
 #biographic { 
    transform: rotate(359deg);
   display: flex;
@@ -2172,8 +1975,6 @@ background-attachment: fixed;
   margin: 75px auto;
    border: 5px solid black;
     border-width: 2px 2px 2px 3px; 
-   
-
 }
 #section1, #section2, #section3 {
   display: flex;  
@@ -2335,7 +2136,187 @@ figure img {
   font-weight: bolder;
 }
 
-/*-------------------------------------------*/
+/*-------------------------------------SECTION SKILLS-----------------------------------*/
+
+#skillsection  {  
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+background-image: url("img/backhalt.png");
+  background-attachment: fixed;
+  background-size: 66%;
+  background-repeat: repeat;
+  background-position: top center;
+  padding-bottom: 50px;
+}
+.skill-bars{
+  padding: 25px 30px;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  
+  margin: auto;
+  margin-top: 50px;  
+    border-radius: 30px;   
+ box-shadow: 1px 1px 12px 5px white;
+  border: 6px solid white;
+  }
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span{  
+  opacity: 0;
+   font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
+  letter-spacing: 1.5px;
+   line-height: 1.5em;
+   text-shadow: 5px 0 #bc040c;
+   color: white;     
+  animation: showText 0.5s 1s linear forwards;  
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: transparent;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 30px;
+  box-shadow: inset 0 2px 2px rgba(0,0,0,0.05),
+              0 2px rgba(255,255,255,0.8);
+  animation: animate 3s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: white;
+    border-radius: 30px;   
+ box-shadow: 1px 1px 12px 6px #10c4c4;
+  animation: animate 3s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.sens span{
+  width: 90%;
+}
+.bar .progress-line.relationnel span{
+  width: 70%;
+}
+.bar .progress-line.adapt span{
+  width: 85%;
+}
+.bar .progress-line.curio span{
+  width: 70%;
+}
+.bar .progress-line.crea span{
+  width: 75%;
+}
+.bar .progress-line.force span{
+  width: 75%;
+}
+.bar .progress-line.veille span{
+  width: 75%;
+}
+.bar .progress-line.esprit span{
+  width: 85%;
+}
+.bar .progress-line.depass span{
+  width: 120%;
+}
+.bar .progress-line.respect span{
+  width: 133%;
+}
+.bar .progress-line.humour span{
+  width: 28%;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -45px;
+  right: 0;
+  padding: 1px 8px;
+  font-size: 2em;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.sens span::after{
+  content: "👍";
+}
+.progress-line.relationnel span::after{
+  content: "🤗";
+}
+.progress-line.adapt span::after{
+  content: "🔌";
+}
+.progress-line.curio span::after{
+  content: "👁️";
+}
+.progress-line.crea span::after{
+  content: "🧠";
+}
+.progress-line.force span::after{
+  content: "💪";
+}
+.progress-line.veille span::after{
+  content: "💡";
+}
+.progress-line.esprit span::after{
+  content: "🎯";
+}
+.progress-line.depass span::after{
+  content: "🙄";
+}
+.progress-line.respect span::after{
+  content: "🤔";
+}
+.progress-line.humour span::after{
+  content: "😒";
+}
+#skillsection button {
+  background-color: #bc040c; 
+  display: flex; 
+  text-decoration: none; 
+  text-align: center;   
+  cursor: pointer;
+  font-size: 1.75em;
+  border-radius: 50%;
+  position: relative;
+  transition: all 300ms ease-in-out;
+   box-shadow: 0 0.3em #7d0107, 0 0.6em #343434, 0 0.8em black;
+   border: 5px solid white;
+  width: 150px;
+  height: 66px;
+  margin: auto;
+  margin-top: 25px;
+}
+#skillsection button i {
+  margin: auto;
+  color: white;
+}
+#skillsection button:active {
+  top: 0.6em;
+  box-shadow: 0 0.2em rgba(0, 0, 0, 0.85);
+}
 
 
 
@@ -2362,7 +2343,11 @@ figure img {
   margin: 0;
   text-decoration: none;
   cursor: pointer;
-  }
+  pointer-events: auto;
+  }  
+#portraitsection a:active {
+ pointer-events: none;
+}
 #portraitsection img {
   position: absolute;
   z-index: -1;
@@ -2406,6 +2391,7 @@ figure img {
   font-style: italic;
   transform: scale(1.25);
 }
+
 /*-------------------------------NAV FOOTER-------------------------*/
 .to-top {
   position: fixed;
@@ -2565,8 +2551,7 @@ article {
   color: white;
   text-shadow: -1px 0 2px white, 0 1px 2px white, 1px 0 2px white, 0 -1px 10px white;
 }
-footer {
-   
+footer {   
  height: 300px;
   display: flex;
   text-align: center;

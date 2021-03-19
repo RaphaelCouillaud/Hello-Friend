@@ -1,3 +1,95 @@
+
+/*----------------------------------------------------------------------*/
+@media (min-width: 1920px) and (max-width: 2560px)
+{
+  #projets {  
+   height: 1550px; 
+}
+.listeprojets {
+  width: 70%;  
+}
+#biographic {   
+  width: 70%;
+}
+#section1, #section2, #section3 {  
+  height: 425px;
+}
+}
+
+/*----------------------RESPONSIVE Desktops and laptops---------------------------------*/
+@media screen  and (max-width : 1224px)
+{
+  #whosectionimg {
+  width: 228px;
+  height: 300px;
+}
+#rocket {    
+  bottom: -360%;
+  right: 0%;
+  }
+@keyframes rocketfly {
+    0% {
+      bottom: -350%;
+    }      
+    10% {      
+       opacity: 0.8;
+    }     
+    80% {      
+       opacity: 0.4;      
+    }     
+    100% {
+      bottom: -250%;   
+      opacity: 0;  
+    }
+  }
+.workco {
+  width: 25%;    
+  height: 450px;
+  }
+  .planetmiddle {
+  width: 90%;
+}
+.planet {
+  width: 150px;
+}
+#planetprofil {
+   width: 100px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+.carousel-text {
+  font-size: 0.75em;
+   top: 500px;
+}
+#projets {  
+   height: 1600px;  
+}
+#section1, #section2, #section3 {  
+  height: 280px;
+}
+figcaption {
+  font-size: 0.85em;   
+}
+.fa-disease { 
+  bottom: 20%;
+   }
+#balle {
+  font-size: 0.9em;
+  left: 320px;
+  }
+  #sectioncredits p:nth-child(1) { 
+  font-size: 0.75em;
+}
+}
+
+
+
+
+
+
+
+
+
 /*----------------------------------------------------------------------*/
 /*----------------------RESPONSIVE 1024---------------------------------*/
 @media screen and (max-width: 1024px) 
@@ -65,7 +157,7 @@ nav ul li a {
 }
 .workco {
   width: 25%;    
-  height: 400px;
+  height: 375px;
   }
   #ocsection {  
   height: 800px;
@@ -81,6 +173,8 @@ nav ul li a {
 }
 #planetprofil {
    width: 80px;
+   margin-top: 50px;
+   margin-bottom: 50px;
 }
 #planets h2 {
   font-size: 1em;
@@ -153,20 +247,17 @@ nav ul li a {
 #comingsoon {  
   height: 100px; 
 }
-
 #projets {  
-   height: 1480px;  
+   height: 1300px;  
 }
-.listeprojets video {
-  height: 135px;
-  pointer-events: auto!important;
- width: 240px;
- border: 3px solid white;
+.listeprojets {  
+  height: 60px;  
 }
-.listeprojets4 img {
-  width: 240px;
-  height: 135px;  
-  border: 3px solid white;
+.listeprojetstop {
+  height: 60px;    
+}
+.listeprojetstop h3 {
+  font-size: 1.5em;  
 }
 #biographic {    
   width: 90%; 
@@ -179,6 +270,9 @@ nav ul li a {
    position: relative;  
     padding-bottom: 15px;
     padding-top: 25px;   
+}
+figure {  
+  width: 50%;   
 }
 figcaption {
   font-size: 1em;   
@@ -197,9 +291,15 @@ figcaption {
   0%  {background-position: 0px 50px;}
   100%  {background-position: -200px 35px;} 
 }
+#sectioncredits p:nth-child(1) { 
+  font-size: 0.75em;
+}
 #continued { 
   bottom: 100px;
 }
+.progress-line span::after{
+  top: -35px;
+ }
 #skillsection button {  
   width: 120px;
   height: 50px;
@@ -267,6 +367,10 @@ nav ul li a {
     display: block;
      font-size: 4em;
   }
+  .topnav a.icon:hover, .topnav a.icon:active {
+    text-shadow: -2px 0 4px #08c404, 0 2px 4px #08c404, 2px 0 4px #08c404, 0 -2px 20px #08c404;
+
+  }
   .topnav.responsive {
     position: relative;
     flex-direction: column;
@@ -276,8 +380,9 @@ nav ul li a {
   }
   .topnav.responsive a.icon {
     position: absolute;
-    right: 50px;
+    right: 40px;
     top: 0;
+    font-size: 4em;  
   }
   .topnav.responsive a.icon img {
     position: absolute;
@@ -288,6 +393,7 @@ nav ul li a {
     float: none;
     display: block;
     text-align: left;
+    font-size: 3em;
   }
   #whosectionimg {
  width: 147px;
@@ -420,7 +526,8 @@ nav ul li a {
 #ocsection {  
   flex-direction: column; 
   height: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 50px; 
+  background-size: 70%;
 }
 .workco {  
   width: 66%;  
@@ -535,9 +642,6 @@ background-attachment: fixed;
   background-size: 170%;
   background-repeat: no-repeat;
   background-position: center center;
-  
-  
-
 }
 .carousel {
   width: 80%;
@@ -553,12 +657,98 @@ background-attachment: fixed;
 .carousel-item p {  
   margin-top: 100px;
 }
+#technolist button {  
+   border: 3px solid white;
+  width: 100px;
+  height: 40px;
+}
+#comingsoon {
+   height: 75px;
+  font-size: 1.5em;
+   -webkit-text-stroke: 1px black; 
+   overflow: hidden;
+   border-top: 7px solid #102ccc;
+  border-bottom: 7px solid #102ccc; 
+  
+}
+#comingsoon > :first-child {
+  display: inline-block;             
+  padding-right: 2em;                 
+  padding-left: 100%;                   
+  white-space: nowrap;                 
+  animation: defil 12s infinite linear;
+  animation-timing-function: cubic-bezier(0.7, 0.4, 0.6, 0.3);
+}
 #screenbuttons {  
-  bottom: 13%;  
+  bottom: 10%;  
 }
 .contact {  
   width: 80px;
   height: 80px;
+}
+#projets {  
+   height: 1250px;    
+}
+.listeprojets {
+  font-size: 1.2em;
+}
+#sectionbio  {
+   padding-bottom: 25px;
+}
+#section1, #section2, #section3 {  
+  height: 200px;
+}
+#biographic {   
+  width: 95%; 
+  
+}
+figure img {  
+ 
+  border: 1px solid black;
+    border-width: 2px 2.5px 2px 3px;  
+}
+figcaption {
+  font-size: 1em;   
+}
+#balle {
+  font-size: 0.9em;
+  left: 250px;
+  } 
+#continued {
+  bottom: 50px;
+}
+#skillsection  {  
+  font-size: 1.2em;
+}
+.skill-bars .bar .progress-line{
+  height: 5px;
+}
+.bar .progress-line span{
+ box-shadow: 1px 1px 8px 4px #10c4c4;
+}
+#skillsection button {
+   border: 3px solid white;
+  width: 100px;
+  height: 40px;
+}
+.to-top {  
+  font-size: 35px;
+}
+.contact {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px 0 30px;
+}
+footer {   
+ height: 250px; 
+}
+#rocket2 {
+  width: 250px;
+  bottom: 0%;
 }
 }
 /*----------------------------------------------------------------------*/
