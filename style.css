@@ -847,11 +847,7 @@ nav ul li:nth-child(7) {
    color: white; 
    box-sizing: border-box;
    padding-top: 50px;
-    background-image: url("img/backstar.png");
- background-attachment: scroll;
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: top center;   
+     
 }
 
 #rocket img {  
@@ -883,11 +879,15 @@ nav ul li:nth-child(7) {
   }
 .swiper-container {
   width: 100%;
-  height: auto;
+  height: 600px;
   padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: 50px;
-    text-shadow: 5px 0 #10c4c4;
+  padding-bottom: 50px;  
+  text-shadow: 5px 0 #10c4c4;
+   background-image: url("img/backstar.png");
+ background-attachment: scroll;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center; 
 }
 .swiper-slide {
   background-position: center;
@@ -995,7 +995,7 @@ nav ul li:nth-child(7) {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;  
-  font-size: 3em;
+  font-size: 4em;
 }
 .loading span:nth-child(2) {
   animation-delay: 0.2s;  
@@ -1052,6 +1052,12 @@ nav ul li:nth-child(7) {
       -webkit-text-stroke: 1.25px white; 
     color: #fcfc04;
      text-shadow: 5px 0 #10c4c4;
+     max-width: 100%;
+     -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 .five {
     font-size: 3em;   
@@ -1075,6 +1081,7 @@ nav ul li:nth-child(7) {
 .topsentence {
   padding-bottom: 25px;
   padding-top: 25px;
+  max-width: 100%;
 }
 .topsentence span {
     font-size: 1.5em;
@@ -1437,18 +1444,11 @@ display: flex;
   font-size: 1em; 
   text-align: center;
   position: relative;
-  margin-bottom: 50px;
-  /* background-image: url("img/backtrek.png");
-background-attachment: fixed;
-  background-size: 50%;
-  background-repeat: repeat;
-  background-position: center right;*/
+  margin-bottom: 50px; 
 }
-
 .planettop {
   width: 100%;
   margin: auto;
-
 }
 .planetmiddle {
   width: 80%;
@@ -1458,8 +1458,7 @@ background-attachment: fixed;
   justify-content: space-between;
   align-items: center;
 }
-
-/*.planetmiddle .planet:nth-child(1) {
+.planetmiddle .planet:nth-child(1) {
    animation: ro 120s linear infinite;
 }
 @keyframes ro{
@@ -1480,7 +1479,7 @@ background-attachment: fixed;
   to{
     transform: rotate(0deg);
   }
-}*/
+}
 #planets {
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   display: flex;
@@ -1499,7 +1498,7 @@ background-attachment: fixed;
   margin-left: 50px;
   margin-right: 50px;  
   animation: rota 80s linear infinite;
-}/*
+}
 @keyframes rota{
   from{
     transform: rotate(0deg);
@@ -1507,7 +1506,7 @@ background-attachment: fixed;
   to{
     transform: rotate(360deg);
   }
-}*/
+}
 #planets h2 {
   font-size: 1.25em;
     font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
@@ -1520,10 +1519,8 @@ background-attachment: fixed;
 }
 #planetprofil {
    width: 120px;
-  height: 100%; 
- 
-  object-fit: cover;
-  
+  height: 100%;  
+  object-fit: cover;  
    mix-blend-mode: darken;
 }
 #planetdots {
@@ -1536,8 +1533,7 @@ background-attachment: fixed;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
-  height: 100%;
-  
+  height: 100%;  
   z-index: 0;
   background: rgba(255, 255, 255, 0.05);
 }
@@ -1547,7 +1543,6 @@ background-attachment: fixed;
   height: 40px;
   display: block;
   animation: rotate 45s linear infinite;
-
 }
 #planetdots span::before {
   content: "";
@@ -1823,8 +1818,7 @@ background-attachment: fixed;
 }
 .listeprojets {
   width: 80%;
-  height: 75px;
-  margin: 5px;
+  height: 75px;  
   margin: auto;
   flex-grow: 1;
     transition: flex-grow 0.4s ease-out;
@@ -1916,15 +1910,7 @@ background-attachment: fixed;
 .listeprojets2 i {
   font-size: 2.25em;
 }
-.listeprojetstop i {
-  font-size: 1.25em;
-  text-shadow: 3px 0 #bc040c;
-   color: white;    
-   -webkit-text-stroke: 1px #10c4c4; 
-}
-.listeprojetstop p {
-  font-size: 1.75em;
-}
+
 #thethrill {
   font-family: 'Homenaje', sans-serif; 
 }
@@ -1946,6 +1932,15 @@ background-attachment: fixed;
 #hello {
 	font-family: MrRobot, 'Audiowide', Helvetica, Arial, sans-serif;
 }
+#chouette {
+  font-family: cursive;
+}
+#ohmy {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
 
 
 
@@ -2009,7 +2004,7 @@ figcaption {
 }
 .fa-disease {  
   position: absolute;   
-  bottom: 10%;
+  bottom: 80px;
   right: 35%;
   font-size: 2.25em;
   color: #DE3A17;
@@ -2061,7 +2056,7 @@ figure img {
   position: absolute; 
   top: 100px;
   left: 420px;
-  font-size: 1.2em;
+  font-size: 1em;
   animation: bounce 0.5s infinite linear;
   text-shadow: 1px 1px 0px black;  
     }
@@ -2227,7 +2222,7 @@ background-image: url("img/backhalt.png");
   width: 75%;
 }
 .bar .progress-line.force span{
-  width: 75%;
+  width: 78%;
 }
 .bar .progress-line.veille span{
   width: 75%;
@@ -2242,7 +2237,7 @@ background-image: url("img/backhalt.png");
   width: 133%;
 }
 .bar .progress-line.humour span{
-  width: 28%;
+  width: 30%;
 }
 .progress-line span::after{
   position: absolute;
@@ -2361,24 +2356,24 @@ background-image: url("img/backhalt.png");
 #portraitsection img.scrollable {
   visibility: visible;
   z-index: 99;
-  mix-blend-mode: luminosity;
+  /*mix-blend-mode: luminosity;*/
 }
 #portraitsection .imagehover p {
   z-index: -1;
   font-family: 'Audiowide', cursive;
-  font-size: 2.25em;  
+  font-size: 2em;  
    margin: 0;
    text-transform: uppercase;
 }
 #portraitsection .imagehover:nth-child(odd) {
-  text-shadow: 5px 0 #bc040c;
-   color: white;    
-   -webkit-text-stroke: 1px #fcfc04;
+  text-shadow: 3px 0 white;
+   color: transparent;    
+   -webkit-text-stroke: 1.5px #fcfc04;
 }
 #portraitsection .imagehover:nth-child(even) {
-  text-shadow: 5px 0 #bc040c;
-   color: white;    
-   -webkit-text-stroke: 1px #10c4c4;
+  text-shadow: 3px 0 white;
+   color: transparent;    
+   -webkit-text-stroke: 1.5px #10c4c4;
 }
 #portraitsection .imagehover {
   z-index: 9;
@@ -2397,8 +2392,7 @@ background-image: url("img/backhalt.png");
   position: fixed;
   bottom: 50px;
   right: 10px;
-  font-size: 50px;
-  color: #fcfc04; 
+  font-size: 50px; 
   -webkit-text-stroke: 0.5px black; 
   display: flex;
   align-items: center;
@@ -2429,6 +2423,7 @@ article {
   padding-top: 40px;  
   margin-bottom: 25px;
   font-family: 'Audiowide', cursive;
+  flex-wrap: wrap;
   
 }
 #email {

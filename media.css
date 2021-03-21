@@ -2,17 +2,45 @@
 /*----------------------------------------------------------------------*/
 @media (min-width: 1920px) and (max-width: 2560px)
 {
-  #projets {  
+  .carousel {
+  width: 60%;
+}
+#projets {  
    height: 1550px; 
 }
 .listeprojets {
-  width: 70%;  
+  width: 60%;  
+}
+.listeprojets4 img {
+  width: 66%;
 }
 #biographic {   
-  width: 70%;
+  width: 60%;
 }
 #section1, #section2, #section3 {  
-  height: 425px;
+  height: 450px;
+}
+.fa-disease { 
+  bottom: 30%;
+   }
+#balle {
+    left: 400px;
+    font-size: 0.8em;
+  }
+  figcaption {
+  font-size: 0.9em;   
+}
+  #sectioncredits p:nth-child(1) { 
+  font-size: 0.75em;
+}
+.skill-bars {  
+  width: 40%;
+  }
+  #portrait {     
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top; 
+ 
 }
 }
 
@@ -511,6 +539,9 @@ nav ul li a {
       bottom: -150%;     
     }
   }
+  .swiper-container { 
+  height: 450px;
+}
 .imgmentor {
   width: 120px;
   height: 120px;
@@ -520,8 +551,17 @@ nav ul li a {
 }
 #wishsection {  
   background-size: contain;
-  background-position: center center;  
-  
+  background-position: center center;    
+}
+.loading span {  
+  font-size: 4em;
+}
+.topsentence {
+ font-size: 0.75em;
+}
+.four, .five {
+  font-size: 2.25em;
+  text-shadow: 3px 0 #10c4c4;
 }
 #ocsection {  
   flex-direction: column; 
@@ -753,3 +793,143 @@ footer {
 }
 /*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*/
+@media screen and (max-width: 568px)
+{
+ #whosectionimg {
+ width: 128px;
+  height: 175px;
+}
+#todolist {  
+  padding-bottom: 50px;
+  background-image: url("img/backspace1.png");
+ background-attachment: fixed;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  position: relative;
+}
+.todocontainer ul li div p:nth-child(1) {
+  font-size: 1em;
+  padding-top: 12px;
+   padding-bottom: 10px;
+  text-shadow: 1.5px 0 #fcfc04;  
+}
+.todocontainer ul li::after { 
+  width: 15px;
+  height: 15px;  
+ }
+ 
+.todocontainer ul li div{  
+  width: 150px;  
+} 
+
+.todocontainer ul li:nth-child(odd) div {
+  left: -230px;
+  transform: translate3d(-200px,0,0);
+}
+.workco {  
+  width: 85%;   
+  height: 225px;
+ 
+}
+.planetmiddle {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+  margin-top: 25px;
+}
+.planet {
+  width: 120px;
+}
+#planetprofil {
+   width: 75px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+}
+.planettop {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.carousel-item i {  
+  font-size: 15em;  
+}
+.carousel-item p {    
+  font-size: 5em;
+}
+#projets {  
+   height: 1540px;
+}
+.listeprojetsbottom { 
+  flex-direction: column; 
+   text-shadow: 3px 0 #bc040c;
+   text-align: center;
+}
+.listeprojets1, .listeprojets2, .listeprojets3, .listeprojets4 {
+  width: 100%;
+   flex-direction: column;
+   text-align: center;
+   display: flex;
+   margin: 0;   
+}
+.listeprojets h3, .listeprojets h4 {
+  text-align: center;
+  margin: auto;
+}
+.listeprojets h4 {
+  margin-top: 5px;
+}
+.listeprojets4 img {
+  width: 60%; 
+  border: 3px solid white; 
+  margin-top: 0px; 
+}
+.listeprojets2 p {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;  
+}
+#sectionbio  {
+   padding-bottom: 0px;
+}
+#biographic { 
+  width: 80%;
+  height: auto;  
+   
+}
+#section1, #section2, #section3 {
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+   position: relative; 
+   padding: 0;     
+}
+figure {  
+  position: relative;
+  width: 70%; 
+  margin: auto;  
+  margin-top: 25px;
+}
+figcaption {
+  font-size: 1.2em;   
+}
+.fa-disease {   
+  bottom: 40px;
+  left: 25%;
+   }
+  .skill-bars{
+  padding: 10px 15px;
+  width: 55%;
+}
+
+.contact { 
+  width: 80px;
+  height: 80px;  
+  margin: 40px;
+}
+}
