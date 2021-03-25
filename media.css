@@ -147,6 +147,10 @@ nav ul li a {
   width: 300px;  
   font-size: 1.1em;
 }
+.todocontainer ul li::after {  
+  width: 25px;
+  height: 25px;
+ }
 .todocontainer ul li:nth-child(odd) div {
   left: -180px;
   transform: translate3d(-200px,0,0);
@@ -509,7 +513,10 @@ nav ul li a {
 #todolist {   
     background-size: 90%;
 }
-
+.todocontainer ul li::after {  
+ 
+  font-size: 2em;
+ }
 .todocontainer ul li div {  
   width: 220px;  
   font-size: 1.25em;
@@ -579,6 +586,9 @@ nav ul li a {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     margin-bottom: 40px;   
+}
+.cardfront, .cardback {  
+  top: 150px;  
 }
 .cardback {
    font-size: 0.75em;
@@ -698,7 +708,7 @@ background-attachment: fixed;
 .carousel-item i {
   margin-top: 75px;
 }
-.carousel-item p {  
+.carousel-item p, #game {  
   margin-top: 100px;
 }
 #technolist button {  
@@ -819,8 +829,9 @@ footer {
   text-shadow: 1.5px 0 #fcfc04;  
 }
 .todocontainer ul li::after { 
-  width: 15px;
-  height: 15px;  
+  width: 20px;
+  height: 20px; 
+  font-size: 1.75em; 
  }
  
 .todocontainer ul li div{  
@@ -952,9 +963,10 @@ figcaption {
  box-shadow: 1px 1px 10px 5px #102ccc;
 }
 .todocontainer ul li::after {  
-  width: 10px;
-  height: 10px;  
+  width: 18px;
+  height: 18px;  
   box-shadow: 1px 1px 10px 5px #102ccc;
+  font-size: 1.5em;
 
  }
 .todocontainer ul li:nth-child(odd) div {
@@ -1005,22 +1017,27 @@ figcaption {
   box-shadow: 1px 1px 10px 5px #10c4c4;  
   border: 3px solid white; 
 }
+#ocsection {
+    height: 1000px;
+}
 .workco {  
-  width: 80%;   
+  width: 75%;   
   height: 225px;
- 
+  margin-top: 0;
+     margin: auto; 
+}
+.cardfront, .cardback {  
+  top: 125px;  
 }
 .cardback {
    font-size: 0.65em;
    box-shadow: 1px 1px 15px 5px white;
   border: 3px solid white;
-  padding: 5px;
 }
 .cardfront {
    font-size: 1.15em;
    box-shadow: 1px 1px 15px 5px white;
-  border: 3px solid white;
-  padding: 5px;
+  border: 3px solid white; 
 }
 #pole {
  width: 12%;  
@@ -1030,25 +1047,132 @@ figcaption {
 }
 #planets { 
   padding: 0px;
-  max-width: 100%;  
+  max-width: 100%; 
+ clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 .planet {
-  width: 50px;
+  width: 80px;
 }
 #planetprofil {
-   width: 50px;  
+   width: 40px;  
    margin: 0; 
-}
-#planetbordo {
-	padding-bottom: 50px;
-}
+ }
 .planetmiddle {
   width: 100%;  
-  justify-content: space-around;
-  border: 3px solid red;
-  padding-right: 75px;
-  padding-left: 75px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.road {  
+  height: 75px;
+  border-top: 4px solid #102ccc;
+  border-bottom: 4px solid #102ccc;
+}
+.road::after {  
+  border-top: 4px dotted white;
+}
+.pacman::before,
+.pacman::after {   
+  border: solid 15px #fcfc04;
+  margin-top: -15px; 
+  border-right-color: transparent;
+  border-bottom-color: transparent;  
+}
+.pacman::after {
+  border-color: #fcfc04;
+  border-right-color: transparent;
+  border-top-color: transparent; 
+}
+.ghost {  
+  height: 38px;
+  width: 30px;
+   margin-top: -20px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+.ghost::before,
+.ghost::after {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 9px;
+  width: 7px;
+  border-radius: 100%;
+  top: 10px;
+  left: 5px;
 }
 
+.ghost::after {
+  left: 18px;
+}
+.eyes::before,
+.eyes::after {  
+  height: 4px;
+  width: 4px; 
+  top: 12px;
+  left: 2px; 
+}
+.eyes::after {
+  left: 16px;
+}
+
+@keyframes peepLeft {
+  0%,
+  100% {
+    left: 2px;
+  }
+  50% {
+    left: 5px;
+  }
+}
+
+@keyframes peepRight {
+  0%,
+  100% {
+    left: 17px;
+  }
+  50% {
+    left: 20px;
+  }
+}
+.carousel {
+  width: 90%;
+  height: 325px;
+}
+.carousel-item i {
+  margin-top: 50px;
+   font-size: 13em;  
+}
+.carousel-item p, #game {  
+  margin-top: 80px;
+  font-size: 4em;
+}
+#technolist button {  
+   border: 3px solid white;
+  width: 75px;
+  height: 30px;
+}
+#comingsoon {
+   height: 60px;  
+   border-top: 5px solid #102ccc;
+  border-bottom: 5px solid #102ccc;   
+}
+#screenbuttons {  
+  bottom: 9%;  
+}
+#projets {  
+   height: 1440px;
+}
+.listeprojets {  
+ box-shadow: 1px 1px 15px 5px white;
+  border: 3px solid white;
+}
+.listeprojets2 p {
+  align-items: center;
+  justify-content: center;  
+}
+.listeprojets1 p, .listeprojets2 p, .listeprojets3 p { 
+  margin: 5px;
+}
+.listeprojets4 {
+  margin-top: 15px;
+}
 }
