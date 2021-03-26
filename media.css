@@ -40,7 +40,14 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top; 
- 
+}
+footer {   
+ height: 400px;  
+}
+#rocket2 {
+  width: 6%; 
+   bottom: -120px;
+   right: 15%;
 }
 }
 
@@ -343,10 +350,12 @@ figcaption {
    max-height: 40%;
    max-width: 30%;   
 }
-/*-------------------------------FOOTER-------------------------*/
 .contact {  
   width: 100px;
   height: 100px;
+}
+footer {   
+ height: 250px;  
 }
 }
 
@@ -399,10 +408,10 @@ nav ul li a {
     display: block;
      font-size: 4em;
   }
-  .topnav a.icon:hover, .topnav a.icon:active {
+  /*.topnav a.icon:hover, .topnav a.icon:active {
     text-shadow: -2px 0 4px #08c404, 0 2px 4px #08c404, 2px 0 4px #08c404, 0 -2px 20px #08c404;
 
-  }
+  }*/
   .topnav.responsive {
     position: relative;
     flex-direction: column;
@@ -785,6 +794,9 @@ figcaption {
   width: 100px;
   height: 40px;
 }
+#portrait {  
+  background-size: cover;  
+}
 .to-top {  
   font-size: 35px;
 }
@@ -798,12 +810,13 @@ figcaption {
   margin: 0 30px 0 30px;
 }
 footer {   
- height: 250px; 
+ height: 200px;    
 }
-#rocket2 {
-  width: 250px;
-  bottom: 0%;
+#rocket2 {  
+  bottom: -40px; 
+  width: 7%; 
 }
+
 }
 /*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*/
@@ -935,6 +948,13 @@ figcaption {
   width: 80px;
   height: 80px;  
   margin: 40px;
+}
+footer {   
+ height: 250px;    
+}
+#rocket2 {  
+  bottom: 0px; 
+  width: 8%; 
 }
 }
 /*----------------------------------------------------------------------*/
@@ -1174,5 +1194,57 @@ figcaption {
 }
 .listeprojets4 {
   margin-top: 15px;
+}
+#biographic { 
+  width: 90%;   
+}
+#section1, #section2, #section3 { 
+  height: 425px;  
+}
+figure { 
+    width: 75%;  
+}
+figcaption {
+  font-size: 1.1em;   
+}
+.fa-disease {   
+  bottom: 40px;
+  left: 25%;
+   }
+#figurebirth img {  
+  animation: wave 20s infinite ease-in-out; 
+}
+
+@keyframes wave {  
+  0%  {background-position: 0 50%;}  
+  20%  {background-position: 0 35%;}  
+  40%  {background-position: 0 55%;} 
+  60%  {background-position: 0 40%;} 
+  80%  {background-position: 0 60%;} 
+  100%  {background-position: 0 35%;} 
+}
+  #figureufo img {      
+    animation: ufobackground 13s alternate infinite;
+}
+@keyframes ufobackground {  
+  0%  {background-position: 0px 50px;}
+  100%  {background-position: -150px 35px;} 
+}
+  .skill-bars{
+  padding: 10px 15px;
+  width: 66%;
+}
+.bar .progress-line.depass span{
+  width: 115%;
+}
+.bar .progress-line.respect span{
+  width: 120%;
+}
+.bar .progress-line.humour span{
+  width: 33%;
+}
+#rocket2 {  
+  bottom: 25px; 
+  width: 10%; 
 }
 }

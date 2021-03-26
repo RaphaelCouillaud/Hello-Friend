@@ -1647,7 +1647,7 @@ background-attachment: fixed;
   width: 100%;  
   /*position: absolute;  */  
 }
-#express, #vanilla, #token {
+#express, #vanilla, #token, #vuex {
    font-weight: lighter;
 }
 #jquery {
@@ -2335,9 +2335,9 @@ background-image: url("img/backhalt.png");
    justify-content: space-between;   
 	background-image: url("img/neonlines.png");
  background-attachment: scroll;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center top; 
+  background-position: center center; 
   padding-bottom: 50px; 
 }
 #portraitsection {
@@ -2560,7 +2560,7 @@ article {
   text-shadow: -1px 0 2px white, 0 1px 2px white, 1px 0 2px white, 0 -1px 10px white;
 }
 footer {   
- height: 300px;
+ height: 325px;
   display: flex;
   text-align: center;
   position: relative;
@@ -2588,11 +2588,11 @@ font-family: MrRobot, 'Audiowide', Helvetica, Arial, sans-serif;
    color: #bc040c;
    }
 #rocket2 {
-	width: 350px;
+	width: 6%;
 	height: auto;
 	position: absolute;
-  bottom: -15%;
-  right: 10%;
+  bottom: -75px;
+  right: 20%;
   transform: translate(-50%, -50%);
 }
 #rocket2 img {
