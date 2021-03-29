@@ -250,13 +250,13 @@ setInterval(nextSlide, 7500);
 
 
 // REFRESH //
-const refreshButton = document.querySelector('.refresh-button');
+//const refreshButton = document.querySelector('.refresh-button');
 
-const refreshPage = () => {
-  location.reload();
-}
+//const refreshPage = () => {
+//  location.reload();
+//}
 
-refreshButton.addEventListener('click', refreshPage)
+//refreshButton.addEventListener('click', refreshPage)
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
@@ -311,6 +311,40 @@ vid.forEach(video => {
 })
 ////////////////////////////////////////////////////////////////////////////////
 
+// SKILLS BARS ANIMATION //
+const skillsSection = document.getElementById('skill-bars');
+
+const progressBars = document.querySelectorAll('.info');
+
+function showProgress() {
+  progressBars.forEach(progressBar => {
+    const valueBar = progressBar.dataset.progress;
+    progressBar.style.opacity = 1;
+    progressBar.style.width = `${valueBar}%`;
+  });
+}
+
+function hideProgress() {
+  progressBars.forEach(p => {
+    p.style.opacity = 0;
+    p.style.width = 0;
+  });
+}
+
+window.addEventListener('scroll',() => {
+  const sectionPos = skillsSection.getBoundingClientRect().top;
+  const screenPos = window.innerHeight / 1.5;
+
+  if(sectionPos < screenPos){
+      showProgress();
+  } else{
+     hideProgress();
+  }
+});
+
+
+////////////////////////////////////////////////////////////////////////////////
+
 // MOUSE IMG SCROLL //
 jQuery(function($){$('.imagehover').mousemove(function(e){
   $(this).find('img').addClass('scrollable');
@@ -325,3 +359,4 @@ jQuery(function($){$('.imagehover').mousemove(function(e){
   $(this).find('img').removeClass('scrollable');
 });
 })
+////////////////////////////////////////////////////////////////////////////////
