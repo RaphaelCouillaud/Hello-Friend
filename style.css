@@ -1668,11 +1668,20 @@ font-family: 'Newsreader', serif;
 #mysql span {
   font-family: 'Newsreader', serif;
 }
-#game {
-   font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
-   color: #fcfc04;
+#game, #coin {
+   font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;  
    text-shadow: -2px 0 4px #fcfc04, 0 2px 4px #fcfc04, 2px 0 4px #fcfc04, 0 -2px 20px #fcfc04;
-   margin-top: 150px;
+   margin-top: 200px;
+   font-size: 4em;
+   color: white;
+}
+#game {
+	 text-shadow: -2px 0 4px #fcfc04, 0 2px 4px #fcfc04, 2px 0 4px #fcfc04, 0 -2px 20px #fcfc04;
+	 
+}
+#coin {
+	
+	text-shadow: -2px 0 4px #bc040c, 0 2px 4px #bc040c, 2px 0 4px #bc040c, 0 -2px 20px #bc040c;
 }
 #word, #prestashop, #nuxt, #react {
    color: #fcfc04;
