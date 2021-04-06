@@ -32,18 +32,16 @@ setInterval(draw, 123);
 window.addEventListener("resize", () => location.reload());
 /////////////////////////////////////////////////////////////////////////
 
+// TYPE SCRIPT ENGLISH //
+let texte = "WELCOME TO MY PORTFOLIO";
+    let arrayscript = Array.from(texte);
 
-// TYPE SCRIPT //
-let text = "BIENVENUE SUR MON PORTFOLIO";
-    let array = Array.from(text);
-
-    Object.keys(array).map((key) => {
+    Object.keys(arrayscript).map((key) => {
       setTimeout(
-        () => (document.getElementById("headerdescription").innerHTML += array[key]),
+        () => (document.getElementById("headerdescriptioneng").innerHTML += arrayscript[key]),
         key * 250
       );
     });
- 
 //////////////////////////////////////////////////////////////////////////////    
 
 // NAVBAR RESPONSIVE //
@@ -175,19 +173,6 @@ window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
 /////////////////////////////////////////////////////////////////////////////////////
 
-// FONTS CSS EFFECTS SECTION FOR //
-window.addEventListener("scroll" ,() => {
-  let content = document.querySelector('#wishsection');
-  let contentPosition = content.getBoundingClientRect().top;
-  let screenPosition = window.innerHeight /1;
-  if (contentPosition < screenPosition) {
-    content.classList.add('animate');
-  } else {
-    content.classList.remove('animate');
-  }
-});
-////////////////////////////////////////////////////////////////////////////////////
-
 // SLIDER ARCADE //
 const prevButton = document.getElementById("carousel-button-prev");
 const nextButton = document.getElementById("carousel-button-next");
@@ -247,22 +232,6 @@ nextButton.addEventListener("click", nextSlide);
 
 setInterval(nextSlide, 7500);
 //////////////////////////////////////////////////////////////////////////////////////
-
-
-
-// REFRESH //
-//const refreshButton = document.querySelector('.refresh-button');
-
-//const refreshPage = () => {
-//  location.reload();
-//}
-
-//refreshButton.addEventListener('click', refreshPage)
-
-///////////////////////////////////////////////////////////////////////////////////////
-
-
-
 
 
 // SCROLL TO TOP //
