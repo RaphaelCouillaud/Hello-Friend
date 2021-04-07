@@ -2126,6 +2126,15 @@ animation: comptabackground 75s linear infinite;
   	-o-animation: comptabackground 75s linear infinite;
   	-ms-animation: comptabackground 75s linear infinite;
 }
+#figurecomptaeng img {    
+background: url("img/comptabackeng.jpg");
+background-size: cover;
+animation: comptabackground 75s linear infinite;
+	-moz-animation: comptabackground 75s linear infinite;
+  	-webkit-animation: comptabackground 75s linear infinite;
+  	-o-animation: comptabackground 75s linear infinite;
+  	-ms-animation: comptabackground 75s linear infinite;
+}
 @keyframes comptabackground {  
   0%  {background-position: 0 0;}
   100%  {background-position: -2122px 0;} 
@@ -2193,7 +2202,7 @@ background: rgba(255, 255, 255, 0.05);
 margin: auto;
 margin-top: 50px;  
 border-radius: 30px;   
-box-shadow: 1px 1px 20px 7px white;
+box-shadow: 1px 1px 20px 7px #10c4c4;
 border: 6px solid white;
 }
 .bar {
@@ -2212,7 +2221,7 @@ margin-top: 0px;
 border-radius: 30px;  
 width: 0%;
 opacity: 0;
-box-shadow: 1px 1px 12px 5px #102ccc;
+box-shadow: 1px 1px 12px 5px #10c4c4;
 background-color: white;
 position: relative;
 height: 100%;
