@@ -325,6 +325,10 @@ figcaption {
   }
   #figureufo img {      
     animation: ufobackground 13s alternate infinite;
+      -moz-animation: ufobackground 13s alternate infinite;
+      -webkit-animation: ufobackground 13s alternate infinite;
+      -o-animation: ufobackground 13s alternate infinite;
+      -ms-animation: ufobackground 13s alternate infinite;
 }
 @keyframes ufobackground {  
   0%  {background-position: 0px 50px;}
@@ -451,6 +455,10 @@ nav ul li a {
 }
 .saucer {  
   animation: saucerfly 7s ease-in-out infinite forwards;
+      -moz-animation: saucerfly 7s ease-in-out infinite forwards;
+      -webkit-animation: saucerfly 7s ease-in-out infinite forwards;
+      -o-animation: saucerfly 7s ease-in-out infinite forwards;
+      -ms-animation: saucerfly 7s ease-in-out infinite forwards;
     }
 @keyframes saucerfly {
     0% {
@@ -742,14 +750,7 @@ background-attachment: fixed;
   border-bottom: 7px solid #102ccc; 
   
 }
-#comingsoon > :first-child {
-  display: inline-block;             
-  padding-right: 2em;                 
-  padding-left: 100%;                   
-  white-space: nowrap;                 
-  animation: defil 12s infinite linear;
-  animation-timing-function: cubic-bezier(0.7, 0.4, 0.6, 0.3);
-}
+
 #screenbuttons {  
   bottom: 10%;  
 }
@@ -791,16 +792,15 @@ figcaption {
 #skillsection  {  
   font-size: 1.2em;
 }
-.skill-bars .bar .progress-line{
-  height: 5px;
+#skill-bars {
+width: 60%;
 }
-.bar .progress-line span{
- box-shadow: 1px 1px 8px 4px #10c4c4;
+.bar {
+height: 8px;  
 }
-#skillsection button {
-   border: 3px solid white;
-  width: 100px;
-  height: 40px;
+.info span { 
+top: -30px;
+font-size: 1.75em;
 }
 #portrait {  
   background-size: cover;  
@@ -833,11 +833,17 @@ footer {
 /*----------------------------------------------------------------------*/
 @media screen and (max-width: 568px)
 {
+#lang a {
+  font-size: 1.5em;
+  color: white;
+}
  #whosectionimg {
  width: 128px;
   height: 175px;
 }
-
+.topolist h2 {
+-webkit-text-stroke: 1px white;
+}
 .todocontainer ul li div p:nth-child(1) {
   font-size: 1em;
   padding-top: 12px;
@@ -943,11 +949,10 @@ figcaption {
   bottom: 40px;
   left: 25%;
    }
-  .skill-bars{
-  padding: 10px 15px;
-  width: 55%;
-}
 
+#skill-bars p {
+font-size: 0.75em;
+}
 .contact { 
   width: 80px;
   height: 80px;  
@@ -1015,7 +1020,7 @@ footer {
   border-width: 7px 14px 7px 0; 
 } 
 .topolist h2 {
-  font-size: 2em;  
+  font-size: 2.25em;  
 }
 #rocket {    
   bottom: -340%;
@@ -1197,6 +1202,19 @@ footer {
    border-top: 5px solid #102ccc;
   border-bottom: 5px solid #102ccc;   
 }
+#comingsoon > :first-child {
+animation: defil 10s infinite linear;
+    -moz-animation: defil 10s infinite linear;
+    -webkit-animation: defil 10s infinite linear;
+    -o-animation: defil 10s infinite linear;
+    -ms-animation: defil 10s infinite linear;
+}
+@keyframes defil {
+  0% {
+    transform: translate3d(200px,0,0); }
+  100% {
+    transform: translate3d(-100%,0,0); }
+}
 #screenbuttons {  
   bottom: 9%;  
 }
@@ -1238,6 +1256,10 @@ figcaption {
    }
 #figurebirth img {  
   animation: wave 20s infinite ease-in-out; 
+    -moz-animation: wave 20s infinite ease-in-out; 
+    -webkit-animation: wave 20s infinite ease-in-out; 
+    -o-animation: wave 20s infinite ease-in-out; 
+    -ms-animation: wave 20s infinite ease-in-out; 
 }
 
 @keyframes wave {  
@@ -1250,28 +1272,19 @@ figcaption {
 }
   #figureufo img {      
     animation: ufobackground 13s alternate infinite;
+      -moz-animation: ufobackground 13s alternate infinite;
+      -webkit-animation: ufobackground 13s alternate infinite;
+      -o-animation: ufobackground 13s alternate infinite;
+      -ms-animation: ufobackground 13s alternate infinite;
 }
 @keyframes ufobackground {  
   0%  {background-position: 0px 50px;}
   100%  {background-position: -150px 35px;} 
 }
-  .skill-bars{
-  padding: 10px 15px;
-  width: 66%;
-}
-.skill-bars .bar .info span{    
-   font-size: 0.75em;
-}
-.progress-line span::after{  
-  right: -20px;
-}
-.bar .progress-line.depass span{
-  width: 115%;
-}
-.bar .progress-line.respect span{
-  width: 120%;
-}
 
+#skill-bars p {
+width: 66%;
+}
 
 #rocket2 {  
   bottom: 10px; 
@@ -1344,6 +1357,10 @@ figure {
   } 
 #figureufo img {      
     animation: ufobackground 13s alternate infinite;
+      -moz-animation: ufobackground 13s alternate infinite;
+      -webkit-animation: ufobackground 13s alternate infinite;
+      -o-animation: ufobackground 13s alternate infinite;
+      -ms-animation: ufobackground 13s alternate infinite;
 }
 @keyframes ufobackground {  
   0%  {background-position: 0px 35px;}
@@ -1351,6 +1368,9 @@ figure {
 }
 #continued {  
   right: 25px;  
+}
+.info span {    
+right: -10px; 
 }
 }
 /*----------------------------------------------------------------------*/

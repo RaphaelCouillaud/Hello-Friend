@@ -228,9 +228,9 @@ header div span:nth-child(6) {
 width: 50px;
 height: 50px;
 position: absolute;   
-top: 0;
-left: 95%; 
-margin: 25px;
+top: 3%;
+left: 97%; 
+
 }
 #lang a {
   font-size: 2em;
@@ -356,7 +356,7 @@ align-items: center;
 position: relative;
 height: 100vh;
 align-content: center;
-mix-blend-mode: multiply;
+/*mix-blend-mode: multiply;*/
 }
 #whosection img {
 max-width: 100%;
@@ -465,7 +465,7 @@ left: 0;
 width: 60%;
 height: 75%;	
 z-index: -2;	
-clip-path: polygon(0% 35%, 25% 19%, 37% 15%, 46% 13%, 56% 13%, 65% 14%, 74% 15%, 90% 26%, 100% 32%, 94% 30%, 64% 21%, 48% 24%, 37% 25%, 8% 49%, 23% 44%, 33% 52%, 41% 45%, 40% 39%, 70% 41%, 70% 48%, 87% 66%, 67% 55%, 9% 68%, 0 74%);
+clip-path: polygon(0 16%, 10% 10%, 24% 7%, 45% 4%, 66% 5%, 78% 9%, 89% 18%, 99% 40%, 90% 35%, 73% 23%, 49% 14%, 29% 23%, 19% 33%, 34% 37%, 70% 43%, 88% 70%, 69% 53%, 49% 47%, 28% 48%, 15% 50%, 4% 60%, 0 75%);
 background: rgba(255, 255, 255, 0.05);
 }
 #milkyaway {
@@ -667,7 +667,7 @@ overflow-wrap: break-word;
 }
 .topolist h2:hover {
 text-shadow: -2px 0 2px #fcfc04, 0 2px 2px #fcfc04, 2px 0 2px #fcfc04, 0 -2px 15px #fcfc04;
--webkit-text-stroke: 0.5px white;
+-webkit-text-stroke: 1.5px white;
 transition: 1s ease-in-out;  
 }
 .topolist h2::after {
@@ -2060,7 +2060,7 @@ display: none;
 #figurebirth img {
 background: url("img/backoyster3.jpg"); /*jpg*/    
 animation: wave 25s infinite ease-in-out;
-	-moz-animation: wave 25s infinite ease-in-out;
+	  -moz-animation: wave 25s infinite ease-in-out;
   	-webkit-animation: wave 25s infinite ease-in-out;
   	-o-animation: wave 25s infinite ease-in-out;
   	-ms-animation: wave 25s infinite ease-in-out;
@@ -2081,7 +2081,7 @@ top: 100px;
 left: 420px;
 font-size: 1em;
 animation: bounce 0.5s infinite linear;
-	-moz-animation: bounce 0.5s infinite linear;
+	  -moz-animation: bounce 0.5s infinite linear;
   	-webkit-animation: bounce 0.5s infinite linear;
   	-o-animation: bounce 0.5s infinite linear;
   	-ms-animation: bounce 0.5s infinite linear;
@@ -2108,7 +2108,7 @@ background-size: cover;
 animation-timing-function: cubic-bezier(0.1, 1, -0.6, 0);
 /*animation-iteration-count: 1;*/
 animation: ufobackground 10s alternate infinite;
-	-moz-animation: ufobackground 10s alternate infinite;
+	  -moz-animation: ufobackground 10s alternate infinite;
   	-webkit-animation: ufobackground 10s alternate infinite;
   	-o-animation: ufobackground 10s alternate infinite;
   	-ms-animation: ufobackground 10s alternate infinite;
@@ -2121,7 +2121,7 @@ animation: ufobackground 10s alternate infinite;
 background: url("img/comptaback.jpg");
 background-size: cover;
 animation: comptabackground 75s linear infinite;
-	-moz-animation: comptabackground 75s linear infinite;
+	  -moz-animation: comptabackground 75s linear infinite;
   	-webkit-animation: comptabackground 75s linear infinite;
   	-o-animation: comptabackground 75s linear infinite;
   	-ms-animation: comptabackground 75s linear infinite;
@@ -2130,7 +2130,7 @@ animation: comptabackground 75s linear infinite;
 background: url("img/comptabackeng.jpg");
 background-size: cover;
 animation: comptabackground 75s linear infinite;
-	-moz-animation: comptabackground 75s linear infinite;
+	  -moz-animation: comptabackground 75s linear infinite;
   	-webkit-animation: comptabackground 75s linear infinite;
   	-o-animation: comptabackground 75s linear infinite;
   	-ms-animation: comptabackground 75s linear infinite;
@@ -2143,7 +2143,7 @@ animation: comptabackground 75s linear infinite;
 background: url("img/openback.jpg");
 background-size: cover;
 animation: openbackground 100s linear infinite;
-	-moz-animation: openbackground 100s linear infinite;
+	  -moz-animation: openbackground 100s linear infinite;
   	-webkit-animation: openbackground 100s linear infinite;
   	-o-animation: openbackground 100s linear infinite;
   	-ms-animation: openbackground 100s linear infinite;
@@ -2385,7 +2385,7 @@ box-shadow: 1px 1px 15px 5px #102ccc;
 border-radius: 28% 72% 73% 27% / 21% 24% 79% 76%;
 transition: 0.5s ease-in-out;
 animation: circles 4s linear infinite;
-	-moz-animation: circles 4s linear infinite;
+	  -moz-animation: circles 4s linear infinite;
   	-webkit-animation: circles 4s linear infinite;
   	-o-animation: circles 4s linear infinite;
   	-ms-animation: circles 4s linear infinite;
@@ -2407,7 +2407,7 @@ box-shadow: 2px 2px 25px 10px #102ccc;
 border-radius: 48% 52% 53% 47% / 31% 34% 69% 66%;
 transition: 0.5s ease-in-out;
 animation: circles 2s linear infinite;
-	-moz-animation: circles 2s linear infinite;
+	  -moz-animation: circles 2s linear infinite;
   	-webkit-animation: circles 2s linear infinite;
   	-o-animation: circles 2s linear infinite;
   	-ms-animation: circles 2s linear infinite;
@@ -2430,7 +2430,7 @@ box-shadow: 1px 1px 15px 7px #102ccc;
 border-radius: 28% 72% 73% 27% / 21% 24% 79% 76%;
 transition: 0.5s ease-in-out;
 animation: circlesnext 6s linear infinite;
--moz-animation: circlesnext 6s linear infinite;
+    -moz-animation: circlesnext 6s linear infinite;
   	-webkit-animation: circlesnext 6s linear infinite;
   	-o-animation: circlesnext 6s linear infinite;
   	-ms-animation: circlesnext 6s linear infinite;
