@@ -527,6 +527,9 @@ nav ul li a {
     width: 70%;
   height: 70%;   
 }
+.topolist h2::after {
+top: 40px;
+}
 #todolist {  
   padding-bottom: 50px;
   background-image: url("img/backspace1.png");
@@ -552,12 +555,12 @@ nav ul li a {
   width: 10%;
   }
 #rocket {    
-  bottom: -300%;
-  right: -10%;
+  bottom: -340%;
+  right: 0%;
   }
 @keyframes rocketfly {
     0% {
-      bottom: -290%;
+      bottom: -330%;
     }      
     10% {      
        opacity: 0.8;
@@ -566,7 +569,7 @@ nav ul li a {
        opacity: 0.4;      
     }     
     100% {
-      bottom: -150%;     
+      bottom: -230%;     
     }
   }
   .swiper-container { 
@@ -575,6 +578,7 @@ nav ul li a {
 .imgmentor {
   width: 120px;
   height: 120px;
+  border: 3px solid white;
 }
 .testimonialBox p { 
   font-size: 1.25em;
@@ -597,7 +601,8 @@ nav ul li a {
   flex-direction: column; 
   height: 100%;
   padding-bottom: 50px; 
-  background-size: 50%;
+  background-position: center left;
+  
 }  
 .workco {  
   width: 66%;  
@@ -805,11 +810,29 @@ font-size: 1.75em;
 #portrait {  
   background-size: cover;  
 }
-.to-top {  
+#portraitsection {
+max-width: 90%;
+}
+#portraitsection .imagehover p span {
+display: inline;
+
+}
+#portraitsection .imagehover p span i {
+  text-shadow: 3px 0 #10c4c4;
+color: #fcfc04;    
+-webkit-text-stroke: 1.5px white;
+font-style: italic;
+}
+#portraitsection .imagehover:nth-child(5) {
   display: none;
 }
+
+.to-top {  
+  font-size: 35px;
+}
 .to-top.active {
-  display: none;
+bottom: 20px;
+
 }
 .contact {
   position: relative;
@@ -965,6 +988,7 @@ footer {
   bottom: 0px; 
   width: 8%; 
 }
+
 }
 /*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*/
@@ -980,6 +1004,7 @@ footer {
   }
 #whosection {  
   height: 90vh;
+  flex-direction: column-reverse;
 }
 .todocontainer ul li div{  
   width: 150px;  
@@ -1022,26 +1047,12 @@ footer {
 .topolist h2 {
   font-size: 2.25em;  
 }
-#rocket {    
-  bottom: -340%;
-  right: -40%;
-  }
-@keyframes rocketfly {
-    0% {
-      bottom: -330%;
-    }      
-    10% {      
-       opacity: 0.8;
-    }     
-    80% {      
-       opacity: 0.4;      
-    }     
-    100% {
-      bottom: -220%;     
-    }
-  }
+.topolist h2::after {
+top: 35px;
+}
+
 .testimonialBox {  
-  width: 75%; 
+  width: 100%; 
 }
 .swiper-container { 
   height: 400px;
@@ -1055,10 +1066,7 @@ footer {
 .testimonialBox a {
   font-size: 3em;  
 }
-#wishsection {  
-  background-size: contain;
-  background-position: bottom 300px right 100px; 
-}
+
 #ocsection {
     height: 1000px;
 }
@@ -1219,8 +1227,7 @@ animation: defil 10s infinite linear;
   bottom: 9%;  
 }
 #projets {  
-   height: 1440px;
-  
+   height: 1470px;  
 }
 .listeprojets {  
  box-shadow: 1px 1px 15px 5px white;
@@ -1304,12 +1311,22 @@ article {
 footer {   
   padding-top: 0px;  
 }
+.to-top {  
+  font-size: 25px;
+}
+}
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+@media screen and (max-width: 400px)
+{
+#projets {  
+   height: 1500px;  
+}
 }
 /*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*/
 @media screen and (max-width: 375px)
-{
- 
+{ 
 .todocontainer ul li div{  
   width: 125px;   
 }
@@ -1317,12 +1334,6 @@ footer {
   left: 40px; 
 }
 
-#rocket {   
-  right: -50%;
-}
-.testimonialBox {  
-  width: 85%; 
-}
 .imgmentor {
   width: 90px;
   height: 90px; 
@@ -1347,7 +1358,7 @@ footer {
   height: 26px;
 }
 #projets {  
-   height: 1460px;  
+   height: 1520px;  
 }
 figure { 
     width: 85%;  
@@ -1372,6 +1383,19 @@ figure {
 .info span {    
 right: -10px; 
 }
+
+article {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+}
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+@media screen and (max-width: 350px)
+{
+#projets {  
+   height: 1570px;  
+}
 }
 /*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*/
@@ -1383,27 +1407,6 @@ right: -10px;
 }
 .todocontainer ul li:nth-child(odd) div {
   left: 55px; 
-}
-#rocket {   
-  right: -60%;
-  bottom: -350%;
-}
-@keyframes rocketfly {
-    0% {
-      bottom: -340%;
-    }      
-    10% {      
-       opacity: 0.8;
-    }     
-    80% {      
-       opacity: 0.4;      
-    }     
-    100% {
-      bottom: -250%;     
-    }
-  }
-.testimonialBox {  
-  width: 90%; 
 }
 .imgmentor {
   width: 90px;
@@ -1427,7 +1430,7 @@ right: -10px;
   height: 26px;
 }
 #projets {  
-   height: 1575px;  
+   height: 1585px;  
 }
 .listeprojets {
   width: 90%;  
