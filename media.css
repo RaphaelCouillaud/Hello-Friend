@@ -381,7 +381,12 @@ footer {
 * {
    font-size: 0.9em;
 }
-
+/* Add some top padding to the page content to prevent 
+sudden quick movement (as the navigation bar gets a new 
+position at the top of the page (position:fixed and top:0) */
+main {
+  padding-top: 50px;
+}
 h1 { 
   font-size: 4em;  
 }
@@ -448,10 +453,24 @@ nav ul li a {
   width: 12%;
 }
 .parallaxeffect img:nth-child(10) {
-  bottom: 25%;
+  bottom: 35%;
+  left: 10%;
 }
 .parallaxeffect img:nth-child(7) {
   bottom: 10%;
+  right: 7%;
+}
+.parallaxeffect img:nth-child(3) {
+left: 15%;
+}
+.parallaxeffect img:nth-child(4) {
+top: 0%;
+}
+.parallaxeffect img:nth-child(6) {
+bottom: 50%;
+}
+.parallaxeffect img:nth-child(2) {
+bottom: 30%;
 }
 .saucer {  
   animation: saucerfly 7s ease-in-out infinite forwards;
@@ -593,6 +612,15 @@ top: 40px;
 .topsentence {
  font-size: 0.75em;
 }
+.animate .one, .animate .two, .animate .three {
+font-size: 2.25em;
+transform: scale(1);
+  -webkit-transform: scale(1);
+    -ms-transform: scale(1,1);
+}
+.one, .two, .three {
+   font-size: 2.25em;
+}
 .four, .five {
   font-size: 2.25em;
   text-shadow: 3px 0 #10c4c4;
@@ -635,16 +663,40 @@ top: 40px;
   max-width: 100%;  
 }
 .planet {
-  width: 100px;
+  width: 120px;
 }
 #planetprofil {
-   width: 50px;
+   width: 65px;
    margin-top: 75px;
    margin-bottom: 75px;
+   animation: rotaprofil 80s linear infinite;
+    -moz-animation: rotaprofil 80s linear infinite;
+    -webkit-animation: rotaprofil 80s linear infinite;
+    -o-animation: rotaprofil 80s linear infinite;
+    -ms-animation: rotaprofil 80s linear infinite;
 }
+@keyframes rotaprofil{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
 #planets h2 {
     -webkit-text-stroke: 0.5px #10c4c4; 
 }
+#planet2, .planet, .planetmiddle .planet:nth-child(1) {
+animation: none;
+  -moz-animation: none;
+    -webkit-animation: none;
+    -o-animation: none;
+    -ms-animation: none;
+}
+
+
+
 /*-------------------------------------SECTION PACMAN-----------------------------------*/
 
 .road {  
@@ -804,8 +856,8 @@ width: 60%;
 height: 8px;  
 }
 .info span { 
-top: -30px;
-font-size: 1.75em;
+right: -10px; 
+font-size: 2em;
 }
 #portrait {  
   background-size: cover;  
@@ -867,6 +919,12 @@ footer {
 .topolist h2 {
 -webkit-text-stroke: 1px white;
 }
+.topolist h2::after {
+display: none;
+}
+.topolist p {
+text-shadow: 1.5px 0 #10c4c4;
+}
 .todocontainer ul li div p:nth-child(1) {
   font-size: 1em;
   padding-top: 12px;
@@ -889,19 +947,29 @@ footer {
 }
 .workco {  
   width: 85%;   
-  height: 225px;
- 
+  height: 225px; 
 }
-
+#planets { 
+  padding: 0px;
+  max-width: 100%; 
+ clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
 .planet {
-  width: 75px;
+  width: 110px;
 }
 #planetprofil {
-   width: 40px;
+   width: 60px;
 }
 .planettop {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+.planetmiddle {
+width: 100%;
+}
+#planetdots span {
+width: 25px;
+height: 25px;
 }
 .carousel-item i {  
   font-size: 15em;  
@@ -976,6 +1044,11 @@ figcaption {
 #skill-bars p {
 font-size: 0.75em;
 }
+.info span { 
+top: -30px;
+right: 0px; 
+font-size: 1.75em;
+}
 .contact { 
   width: 80px;
   height: 80px;  
@@ -1047,9 +1120,7 @@ footer {
 .topolist h2 {
   font-size: 2.25em;  
 }
-.topolist h2::after {
-top: 35px;
-}
+
 
 .testimonialBox {  
   width: 100%; 
@@ -1095,11 +1166,7 @@ top: 35px;
 #logooc {
   width: 40%;
 }
-#planets { 
-  padding: 0px;
-  max-width: 100%; 
- clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-}
+
 .planet {
   width: 80px;
 }
@@ -1110,6 +1177,10 @@ top: 35px;
 .planetmiddle {
   width: 100%;  
   justify-content: space-between;
+}
+#planetdots span {
+width: 18px;
+height: 18px;
 }
 .road {  
   height: 75px;
@@ -1224,7 +1295,7 @@ animation: defil 10s infinite linear;
     transform: translate3d(-100%,0,0); }
 }
 #screenbuttons {  
-  bottom: 9%;  
+  bottom: 8.5%;  
 }
 #projets {  
    height: 1470px;  
@@ -1290,9 +1361,11 @@ figcaption {
 }
 
 #skill-bars p {
-width: 66%;
+width: 70%;
 }
-
+.info span {    
+right: -10px; 
+}
 #rocket2 {  
   bottom: 10px; 
   width: 10%; 
@@ -1320,7 +1393,7 @@ footer {
 @media screen and (max-width: 400px)
 {
 #projets {  
-   height: 1500px;  
+   height: 1520px;  
 }
 }
 /*----------------------------------------------------------------------*/
@@ -1381,12 +1454,21 @@ figure {
   right: 25px;  
 }
 .info span {    
-right: -10px; 
+right: -15px; 
+text-shadow: 3px 0 #bc040c;
 }
 
 article {
   margin-right: 5px;
   margin-left: 5px;
+}
+.contact { 
+  width: 50px;
+  height: 50px;  
+  margin: 25px;
+}
+.links {  
+  font-size: 1.85em;
 }
 }
 /*----------------------------------------------------------------------*/
@@ -1395,6 +1477,12 @@ article {
 {
 #projets {  
    height: 1570px;  
+}
+#planets h2 {
+font-size: 0.75em;
+}
+#screenbuttons {  
+  bottom: 8%;  
 }
 }
 /*----------------------------------------------------------------------*/
@@ -1452,16 +1540,16 @@ figcaption {
   0%  {background-position: 0px 35px;}
   100%  {background-position: -150px 20px;} 
 }
-.bar .progress-line.force span{
-  width: 90%;
-}
-.bar .progress-line.veille span{
-  width: 92%;
-}
-.bar .progress-line.humour span{
-  width: 29%;
+.info span { 
+text-shadow: 2px 0 #bc040c;
 }
 #continued {  
   right: 25px;  
 }
+.contact { 
+  width: 45px;
+  height: 45px;  
+  margin: 20px;
+}
+
 }

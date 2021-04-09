@@ -1,9 +1,9 @@
 @font-face {
-font-family: 'MrRobot';
-src : url('MrRobot.eot') format('eot'),
-/* url('MrRobot.woff') format('woff'),*/
-url('MrRobot.ttf') format('ttf'),
-url('MrRobot.svg') format('svg');
+font-family: 'SEGA';
+src : url('SEGA.eot') format('eot'),
+url('SEGA.woff') format('woff'),
+url('SEGA.ttf') format('ttf'),
+url('SEGA.svg') format('svg');
 }
 html {
 scroll-behavior: smooth;
@@ -43,7 +43,7 @@ transform: translate(-50%, -50%);
 margin: auto;
 text-align: center;
 font-size: 8em;   
-font-family: MrRobot, 'Audiowide', Helvetica, Arial, sans-serif;
+font-family: 'SEGA', 'Audiowide', Helvetica, Arial, sans-serif;
 color: #bc040c;   
 z-index: 1;
 opacity: 0;
@@ -262,7 +262,6 @@ position: sticky;
 top: 0;  
 max-width: 100%;
 }
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .topnav li img {
 width: 75px;
 height: 100%;
@@ -787,7 +786,7 @@ background: rgba(16,44,204, 0.25);
 -webkit-backdrop-filter: blur(0.5px);*/  
 }
 .todocontainer ul li div strong {
-font-family: MrRobot, 'Audiowide', Helvetica, Arial, sans-serif;
+font-family: 'SEGA', 'Audiowide', Helvetica, Arial, sans-serif;
 color: #bc040c;
 text-shadow: none;
 font-size: 1em;   
@@ -1059,8 +1058,7 @@ background-repeat: no-repeat;
 background-position: top center;  
 position: relative;
 }
-.four
-{
+.four {
 font-size: 3em;   
 margin-top: -5px;
 -webkit-transition: all .8s ease-in-out;
@@ -1093,11 +1091,6 @@ letter-spacing: 3px;
 -webkit-text-stroke: 1.25px white; 
 color: #fcfc04;
 text-shadow: 5px 0 #10c4c4;
-}
-.animate .four, .animate .five {
-transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);           
 }
 .topsentence {
 padding-bottom: 25px;
@@ -1133,8 +1126,8 @@ color: white;
 -webkit-text-stroke: 1.25px #10c4c4; 
 }
 .animate .one {
-transform: scale(1.5,1.5);
- 	-webkit-transform: scale(1.5,1.5);
+transform: scale(1.5);
+ 	-webkit-transform: scale(1.5);
     -ms-transform: scale(1.5,1.5);
 font-size: 1.75em;
 opacity: 1;
@@ -1152,6 +1145,11 @@ transform: scale(1.5,1.5);
     -webkit-transform: scale(1.5,1.5);
     -ms-transform: scale(1.5,1.5);
 opacity: 1;    
+}
+.animate .four, .animate .five {
+transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);           
 }
 /*-------------------------------------SECTION PACMAN-----------------------------------*/
 .road {
@@ -1559,11 +1557,11 @@ position: relative;
 width: 40px;
 height: 40px;
 display: block;
-animation: rotate 45s linear infinite;
+/*animation: rotate 45s linear infinite;
 	-moz-animation: rotate 45s linear infinite;
   	-webkit-animation: rotate 45s linear infinite;
   	-o-animation: rotate 45s linear infinite;
-  	-ms-animation: rotate 45s linear infinite;
+  	-ms-animation: rotate 45s linear infinite;*/
 }
 #planetdots span::before {
 content: "";
@@ -1959,7 +1957,7 @@ font-family: 'Finger Paint', cursive;
 font-family: 'Electrolize', sans-serif;
 }
 #hello {
-font-family: MrRobot, 'Audiowide', Helvetica, Arial, sans-serif;
+font-family: 'SEGA', 'Audiowide', Helvetica, Arial, sans-serif;
 }
 #chouette {
 font-family: cursive;
@@ -2510,7 +2508,7 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 footer p strong {
-font-family: MrRobot, 'Audiowide', Helvetica, Arial, sans-serif;
+font-family: 'SEGA', 'Audiowide', Helvetica, Arial, sans-serif;
 color: #bc040c;
 }
 #rocket2 {
