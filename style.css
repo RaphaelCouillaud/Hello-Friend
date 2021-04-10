@@ -1345,7 +1345,7 @@ background-attachment: fixed;
 background-size: 60%;
 background-repeat: repeat;
 background-position: center right;
-margin-bottom: 50px;
+padding-bottom: 50px;
 padding-top: 25px;
 flex-wrap: wrap;
 }
