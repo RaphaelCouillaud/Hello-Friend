@@ -646,7 +646,8 @@ padding-bottom: 0;
 }
 #planets { 
   padding: 30px;
-  max-width: 100%;  
+  max-width: 100%;
+  background-size: 130%;  
 }
 .planet {
   width: 120px;
@@ -927,6 +928,9 @@ text-shadow: 1.5px 0 #10c4c4;
   left: -30px;
   transform: translate3d(-200px,0,0);
 }
+.testimonialBox h4 {
+text-shadow: 1px 0 #fcfc04;
+}
 .workco {  
   width: 85%;   
   height: 225px; 
@@ -938,6 +942,7 @@ font-size: 4em;
   padding: 0px;
   max-width: 100%; 
  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+ background-size: 180%;
 }
 .planet {
   width: 110px;
@@ -1104,10 +1109,11 @@ footer {
 .topolist h2 {
   font-size: 2.25em;  
 }
-
-
 .testimonialBox {  
   width: 100%; 
+}
+.testimonialBox p { 
+  font-size: 1em;
 }
 .swiper-container { 
   height: 400px;
@@ -1402,7 +1408,7 @@ footer {
     height: 1100px;
 }
 .workco {    
-  height: 240px; 
+  height: 260px; 
 }
 .planet {
   width: 65px;

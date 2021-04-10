@@ -1,6 +1,35 @@
 // CANVAS //
 
+const C = document.querySelector("canvas"),
+  $ = C.getContext("2d"),
+  W = (C.width = window.innerWidth),
+  H = (C.height = window.innerHeight);
 
+const str = "HELLO FRIEND مرحبا صديق   Hola amiga שלום חבר  Ciao amico こんにちは友達 Hallo vriend 안녕 친구 Witaj przyjacielu 你好，朋友 Olá amigo Привет salut l'ami" ,
+  matrix = str.split("");
+
+let font = 11,
+  col = W / font,
+  arr = [];
+
+for (let i = 0; i < col; i++) arr[i] = 1;
+
+function draw() {
+  $.fillStyle = "rgba(0,0,0,.1)";
+  $.fillRect(0, 0, W, H);
+  $.fillStyle = "#08c404";
+  $.font = font + "px system-ui";
+  for (let i = 0; i < arr.length; i++) {
+    let txt = matrix[Math.floor(Math.random() * matrix.length)];
+    $.fillText(txt, i * font, arr[i] * font);
+    if (arr[i] * font > H && Math.random() > 0.975) arr[i] = 0;
+    arr[i]++;
+  }
+}
+
+setInterval(draw, 123);
+
+// window.addEventListener("resize", () => location.reload());//
 /////////////////////////////////////////////////////////////////////////
 
 
