@@ -37,6 +37,7 @@ min-height: 100vh;
 h1 {
 position: absolute;
 width: 100%;
+line-height: 1.25em;
 top: 45%;
 left: 50%;
 transform: translate(-50%, -50%);
@@ -1397,7 +1398,7 @@ background: rgba(16,44,204, 0.25);
 margin: auto;
 }
 .cardfront h3 {  
-margin: auto 0;
+margin: auto;
 padding-bottom: 25px;
 font-size: 1em;
 letter-spacing: 1.5px;
