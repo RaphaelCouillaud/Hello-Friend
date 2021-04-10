@@ -6,9 +6,9 @@ url('SEGA.ttf') format('ttf'),
 url('SEGA.svg') format('svg');
 }
 html {
-scroll-behavior: none;
+scroll-behavior: smooth;
 /* Disables pull-to-refresh but allows overscroll glow effects. */
-  overscroll-behavior-y: contain;
+overscroll-behavior: none
 }
 body {
 margin: 0;
@@ -20,7 +20,7 @@ background-attachment: fixed;
 background-repeat: no-repeat;
 background-position: top center;
 box-sizing: border-box;
-overscroll-behavior-y: contain;
+overscroll-behavior: none
 }
 a {
 text-decoration: none;
@@ -1015,7 +1015,7 @@ border: 6px solid white;
 .loading span {
 font-size: 4em;
 -webkit-text-stroke: 1.5px white;
-animation-name: disappear 2s both infinite;  
+animation: disappear 2s both infinite;  
   	-moz-animation: disappear 2s both infinite; 
 	-webkit-animation: disappear 2s both infinite; 
 	-o-animation: disappear 2s both infinite; 
