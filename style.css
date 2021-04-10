@@ -6,7 +6,7 @@ url('SEGA.ttf') format('ttf'),
 url('SEGA.svg') format('svg');
 }
 html {
-scroll-behavior: smooth;
+scroll-behavior: none;
 /* Disables pull-to-refresh but allows overscroll glow effects. */
   overscroll-behavior-y: contain;
 }
