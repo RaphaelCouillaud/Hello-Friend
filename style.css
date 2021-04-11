@@ -41,6 +41,7 @@ h1 {
 position: absolute;
 width: 100%;
 line-height: 1.25em;
+letter-spacing: 5px;
 top: 45%;
 left: 50%;
 transform: translate(-50%, -50%);
@@ -91,11 +92,11 @@ text-shadow: 6px 0 #10c4c4;
 }
 .glitch:before {
 text-shadow: 4px 0 #10c4c4;
-animation: glitch-anim-1 0.4s infinite ease-in-out alternate-reverse;
-  	-moz-animation: glitch-anim-1 0.4s infinite ease-in-out alternate-reverse;
-    -webkit-animation: glitch-anim-1 0.4s infinite ease-in-out alternate-reverse;
-    -o-animation: glitch-anim-1 0.4s infinite ease-in-out alternate-reverse;
-    -ms-animation: glitch-anim-1 0.4s infinite ease-in-out alternate-reverse;
+animation: glitchanim 0.4s infinite ease-in-out alternate-reverse;
+  	-moz-animation: glitchanim 0.4s infinite ease-in-out alternate-reverse;
+    -webkit-animation: glitchanim 0.4s infinite ease-in-out alternate-reverse;
+    -o-animation: glitchanim 0.4s infinite ease-in-out alternate-reverse;
+    -ms-animation: glitchanim 0.4s infinite ease-in-out alternate-reverse;
 }
 .glitch:after {
 left: 4px;
@@ -103,20 +104,20 @@ text-shadow: -3px 0 #fcfc04;
 }
 .glitch:after {
 text-shadow: -5px 0 #fcfc04;
-animation: glitch-anim-2 0.3s infinite ease-in-out alternate-reverse;
-  	-moz-animation: glitch-anim-2 0.3s infinite ease-in-out alternate-reverse;
-    -webkit-animation: glitch-anim-2 0.3s infinite ease-in-out alternate-reverse;
-    -o-animation: glitch-anim-2 0.3s infinite ease-in-out alternate-reverse;
-    -ms-animation: glitch-anim-2 0.3s infinite ease-in-out alternate-reverse;
+animation: glitchanimation 0.3s infinite ease-in-out alternate-reverse;
+  	-moz-animation: glitchanimation 0.3s infinite ease-in-out alternate-reverse;
+    -webkit-animation: glitchanimation 0.3s infinite ease-in-out alternate-reverse;
+    -o-animation: glitchanimation 0.3s infinite ease-in-out alternate-reverse;
+    -ms-animation: glitchanimation 0.3s infinite ease-in-out alternate-reverse;
 }
-@keyframes glitch-anim-1 {
+@keyframes glitchanim {
   0% {clip: rect(30px, 9999px, 10px, 0); opacity: 1;}
   25% {clip: rect(15px, 9999px, 100px, 0); opacity: 0.6}
   50% {clip: rect(50px, 9999px, 105px, 0); opacity: 0.1}
   75% {clip: rect(2px, 9999px, 80px, 0); opacity: 0.6}
   100% {clip: rect(90px, 9999px, 100px, 0); opacity: 1}
 }
-@keyframes glitch-anim-2 {
+@keyframes glitchanimation {
   0% {
     top: -1px;
     left: 50px;
@@ -190,16 +191,16 @@ left: 50%; /* à 50%/50% du parent référent */
 transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 }
 .fa-chevron-down {
-color: transparent;
--webkit-text-stroke: 1px white;
+color: #08c404;
+-webkit-text-stroke: 2px white;
 }
 header div span {   
 font-size: 2em;  
-animation: disappear 2s both infinite;
-  -moz-animation: disappear 2s both infinite;
-  -webkit-animation: disappear 2s both infinite;
-  -o-animation: disappear 2s both infinite;
-  -ms-animation: disappear 2s both infinite;
+animation: disappeared 2s both infinite;
+  -moz-animation: disappeared 2s both infinite;
+  -webkit-animation: disappeared 2s both infinite;
+  -o-animation: disappeared 2s both infinite;
+  -ms-animation: disappeared 2s both infinite;
 }
 header div  span:nth-child(2) {
   animation-delay: 0.2s;  
@@ -216,13 +217,13 @@ header div span:nth-child(5) {
 header div span:nth-child(6) {
   animation-delay: 0.6s;  
 }
-@keyframes disappear {
+@keyframes disappeared {
   0% {
       opacity: .2;
     }
     20% {
       opacity: 1;
-      text-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 35px white, 0 0 50px white, 0 0 70px white;
+      text-shadow: 0 0 10px #08c404, 0 0 15px #08c404, 0 0 20px #08c404, 0 0 35px #08c404, 0 0 50px #08c404, 0 0 70px #08c404;
     }
     100% {
       opacity: .2;
@@ -1668,7 +1669,7 @@ font-weight: lighter;
 #jquery {
 font-style: italic;
 }
-#mongo {
+#mongo, #firebase {
 font-family: 'Newsreader', serif;
 }
 #sequelize, #mysql {
@@ -1837,7 +1838,7 @@ text-align: center;
 font-size: 1.1em; 
 justify-content: space-between;
 width: 100%;
-height: 1550px;  
+height: 1650px;  
 background-image: url("img/backtron.png");
 background-attachment: fixed;
 background-size: cover;
@@ -1963,6 +1964,8 @@ font-family: 'Electrolize', sans-serif;
 }
 #hello {
 font-family: 'SEGA', 'Audiowide', Helvetica, Arial, sans-serif;
+font-weight: lighter;
+letter-spacing: 2px;
 }
 #chouette {
 font-family: cursive;
@@ -2515,6 +2518,8 @@ transform: translate(-50%, -50%);
 footer p strong {
 font-family: 'SEGA', 'Audiowide', Helvetica, Arial, sans-serif;
 color: #bc040c;
+font-weight: lighter;
+letter-spacing: 2px;
 }
 #rocket2 {
 width: 6%;

@@ -6,7 +6,7 @@
   width: 60%;
 }
 #projets {  
-   height: 1550px; 
+   height: 1650px; 
 }
 .listeprojets {
   width: 60%;  
@@ -97,7 +97,7 @@ footer {
    top: 500px;
 }
 #projets {  
-   height: 1600px;  
+   height: 1700px;  
 }
 #section1, #section2, #section3 {  
   height: 280px;
@@ -287,7 +287,7 @@ nav ul li a {
   height: 100px; 
 }
 #projets {  
-   height: 1300px;  
+   height: 1380px;  
 }
 .listeprojets {  
   height: 60px;  
@@ -384,9 +384,8 @@ footer {
 /* Add some top padding to the page content to prevent 
 sudden quick movement (as the navigation bar gets a new 
 position at the top of the page (position:fixed and top:0) */
-
-h1 { 
-  font-size: 4em;  
+h1 {
+  font-weight: lighter;
 }
 #headerdescription, #headerdescriptioneng {  
   font-size: 0.75em; 
@@ -803,7 +802,7 @@ background-attachment: fixed;
   height: 80px;
 }
 #projets {  
-   height: 1250px;    
+   height: 1320px;    
 }
 .listeprojets {
   font-size: 1.2em;
@@ -895,6 +894,9 @@ footer {
 /*----------------------------------------------------------------------*/
 @media screen and (max-width: 568px)
 {
+h1 { 
+  font-size: 4em;  
+}
 #lang a {
   font-size: 1.5em;
   color: white;
@@ -969,7 +971,7 @@ height: 25px;
 }
 
 #projets {  
-   height: 1540px;
+   height: 1620px;
 }
 .listeprojetsbottom { 
   flex-direction: column; 
@@ -1057,6 +1059,45 @@ footer {
 /*----------------------------------------------------------------------*/
 @media screen and (max-width: 425px)
 {
+  .glitch:after {
+text-shadow: -5px 0 #fcfc04;
+animation: glitchanimation 0.3s infinite ease-in-out alternate-reverse;
+    -moz-animation: glitchanimation 0.3s infinite ease-in-out alternate-reverse;
+    -webkit-animation: glitchanimation 0.3s infinite ease-in-out alternate-reverse;
+    -o-animation: glitchanimation 0.3s infinite ease-in-out alternate-reverse;
+    -ms-animation: glitchanimation 0.3s infinite ease-in-out alternate-reverse;
+}
+@keyframes glitchanimation {
+  0% {
+    top: -1px;
+    left: 25px;
+    clip: rect(45px, 9999px, 89px, 0);    
+  }
+  25% {
+    top: -10px;
+    left: 1px;
+    clip: rect(59px, 9999px, 15px, 0);
+    opacity: 0.6;
+  }
+  50% {
+    top: -5px;
+    left: 10px;
+    clip: rect(45px, 9999px, 8px, 0);
+    opacity: 0.1;
+  }
+  75% {
+    top: 7px;
+    right: 10px;
+    left: -25px;
+    clip: rect(45px, 9999px, 33px, 0);
+    opacity: 0.6;
+  }
+  100% {
+    top: -3px;
+    left: -5px;
+    clip: rect(21px, 9999px, 109px, 0);
+  }
+}
   #headerdescription, #headerdescriptioneng {  
   font-size: 0.8em;
   border-right: 5px solid #08c404;
@@ -1291,7 +1332,7 @@ animation: defil 10s infinite linear;
   bottom: 8.5%;  
 }
 #projets {  
-   height: 1470px;  
+   height: 1525px;  
 }
 .listeprojets {  
  box-shadow: 1px 1px 15px 5px white;
@@ -1386,7 +1427,7 @@ footer {
 @media screen and (max-width: 400px)
 {
 #projets {  
-   height: 1520px;  
+   height: 1580px;  
 }
 }
 /*----------------------------------------------------------------------*/
@@ -1424,7 +1465,7 @@ footer {
   height: 26px;
 }
 #projets {  
-   height: 1570px;  
+   height: 1600px;  
 }
 figure { 
     width: 85%;  
@@ -1469,7 +1510,7 @@ article {
 @media screen and (max-width: 350px)
 {
 #projets {  
-   height: 1600px;  
+   height: 1650px;  
 }
 #planets h2 {
 font-size: 0.75em;
@@ -1511,7 +1552,7 @@ font-size: 0.75em;
   height: 26px;
 }
 #projets {  
-   height: 1585px;  
+   height: 1650px;  
 }
 .listeprojets {
   width: 90%;  
@@ -1548,6 +1589,6 @@ text-shadow: 2px 0 #bc040c;
 @media screen and (max-width: 305px)
 {
 #projets {  
-   height: 1630px;  
+   height: 1650px;  
 }
 }
