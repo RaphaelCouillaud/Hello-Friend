@@ -29,7 +29,7 @@ function draw() {
 
 setInterval(draw, 123);
 
-window.addEventListener("resize", () => location.reload());
+//window.addEventListener("resize", () => location.reload());//
 /////////////////////////////////////////////////////////////////////////
 
 // TYPE SCRIPT ENGLISH //
