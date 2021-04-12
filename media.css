@@ -552,7 +552,7 @@ top: 40px;
  background-attachment: fixed;
   background-size: 110%;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: center center;
   position: relative;
 }
 .todocontainer ul li::after {  
@@ -911,7 +911,7 @@ h1 {
 .topolist h2::after {
 display: none;
 }
-.topolist p {
+.topolist p, #whosectiontopo p {
 text-shadow: 1.5px 0 #10c4c4;
 }
 .todocontainer ul li div p:nth-child(1) {
@@ -1116,6 +1116,19 @@ animation: glitchanimation 0.3s infinite ease-in-out alternate-reverse;
 #whosection {  
   height: 90vh;
   flex-direction: column-reverse;
+}
+#whosectiontopo h3 {
+font-size: 1.25em;
+text-shadow: 1px 0 #10c4c4;
+}
+#todolist {  
+  padding-bottom: 50px;
+  background-image: url("img/backspace2.png");
+ background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
 }
 .todocontainer ul li div{  
   width: 150px;  

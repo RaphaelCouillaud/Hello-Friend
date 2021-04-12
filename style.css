@@ -822,7 +822,7 @@ box-shadow: 1px 1px 15px 5px #102ccc;
 font-size: 1.4em;
  }
 .todocontainer ul li:nth-child(1)::after, .todocontainer ul li:nth-child(3)::after, .todocontainer ul li:nth-child(6)::after {
-content: '🎓';
+content: '👨🏻‍🎓';
 }
 .todocontainer ul li:nth-child(2)::after, .todocontainer ul li:nth-child(4)::after {
 content: '👔';
@@ -2518,8 +2518,7 @@ transform: translate(-50%, -50%);
 footer p strong {
 font-family: 'SEGA', 'Audiowide', Helvetica, Arial, sans-serif;
 color: #bc040c;
-font-weight: lighter;
-letter-spacing: 2px;
+letter-spacing: 0.5px;
 }
 #rocket2 {
 width: 6%;
