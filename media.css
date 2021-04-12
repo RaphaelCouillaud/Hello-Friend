@@ -1053,7 +1053,14 @@ footer {
   bottom: 0px; 
   width: 8%; 
 }
-
+}
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+@media screen and (max-width: 440px)
+{
+#projets {  
+   height: 1650px;  
+}
 }
 /*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*/
@@ -1432,6 +1439,14 @@ footer {
 }
 /*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*/
+@media screen and (max-width: 390px)
+{
+#projets {  
+   height: 1600px;  
+}
+}
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
 @media screen and (max-width: 375px)
 { 
 .todocontainer ul li div{  
@@ -1463,9 +1478,6 @@ footer {
 #technolist button {   
   width: 65px;
   height: 26px;
-}
-#projets {  
-   height: 1600px;  
 }
 figure { 
     width: 85%;  
@@ -1529,7 +1541,7 @@ font-size: 0.75em;
 }
 /*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*/
-@media screen and (max-width: 320px)
+@media screen and (max-width: 325px)
 {
  
 .todocontainer ul li div{  
@@ -1597,6 +1609,46 @@ text-shadow: 2px 0 #bc040c;
 @media screen and (max-width: 305px)
 {
 #projets {  
-   height: 1650px;  
+   height: 1700px;  
+}
+.contact { 
+  width: 40px;
+  height: 40px;  
+  margin: 15x;
+}
+}
+@media screen and (max-width: 290px)
+{
+  .todocontainer ul li div{  
+  width: 100px;   
+}
+.todocontainer ul li:nth-child(odd) div {
+  left: 60px; 
+}
+.planet {
+  width: 40px;
+}
+.contact { 
+  width: 35px;
+  height: 35px;  
+  margin: 15x;
+}
+#rocket2 {  
+  bottom: 40px; 
+  width: 8%; 
+}
+}
+@media screen and (max-width: 280px)
+{
+  .planet {
+  width: 30px;
+}
+#ocsection {
+    height: 1250px;
+}
+.contact { 
+  width: 30px;
+  height: 30px;  
+  margin: 10x;
 }
 }
