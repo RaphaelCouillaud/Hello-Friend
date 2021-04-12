@@ -1420,7 +1420,7 @@ article {
   margin: 30px;
 }
 .links {  
-  font-size: 2.5em;
+  font-size: 2.75em;
 }
 footer {   
   padding-top: 0px;  
@@ -1443,6 +1443,13 @@ footer {
 {
 #projets {  
    height: 1600px;  
+}
+.contact { 
+  width: 55px;
+  height: 55px; 
+}
+.links {  
+  font-size: 2.5em;
 }
 }
 /*----------------------------------------------------------------------*/
@@ -1503,18 +1510,9 @@ figure {
 right: -15px; 
 text-shadow: 3px 0 #bc040c;
 }
-
 article {
   margin-right: 5px;
   margin-left: 5px;
-}
-.contact { 
-  width: 50px;
-  height: 50px;  
-  margin: 25px;
-}
-.links {  
-  font-size: 1.85em;
 }
 }
 /*----------------------------------------------------------------------*/
@@ -1523,6 +1521,13 @@ article {
 {
 #projets {  
    height: 1650px;  
+}
+.contact { 
+  width: 50px;
+  height: 50px; 
+}
+.links {  
+  font-size: 2.4em;
 }
 }
 /*----------------------------------------------------------------------*/
@@ -1537,6 +1542,13 @@ font-size: 0.75em;
 }
 #screenbuttons {  
   bottom: 8%;  
+}
+.contact { 
+  width: 40px;
+  height: 40px; 
+}
+.links {  
+  font-size: 2.25em;
 }
 }
 /*----------------------------------------------------------------------*/
@@ -1613,8 +1625,7 @@ text-shadow: 2px 0 #bc040c;
 }
 .contact { 
   width: 40px;
-  height: 40px;  
-  margin: 15x;
+  height: 40px; 
 }
 }
 @media screen and (max-width: 290px)
@@ -1630,8 +1641,7 @@ text-shadow: 2px 0 #bc040c;
 }
 .contact { 
   width: 35px;
-  height: 35px;  
-  margin: 15x;
+  height: 35px;   
 }
 #rocket2 {  
   bottom: 40px; 
@@ -1647,8 +1657,10 @@ text-shadow: 2px 0 #bc040c;
     height: 1250px;
 }
 .contact { 
-  width: 30px;
-  height: 30px;  
-  margin: 10x;
+  width: 35px;
+  height: 35px; 
+}
+.links {  
+  font-size: 2em;
 }
 }
