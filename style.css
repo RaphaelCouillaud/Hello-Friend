@@ -745,6 +745,7 @@ background-size: 90%;
 background-repeat: no-repeat;
 background-position: bottom center;
 position: relative;
+padding-top: 50px; 
 }
 .todocontainer p {
 font-size: 0.85em;
@@ -1455,6 +1456,7 @@ font-size: 1em;
 text-align: center;
 position: relative;
 background: rgba(255, 255, 255, 0.05);
+padding-top: 50px; 
 }
 .planettop {
 width: 100%;
@@ -1663,7 +1665,7 @@ margin-top: 160px;
 width: 100%;  
 /*position: absolute;  */  
 }
-#express, #vanilla, #token, #vuex {
+#express, #vanilla, #token, #vuex, #swiper {
 font-weight: lighter;
 }
 #jquery {
@@ -1979,6 +1981,7 @@ display: flex;
 flex-wrap: wrap;  
 flex-direction: column;
 margin: auto;  
+padding-top: 50px; 
 padding-bottom: 50px;
 justify-content: space-between;
 background-image: url("img/backbubbles.png");
@@ -2346,7 +2349,7 @@ transform: rotate(0deg);
 text-shadow: -1px 0 2px white, 0 1px 2px white, 1px 0 2px white, 0 -1px 10px white;
 }
 /*-------------------------------FOOTER-------------------------*/
-article {
+#contactarticle {
 position: relative;
 height: auto;
 box-sizing: border-box;
@@ -2355,7 +2358,7 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 color: white;
-padding-top: 40px;  
+padding-top: 25px;  
 margin-bottom: 25px;
 font-family: 'Audiowide', cursive;
 flex-wrap: wrap;
@@ -2496,7 +2499,7 @@ height: 325px;
 display: flex;
 text-align: center;
 position: relative;
-background-image: url("img/moon.png");
+background-image: url("img/moon1.png");
 background-attachment: scroll;
 background-size: cover;
 background-repeat: repeat;
