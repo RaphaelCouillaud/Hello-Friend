@@ -43,7 +43,17 @@ let texte = "WELCOME TO MY PORTFOLIO";
       );
     });
 //////////////////////////////////////////////////////////////////////////////    
+document.addEventListener("mousemove" , showParallax);
+          function showParallax(e){
+            this.querySelectorAll('.layer').forEach(layer => {
+              const speed = layer.getAttribute('data-speed')
 
+              const xScreen = (window.innerWidth - e.pageX*speed)/100
+              const yScreen = (window.innerHeight - e.pageY*speed)/100
+
+              layer.style.transform = `translateX(${xScreen}px) translateY(${yScreen}px)`
+            })
+          }
 // NAVBAR RESPONSIVE //
 function responsiveNav() {
   var x = document.getElementById("myTopnav");

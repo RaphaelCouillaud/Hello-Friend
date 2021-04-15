@@ -543,7 +543,7 @@
                 </div>
                 <div class="listeprojets2">
                   <h4>Technos</h4>
-                  <p><i class="fab fa-vuejs"></i>&nbsp; + Firebase</p> 
+                  <p><i class="fab fa-vuejs"></i>+&nbsp;<i class="fab fa-node"></i>+ Firebase</p> 
                 </div>
                 <div class="listeprojets3">          
                   <h4>Avis client(e)</h4>
@@ -1094,21 +1094,7 @@
        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="index.js"></script>
 
-     <!-- VanillaJs Parallax -->
-         <script type="text/javascript">
-         	document.addEventListener("mousemove" , showParallax);
-         	function showParallax(e){
-         		this.querySelectorAll('.layer').forEach(layer => {
-         			const speed = layer.getAttribute('data-speed')
-
-         			const xScreen = (window.innerWidth - e.pageX*speed)/100
-         			const yScreen = (window.innerHeight - e.pageY*speed)/100
-
-         			layer.style.transform = `translateX(${xScreen}px) translateY(${yScreen}px)`
-         		})
-         	}
-
-         </script>
+     
 
          <!-- Initialize Swiper -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>        
@@ -1119,9 +1105,9 @@
       centeredSlides: true,
       slidesPerView: 'auto',
       coverflowEffect: {
-        rotate: 0,
+        rotate: 180,
         stretch: 0,
-        depth: 200,
+        depth: 300,
         modifier: 2,
         slideShadows: true,
       },
