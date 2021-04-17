@@ -1486,16 +1486,14 @@ footer {
 @media screen and (max-width: 410px)
 {
 #projets {  
-   height: 1580px;  
+   height: 1620px;  
 }
 }
 /*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*/
 @media screen and (max-width: 390px)
 {
-#projets {  
-   height: 1600px;  
-}
+
 .contact { 
   width: 55px;
   height: 55px; 
@@ -1590,7 +1588,7 @@ text-shadow: 1.5px 0 #bc040c;
   font-size: 1.25em;
 }
 #projets {  
-   height: 1650px;  
+   height: 1670px;  
 }
 #planets h2 {
 font-size: 0.75em;
@@ -1645,7 +1643,7 @@ left: 5%;
   height: 26px;
 }
 #projets {  
-   height: 1670px;  
+   height: 1680px;  
 }
 .listeprojets {
   width: 90%;  
