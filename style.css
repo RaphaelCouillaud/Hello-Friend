@@ -1997,6 +1997,9 @@ font-family: cursive;
 #ohmy {
 font-family: Helvetica, Arial, sans-serif;
 }
+#yellow {
+   font-family: 'Gloria Hallelujah', Helvetica, Arial, sans-serif;
+}
 /*-------------------------------------SECTION BIO GRAPHIQUE-----------------------------------*/
 #sectionbio  {
 display: flex;
