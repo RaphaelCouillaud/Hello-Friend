@@ -830,7 +830,7 @@ content: '👨🏻‍🎓';
 .todocontainer ul li:nth-child(2)::after, .todocontainer ul li:nth-child(4)::after {
 content: '👔';
 }
-.todocontainer ul li:nth-child(5)::after {
+.todocontainer ul li:nth-child(5)::after, .todocontainer ul li:nth-child(7)::after {
 content: '💼';
 }
 .todocontainer ul li div::before {
@@ -1682,7 +1682,7 @@ margin-top: 160px;
 width: 100%;  
 /*position: absolute;  */  
 }
-#express, #vanilla, #token, #vuex, #swiper {
+#express, #vanilla, #token, #vuex, #swiper, #gsap {
 font-weight: lighter;
 }
 #jquery {
@@ -1857,7 +1857,7 @@ text-align: center;
 font-size: 1.1em; 
 justify-content: space-between;
 width: 100%;
-height: 1650px;  
+height: 1800px;  
 background-image: url("img/backtron.png");
 background-attachment: fixed;
 background-size: cover;

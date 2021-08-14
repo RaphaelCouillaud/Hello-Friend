@@ -6,7 +6,7 @@
   width: 60%;
 }
 #projets {  
-   height: 1650px; 
+   height: 1750px; 
 }
 .listeprojets {
   width: 60%;  
@@ -103,7 +103,7 @@ left: 3%;
   bottom: 10.5%;  
 }
 #projets {  
-   height: 1700px;  
+   height: 1900px;  
 }
 #section1, #section2, #section3 {  
   height: 280px;
@@ -285,7 +285,7 @@ nav ul li a {
   height: 100px; 
 }
 #projets {  
-   height: 1380px;  
+   height: 1550px;  
 }
 .listeprojets {  
   height: 60px;  
@@ -803,7 +803,7 @@ background-attachment: fixed;
   height: 80px;
 }
 #projets {  
-   height: 1320px;    
+   height: 1450px;    
 }
 .listeprojets {
   font-size: 1.2em;
@@ -990,7 +990,7 @@ height: 25px;
 }
 
 #projets {  
-   height: 1650px;
+   height: 1750px;
 }
 .listeprojetsbottom { 
   flex-direction: column; 
@@ -1085,7 +1085,7 @@ footer {
 @media screen and (max-width: 440px)
 {
 #projets {  
-   height: 1670px;  
+   height: 1770px;  
 }
 }
 /*----------------------------------------------------------------------*/
@@ -1377,7 +1377,7 @@ animation: defil 10s infinite linear;
   bottom: 8.5%;  
 }
 #projets {  
-   height: 1550px;  
+   height: 1650px;  
 }
 .listeprojets {  
  box-shadow: 1px 1px 15px 5px white;
@@ -1486,7 +1486,7 @@ footer {
 @media screen and (max-width: 410px)
 {
 #projets {  
-   height: 1620px;  
+   height: 1680px;  
 }
 }
 /*----------------------------------------------------------------------*/
@@ -1570,7 +1570,7 @@ text-shadow: 1.5px 0 #bc040c;
 @media screen and (max-width: 365px)
 {
 #projets {  
-   height: 1650px;  
+   height: 1725px;  
 }
 .contact { 
   width: 50px;
@@ -1588,7 +1588,7 @@ text-shadow: 1.5px 0 #bc040c;
   font-size: 1.25em;
 }
 #projets {  
-   height: 1670px;  
+   height: 1800px;  
 }
 #planets h2 {
 font-size: 0.75em;
@@ -1642,9 +1642,7 @@ left: 5%;
   width: 65px;
   height: 26px;
 }
-#projets {  
-   height: 1680px;  
-}
+
 .listeprojets {
   width: 90%;  
 }
