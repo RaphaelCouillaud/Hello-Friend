@@ -34,7 +34,7 @@ setInterval(draw, 123);
 
 
 // TYPE SCRIPT //
-let text = "BIENVENUE SUR MON PORTFOLIO";
+let text = "BIENVENUE, VOUS N'ÊTES PAS SEULS";
     let array = Array.from(text);
 
     Object.keys(array).map((key) => {

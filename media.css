@@ -5,8 +5,9 @@
   .carousel {
   width: 60%;
 }
+
 #projets {  
-   height: 1750px; 
+   height: 1600px; 
 }
 .listeprojets {
   width: 60%;  
@@ -54,6 +55,10 @@ footer {
 /*----------------------RESPONSIVE Desktops and laptops---------------------------------*/
 @media screen  and (max-width : 1224px)
 {
+  nav ul li a {  
+  font-size: 1.5em;  
+  -webkit-text-stroke: 0.6px white;
+}
   #whosectionimg {
   width: 228px;
   height: 300px;
@@ -360,7 +365,10 @@ footer {
  height: 250px;  
 }
 }
-
+.silhouette iframe{
+  width: 300px;
+  height: auto;
+}
 
 
 
@@ -386,11 +394,12 @@ h1 {
   font-weight: lighter;
 }
 #headerdescription, #headerdescriptioneng {  
-  font-size: 0.75em; 
+  font-size: 1.25em; 
    border-right: 7px solid #08c404;
+   width: 70%;
 }
 header div span {
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 nav ul {   
@@ -541,6 +550,22 @@ bottom: 30%;
     width: 70%;
   height: 70%;   
 }
+#whosection {  
+  height: 65vh;
+}
+
+#whosectiontopo h3 {
+font-size: 2em;
+text-shadow: 1px 0 #10c4c4;
+}
+#whosectiontopo p {
+font-size: 2em;
+letter-spacing: 1.5px;
+line-height: 1.5em;
+}
+.topolist p, #whosectiontopo p {
+text-shadow: 0.5px 0 #10c4c4;
+}
 .topolist h2::after {
 top: 40px;
 }
@@ -572,7 +597,7 @@ top: 40px;
   display: none;
 }
   .swiper-container { 
-  height: 450px;
+  height: 550px;
 }
 .swiper-slide-active .fa-chevron-left {
 left: 2%;
@@ -681,7 +706,10 @@ animation: none;
     -o-animation: none;
     -ms-animation: none;
 }
-
+.silhouette iframe{
+  width: 250px;
+  height: auto;
+}
 
 
 /*-------------------------------------SECTION PACMAN-----------------------------------*/
@@ -764,7 +792,7 @@ background-attachment: fixed;
  background-position: right 45% bottom 45%;
 }
 .carousel {
-  width: 80%;
+  width: 70%;
   height: 400px;
 }
 .carousel-text {
@@ -773,6 +801,11 @@ background-attachment: fixed;
 }
 .carousel-item i {
   margin-top: 75px;
+}
+.carousel-item img {
+max-width: 600px;
+height: 260px;
+
 }
 .carousel-item p {  
   margin-top: 100px;
@@ -796,14 +829,14 @@ background-attachment: fixed;
 }
 
 #screenbuttons {  
-  bottom: 10%;  
+  bottom: 9%;  
 }
 .contact {  
   width: 80px;
   height: 80px;
 }
 #projets {  
-   height: 1450px;    
+   height: 1250px;    
 }
 .listeprojets {
   font-size: 1.2em;
@@ -843,7 +876,7 @@ width: 60%;
 height: 8px;  
 }
 .info span { 
-right: -10px; 
+right: -35px; 
 font-size: 2em;
 }
 #portrait {  
@@ -906,9 +939,17 @@ footer {
 h1 { 
   font-size: 4em;  
 }
+header {  
+max-height: 60vh; 
+}
 #lang a {
   font-size: 1.5em;
   color: white;
+}
+#headerdescription, #headerdescriptioneng {  
+  font-size: 1.1em; 
+   border-right: 7px solid #08c404;
+   width: 60%;
 }
  #whosectionimg {
  width: 128px;
@@ -990,7 +1031,7 @@ height: 25px;
 }
 
 #projets {  
-   height: 1750px;
+   height: 1500px;
 }
 .listeprojetsbottom { 
   flex-direction: column; 
@@ -1004,6 +1045,11 @@ height: 25px;
    display: flex;
    margin: 0;   
 }
+.listeprojets4 {
+   margin-top: 25px; 
+}
+
+  
 .listeprojets h3, .listeprojets h4 {
   text-align: center;
   margin: auto;
@@ -1063,14 +1109,20 @@ figcaption {
 font-size: 0.75em;
 }
 .info span { 
-top: -30px;
-right: 0px; 
+
 font-size: 1.75em;
 }
 .contact { 
   width: 80px;
   height: 80px;  
   margin: 40px;
+}
+.silhouette {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 75%;  
 }
 footer {   
  height: 250px;    
@@ -1082,11 +1134,43 @@ footer {
 }
 /*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*/
+@media screen and (max-width: 480px)
+{
+#whosectiontopo p {
+font-size: 1.5em;
+letter-spacing: 1.25px;
+line-height: 1.25em;
+}
+#screenbuttons {  
+  bottom: 8%;  
+}
+.planet {
+  width: 80px;
+}
+#planetprofil {
+   width: 40px;  
+   margin: 0; 
+ }
+.planetmiddle {
+  width: 100%;  
+  justify-content: space-between;
+}
+#planetdots span {
+width: 18px;
+height: 18px;
+}
+}
+
+
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
 @media screen and (max-width: 440px)
 {
 #projets {  
    height: 1770px;  
 }
+
 }
 /*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*/
@@ -1140,7 +1224,7 @@ animation: glitchanimation 0.3s infinite ease-in-out alternate-reverse;
   width: 25%;
   }
 #whosection {  
-  height: 90vh;
+  height: 70vh;
   flex-direction: column-reverse;
 }
 #todolist {  
@@ -1202,7 +1286,7 @@ left: 4%;
   font-size: 1.35em;
 }
 .swiper-container { 
-  height: 400px;
+  height: 520px;
 }
 .imgmentor {
   width: 100px;
@@ -1246,21 +1330,7 @@ font-size: 3em;
   width: 40%;
 }
 
-.planet {
-  width: 80px;
-}
-#planetprofil {
-   width: 40px;  
-   margin: 0; 
- }
-.planetmiddle {
-  width: 100%;  
-  justify-content: space-between;
-}
-#planetdots span {
-width: 18px;
-height: 18px;
-}
+
 .road {  
   height: 75px;
   border-top: 4px solid #102ccc;
@@ -1346,6 +1416,10 @@ height: 18px;
   margin-top: 80px;
   font-size: 4em;
 }
+.carousel-item img {
+ height: 175px;
+
+}
 #game, #coin {   
    margin-top: 100px;
     font-size: 2.5em;
@@ -1361,11 +1435,11 @@ height: 18px;
   border-bottom: 5px solid #102ccc;   
 }
 #comingsoon > :first-child {
-animation: defil 10s infinite linear;
-    -moz-animation: defil 10s infinite linear;
-    -webkit-animation: defil 10s infinite linear;
-    -o-animation: defil 10s infinite linear;
-    -ms-animation: defil 10s infinite linear;
+animation: defil 30s infinite linear;
+    -moz-animation: defil 30s infinite linear;
+    -webkit-animation: defil 30s infinite linear;
+    -o-animation: defil 30s infinite linear;
+    -ms-animation: defil 30s infinite linear;
 }
 @keyframes defil {
   0% {
@@ -1374,10 +1448,11 @@ animation: defil 10s infinite linear;
     transform: translate3d(-100%,0,0); }
 }
 #screenbuttons {  
-  bottom: 8.5%;  
+  bottom: 7%;  
 }
+
 #projets {  
-   height: 1650px;  
+   height: 1400px;  
 }
 .listeprojets {  
  box-shadow: 1px 1px 15px 5px white;
@@ -1443,7 +1518,7 @@ figcaption {
 width: 70%;
 }
 .info span {    
-right: -10px; 
+right: -25px; 
 }
 #portraitsection .imagehover p span i {
   text-shadow: 1px 0 #10c4c4;   
@@ -1488,6 +1563,7 @@ footer {
 #projets {  
    height: 1680px;  
 }
+
 }
 /*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*/
