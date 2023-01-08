@@ -550,9 +550,7 @@ bottom: 30%;
     width: 70%;
   height: 70%;   
 }
-#whosection {  
-  height: 65vh;
-}
+
 
 #whosectiontopo h3 {
 font-size: 2em;
@@ -940,7 +938,7 @@ h1 {
   font-size: 4em;  
 }
 header {  
-max-height: 60vh; 
+max-height: 70vh; 
 }
 #lang a {
   font-size: 1.5em;
@@ -955,6 +953,7 @@ max-height: 60vh;
  width: 128px;
   height: 175px;
 }
+
 #whosectiontopo h3 {
 font-size: 1.25em;
 text-shadow: 1px 0 #10c4c4;
@@ -1022,6 +1021,10 @@ width: 100%;
 #planetdots span {
 width: 25px;
 height: 25px;
+}
+.carousel {
+  width: 95%;
+  height: 400px;
 }
 .carousel-item i {  
   font-size: 15em;  
@@ -1136,10 +1139,32 @@ footer {
 /*----------------------------------------------------------------------*/
 @media screen and (max-width: 480px)
 {
+  header div span {
+    font-size: 1.75em;
+}
+#whosection {  
+  flex-direction: column-reverse;
+  margin: auto;
+}
 #whosectiontopo p {
-font-size: 1.5em;
-letter-spacing: 1.25px;
-line-height: 1.25em;
+font-size: 1.35em;
+letter-spacing: 1.35px;
+line-height: 1.35em;
+}
+
+.carousel-item img {
+ height: 240px;
+ margin-top: 35px;
+}
+
+#game, #coin {
+margin-top: 100px;
+font-size: 3em;
+}
+.carousel-item p { 
+writing-mode: horizontal-tb;
+text-orientation: mixed;
+/*position: absolute;  */  
 }
 #screenbuttons {  
   bottom: 8%;  
@@ -1148,7 +1173,7 @@ line-height: 1.25em;
   width: 80px;
 }
 #planetprofil {
-   width: 40px;  
+   width: 100px;  
    margin: 0; 
  }
 .planetmiddle {
@@ -1159,9 +1184,20 @@ line-height: 1.25em;
 width: 18px;
 height: 18px;
 }
+
 }
 
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+@media screen and (max-width: 460px)
+{
 
+.carousel-item img {
+ height: 220px;
+  margin-top: 45px;
+}
+
+}
 
 /*----------------------------------------------------------------------*/
 /*----------------------------------------------------------------------*/
@@ -1169,6 +1205,10 @@ height: 18px;
 {
 #projets {  
    height: 1770px;  
+}
+.carousel-item img {
+ height: 210px;
+  margin-top: 50px;
 }
 
 }
@@ -1216,17 +1256,14 @@ animation: glitchanimation 0.3s infinite ease-in-out alternate-reverse;
   }
 }
   #headerdescription, #headerdescriptioneng {  
-  font-size: 0.8em;
+  font-size: 0.6em;
   border-right: 5px solid #08c404;
   white-space:nowrap;
 }
 .saucer {  
   width: 25%;
   }
-#whosection {  
-  height: 70vh;
-  flex-direction: column-reverse;
-}
+
 #todolist {  
   padding-bottom: 50px;
   background-image: url("img/backspace2.png");
@@ -1412,14 +1449,11 @@ font-size: 3em;
   margin-top: 50px;
    font-size: 13em;  
 }
-.carousel-item p {  
-  margin-top: 80px;
-  font-size: 4em;
-}
 .carousel-item img {
- height: 175px;
-
+ height: 200px;
+  margin-top: 15px;
 }
+
 #game, #coin {   
    margin-top: 100px;
     font-size: 2.5em;
@@ -1603,7 +1637,7 @@ footer {
   width: 65px;
 }
 #planetprofil {
-   width: 35px;  
+   width: 80px;  
 }
 .carousel {
   width: 100%;
